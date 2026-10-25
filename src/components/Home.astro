@@ -12,6 +12,7 @@ const { t } = Astro.props;
         {t.hero.author}
         <small>{t.hero.role}</small>
         <small class="creds">{t.hero.credentials}</small>
+        <small class="creds-note">{t.hero.credsNote.text}<a href={t.hero.credsNote.href} target="_blank" rel="noopener">{t.hero.credsNote.link}</a></small>
       </div>
       <p class="cta-line">
         <a class="home-cta" href={t.whatsapp.href} aria-label={`${t.homeCta.label} — WhatsApp`} target="_blank" rel="noopener">{t.homeCta.label}</a>

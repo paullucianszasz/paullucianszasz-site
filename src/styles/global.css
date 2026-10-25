@@ -245,7 +245,9 @@ p { margin: 0 0 15px; }
   margin: 0 auto 24px;
   box-shadow: 0 12px 28px rgba(63, 49, 35, 0.14);
 }
-.hero .author .creds { display: block; font-size: 14px; color: var(--text-light); margin-top: 6px; }
+.hero .author .creds, .hero .author .creds-note { display: block; font-size: 14px; margin-top: 6px; color: #7a6a57; }
+.hero .author .creds-note a { color: var(--link); font-weight: 600; }
+.hero .author .creds-note a:hover { color: var(--link-hover); text-decoration: underline; }
 .hero .cta-line { max-width: none; text-align: center; margin-top: 24px; }
 .hero .home-cta { font-size: 14px; background: var(--link); color: var(--white); }
 .hero .home-cta:hover { background: var(--link-hover); }
