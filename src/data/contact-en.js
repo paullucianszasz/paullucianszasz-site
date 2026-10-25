@@ -1,8 +1,8 @@
 // Contact (EN) — oglinda lui contact-ro.js; telefon, email si adresa vin din src/data/site.js (footer).
-// Programul este placeholder; politica de anulare este traducerea textului furnizat.
+// Hours as supplied (16:00 – 20:00); days assumed Monday – Friday, to confirm. Cancellation policy mirrors the supplied RO text.
 export const contactEn = {
   title: 'Contact',
-  hours: 'Monday – Friday, 10:00 – 19:00', // PLACEHOLDER — to confirm
+  hours: 'Monday – Friday, between 16:00 and 20:00', // days: to confirm; hours as supplied
   booking: [
     'Bookings are made by phone, WhatsApp or email. I do not use an online scheduling platform, so the first contact is enough: we look at the available hours together and set the first session.'
   ],

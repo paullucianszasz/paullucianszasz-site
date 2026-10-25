@@ -1,9 +1,9 @@
 // Contact (RO) — telefon, email si adresa vin din src/data/site.js (footer), neschimbate.
-// Programul este un placeholder: confirma/l editheaza inainte de publicare.
+// Programul: orele furnizate (16:00 – 20:00); zilele sunt asumate Luni – Vineri, de confirmat.
 // Paragrafele marate "draft" sunt pentru aprobare; politica de anulare este textul furnizat, neschimbat.
 export const contactRo = {
   title: 'Contact',
-  hours: 'Luni – Vineri, 10:00 – 19:00', // PLACEHOLDER — de confirmat
+  hours: 'Luni – Vineri, între 16:00 și 20:00', // zile: de confirmat; orele sunt cele furnizate
   booking: [
     'Programarea se face telefonic, prin WhatsApp sau prin email. Nu folosesc o platformă de programare online, așa că primul contact este suficient: verificăm împreună orele disponibile și stabilim prima ședință.'
   ],
