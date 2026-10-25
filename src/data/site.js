@@ -34,9 +34,11 @@ export const site = {
     homeCta: { label: 'Programați o consultație inițială' },
     localLine: 'Cabinet în Cluj-Napoca, pe Andrei Saguna nr. 8, sau ședințe online — în funcție de ceea ce ți se potrivește.',
     valueProp: {
-      heading: 'Cum funcționează Psihoterapiile Cognitive și Comportamentale',
-      // mirror al textului furnizat in engleza — pentru aprobare
-      text: 'Terapia cognitiv-comportamentală (CBT) este un proces structurat, orientat spre obiective, în care lucrăm ca o echipă pentru a schimba tiparele care nu te ajută. Mai întâi mapăm modul în care credințele centrale și declanșatorii din viața de zi cu zi îți influențează dispoziția. Apoi exersăm identificarea și remodelarea gândurilor automate negative și introducem schimbări comportamentale practice, pentru a întrerupe cercurile de evitare sau de stres. Fiindcă schimbarea reală se întâmplă în viața de zi cu zi, folosim exerciții simple între ședințe, pentru a testa obiceiuri noi. Într-un proces tipic de 5–20 de ședințe, construiești un set personal de puncte forte și strategii de adaptare, astfel încât să poți naviga cu încredere provocările viitoare pe cont propriu.'
+      heading: 'Cine sunt și cum te pot însoți',
+      text: [
+        'Sunt psihoterapeut specializat în terapii cognitive și comportamentale, iar misiunea mea este să te sprijin în crearea unei relații mai blânde și mai armonioase cu tine însuți și cu lumea din jur. Abordarea mea integrativă îmbină instrumentele validate științific din CBT, REBT și CT-R cu principiile mindfulness-ului și ale autocompasiunii.',
+        'Viziunea mea asupra psihoterapiei este profund colaborativă și umană. Dincolo de tehnici și teorii, cred că relația terapeutică bazată pe încredere și căldură este fundamentul oricărei schimbări durabile. Te voi ajuta nu doar să înțelegi mecanismele din spatele gândurilor și emoțiilor tale, ci și să deconstruiești acele reguli rigide care îți limitează potențialul. Sunt aici să te însoțesc cu prezență, compasiune și claritate în procesul tău de autocunoaștere, oferindu-ți instrumentele necesare pentru a deveni propriul tău sprijin în fața provocărilor viitoare.'
+      ]
     },
     areas: {
       heading: 'Domenii de expertiză',
@@ -112,9 +114,12 @@ export const site = {
     homeCta: { label: 'Schedule an Initial Consultation' },
     localLine: 'Sessions in my Cluj-Napoca office on Andrei Saguna no. 8, or online — whichever suits you better.',
     valueProp: {
-      // mirror al heading-ului in romana — pentru aprobare
-      heading: 'How Cognitive and Behavioral Therapies Work',
-      text: 'Cognitive Behavioral Therapy (CBT) is a structured, goal-oriented process where we work as a team to change unhelpful patterns. First, we map out how your core beliefs and daily triggers impact your mood. Next, we practice identifying and reshaping negative automatic thoughts while introducing practical behavioral changes to break cycles of avoidance or stress. Because real change happens in daily life, we use simple between-session practices to test new habits. Over a typical course of 5 to 20 sessions, you will build a personal toolkit of strengths and coping strategies so you can confidently navigate future challenges on your own.'
+      // mirror al textului furnizat in romana — pentru aprobare
+      heading: 'Who I am and how I can walk alongside you',
+      text: [
+        'I am a psychotherapist specialized in cognitive and behavioral therapies, and my mission is to support you in building a kinder, more harmonious relationship with yourself and with the world around you. My integrative approach combines the scientifically validated tools of CBT, REBT and CT-R with the principles of mindfulness and self-compassion.',
+        'My vision of psychotherapy is deeply collaborative and human. Beyond techniques and theories, I believe the therapeutic relationship built on trust and warmth is the foundation of any lasting change. I will help you not only understand the mechanisms behind your thoughts and emotions, but also dismantle the rigid rules that limit your potential. I am here to walk with you — with presence, compassion, and clarity — through your process of self-discovery, offering you the tools you need to become your own support in the face of future challenges.'
+      ]
     },
     areas: {
       heading: 'Areas of Expertise',

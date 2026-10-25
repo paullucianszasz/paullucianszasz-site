@@ -23,7 +23,7 @@ const { t } = Astro.props;
 <section class="section value-prop">
   <div class="container">
     <h2>{t.valueProp.heading}</h2>
-    <p>{t.valueProp.text}</p>
+    {Array.isArray(t.valueProp.text) ? t.valueProp.text.map((p) => <p>{p}</p>) : <p>{t.valueProp.text}</p>}
     <p class="local-line">{t.localLine}</p>
   </div>
 </section>
