@@ -22,9 +22,17 @@ const { t, about } = Astro.props;
                   block.items && block.items.length > 0 && (
                     <div class="tl-block">
                       {block.subheading && <h4>{block.subheading}</h4>}
-                      {block.items.every((i) => typeof i === 'string') ? (
+                      {block.items.every((i) => typeof i === 'string' || i.text) ? (
                         <ul>
-                          {block.items.map((i) => <li>{i}</li>)}
+                          {block.items.map((i) => (
+                            <li>
+                              {i.text
+                                ? i.href
+                                  ? <a href={i.href} target="_blank" rel="noopener">{i.text}</a>
+                                  : i.text
+                                : i}
+                            </li>
+                          ))}
                         </ul>
                       ) : (
                         block.items.map((i) => (
@@ -33,6 +41,10 @@ const { t, about } = Astro.props;
                             <div class="tl-body">
                               <div class="role">{i.role}</div>
                               <div>{i.detail}</div>
+                              {i.thesis && (
+                                <div class="thesis">{t.lang === 'ro' ? 'Titlul tezei' : 'Thesis title'}: {i.thesis}</div>
+                              )}
+                              {i.summary && <p class="thesis-summary">{i.summary}</p>}
                             </div>
                           </div>
                         ))

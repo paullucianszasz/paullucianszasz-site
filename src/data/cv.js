@@ -2,14 +2,35 @@
 export const cvPhoto = '/assets/me-2.jpg';
 
 // Acreditare — completeaza datele aici; campurile goale nu sunt afisate pe pagina,
-// asa ca nimic neconfirmat nu ajunge in HTML.
+// asa ca nimic neconfirmat nu ajunge in HTML. Numarul de registru nu este listat:
+// se verifica pe site-ul CPR (afisam linkul, nu numarul de registru).
 export const accreditation = {
-  cpr: { year: '', role: '', detail: '' },
-  institute: { year: '', role: '', detail: '' },
-  associations: []
+  cpr: {
+    ro: {
+      text: 'Colegiul Psihologilor din România (CPR) — Registrul public',
+      href: 'https://www.copsi.ro/index.php/registre'
+    },
+    en: {
+      text: 'College of Psychologists of Romania (CPR) — public register',
+      href: 'https://www.copsi.ro/index.php/registre'
+    }
+  },
+  associations: [
+    {
+      ro: {
+        text: 'Membru al Asociației de Psihoterapii Cognitive și Comportamentale din România (APCCR).',
+        href: 'https://psihoterapiecbt.ro/'
+      },
+      en: {
+        text: 'Member of Asociația de Psihoterapii Cognitive și Comportamentale din România (APCCR), the Romanian association of cognitive and behavioural psychotherapies.',
+        href: 'https://psihoterapiecbt.ro/en/'
+      }
+    }
+  ]
 };
 
 // Sectiile cu structura anuala (year / role / detail)
+// job si jobEn nu sunt afisate pe site (cererea de a scoate "Activitate academica"); le pastram din CV
 export const job = [
   {
     year: '2020 – în prezent',
@@ -27,7 +48,9 @@ export const education = [
   {
     year: '2020',
     role: 'Diplomă de Doctor în Psihologie',
-    detail: 'Calificativ: Foarte bine / Magna Cum Laude — Universitatea Babeș-Bolyai, Cluj-Napoca. 2013 – 2020, Doctorand, Școala Doctorală de Psihologie Cognitiva, coordonator prof. univ. dr. Mircea Miclea, Departamentul de Psihologie, Universitatea Babeș-Bolyai.'
+    detail: 'Calificativ: Foarte bine / Magna Cum Laude — Universitatea Babeș-Bolyai, Cluj-Napoca. 2013 – 2020, Doctorand, Școala Doctorală de Psihologie Cognitiva, coordonator prof. univ. dr. Mircea Miclea, Departamentul de Psihologie, Universitatea Babeș-Bolyai.',
+    thesis: 'SELECȚIA STRATEGIILOR DE REGLARE EMOȚIONALĂ ȘI INTENSITATEA AFECTIVĂ',
+    summary: ''
   },
   {
     year: '2009 – 2011',
@@ -73,10 +96,7 @@ export const training = [
 ];
 
 export const qualifications = [
-  '2017 — Fotograf, certificat de absolvire, poziție COR 343101, eliberat de Ministerul Muncii și Ministerul Educației.',
-  '2015 — Training foto Brașov, “Oamenii în fotografie”, diploma Photolife.',
-  '2009 – 2010 — Bursă de performanță, Universitatea Babeș-Bolyai, Cluj-Napoca, Romania, obținută cu articol de cercetare publicat în jurnal cotat ISI (factor de impact 5.02). Supervizor: Aurora Szentagotai, PhD.',
-  'Alte burse de merit, studiu între 2008 – 2010.'
+  '2009 – 2010 — Bursă de performanță, Universitatea Babeș-Bolyai, Cluj-Napoca, Romania, obținută cu articol de cercetare publicat în jurnal cotat ISI (factor de impact 5.02). Supervizor: Aurora Szentagotai, PhD.'
 ];
 
 export const reviewing = [
@@ -116,7 +136,9 @@ export const educationEn = [
   {
     year: '2020',
     role: 'PhD in Psychology',
-    detail: 'Grade: Excellent / Magna Cum Laude — Babeș-Bolyai University, Cluj-Napoca. 2013 – 2020, doctoral student, Doctoral School of Cognitive Psychology, supervisor Prof. Mircea Miclea, Department of Psychology, Babeș-Bolyai University.'
+    detail: 'Grade: Excellent / Magna Cum Laude — Babeș-Bolyai University, Cluj-Napoca. 2013 – 2020, doctoral student, Doctoral School of Cognitive Psychology, supervisor Prof. Mircea Miclea, Department of Psychology, Babeș-Bolyai University.',
+    thesis: 'SELECȚIA STRATEGIILOR DE REGLARE EMOȚIONALĂ ȘI INTENSITATEA AFECTIVĂ',
+    summary: ''
   },
   {
     year: '2009 – 2011',
@@ -161,10 +183,7 @@ export const trainingEn = [
 ];
 
 export const qualificationsEn = [
-  '2017 — Photographer, completion certificate, COR position 343101, issued by the Ministry of Labour and the Ministry of Education.',
-  '2015 — Photography training in Brașov, “People in photography”, Photolife diploma.',
-  '2009 – 2010 — Performance scholarship, Babeș-Bolyai University, Cluj-Napoca, obtained with a research article published in an ISI-indexed journal (impact factor 5.02). Supervisor: Aurora Szentagotai, PhD.',
-  'Other merit and study scholarships, 2008 – 2010.'
+  '2009 – 2010 — Performance scholarship, Babeș-Bolyai University, Cluj-Napoca, obtained with a research article published in an ISI-indexed journal (impact factor 5.02). Supervisor: Aurora Szentagotai, PhD.'
 ];
 
 export const reviewingEn = [

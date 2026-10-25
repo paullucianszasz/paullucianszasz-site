@@ -13,6 +13,11 @@ const personRo = {
   image: '/assets/me-2.jpg',
   telephone: '+40723333609',
   email: 'paullucianszaszpsihoterapeut@gmail.com',
+  memberOf: {
+    '@type': 'Organization',
+    name: 'Asociația de Psihoterapii Cognitive și Comportamentale din România (APCCR)',
+    url: 'https://psihoterapiecbt.ro/'
+  },
   address: {
     '@type': 'PostalAddress',
     streetAddress: 'Andrei Saguna, Nr. 8',
