@@ -3,18 +3,10 @@ const { t } = Astro.props;
 ---
 <section class="hero">
   <div class="container">
-    <h1>{t.hero.title1} <span class="typed-word">{t.hero.typed}</span></h1>
-    <p>{t.hero.text}</p>
-    <p>{t.hero.help}</p>
+    <h1 class="message-text">{t.hero.message}</h1>
     <div class="author">
       {t.hero.author}
       <small>{t.hero.role}</small>
     </div>
-  </div>
-</section>
-
-<section class="section home-note">
-  <div class="container">
-    <p class="note-text">{t.note}</p>
   </div>
 </section>
