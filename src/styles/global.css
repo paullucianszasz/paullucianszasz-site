@@ -40,23 +40,23 @@ p { margin: 0 0 15px; }
 /* ---------------- Header ---------------- */
 .site-header { position: relative; z-index: 50; }
 
-/* One row for every page: brand, nav, booking CTA, language switch */
+/* One row for every page: brand, nav (with the two buttons), language switch */
 .header-main {
   background: transparent;
-  padding: 14px 24px;
+  padding: 14px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
+  gap: 14px;
   position: sticky;
   top: 0;
   z-index: 60;
 }
 .header-main.dark { background: var(--bar); }
 
-.header-logo img { max-height: 36px; width: auto; display: block; }
+.header-logo img { max-height: 34px; width: auto; display: block; }
 
-.header-nav { display: flex; flex-wrap: wrap; gap: 22px; align-items: center; }
+.header-nav { display: flex; flex-wrap: wrap; gap: 18px; align-items: center; }
 .header-nav > li > .nav-link,
 .header-main .nav-item > a {
   font-size: 13px;
@@ -68,6 +68,9 @@ p { margin: 0 0 15px; }
   display: inline-block;
 }
 .header-main.dark .header-nav > li > .nav-link { color: #cfc1ac; }
+
+/* The two buttons are nav items, so they stay on the same line as the page links */
+.nav-cta-item, .nav-wa-item { display: inline-flex; align-items: center; }
 
 .nav-item { position: relative; }
 .nav-link,
@@ -134,7 +137,7 @@ p { margin: 0 0 15px; }
   flex-direction: column;
   align-items: flex-start;
   gap: 3px;
-  padding: 9px 16px;
+  padding: 8px 14px;
   border-radius: 4px;
   background: var(--link);
   color: var(--white);
@@ -143,17 +146,36 @@ p { margin: 0 0 15px; }
 .header-cta:hover { background: var(--link-hover); }
 .header-cta .cta-label { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; color: inherit; }
 .header-cta .cta-phone { font-size: 13px; font-weight: 600; letter-spacing: 0.5px; color: rgba(251, 247, 241, 0.85); }
+
+/* WhatsApp button: brand green, dark label so it passes contrast on both the dark bar and the cream header */
+.header-wa {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 13px;
+  border-radius: 4px;
+  background: #25d366;
+  color: #12251b;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  transition: background 0.25s;
+}
+.header-wa:hover { background: #20bd5a; }
+.header-wa svg { width: 15px; height: 15px; fill: currentColor; flex: 0 0 auto; }
 /* On the dark bar the button is cream with dark text, so it pops against #3f3123 */
 .header-main.dark .header-cta { background: var(--white); color: var(--dark); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18); }
 .header-main.dark .header-cta:hover { background: #efe5d9; }
 .header-main.dark .header-cta .cta-phone { color: var(--link-hover); }
 .header-main.dark .lang-switch { color: #cfc1ac; }
 
-/* Nav stays in the header at every width; the row wraps instead of collapsing */
-@media (max-width: 1023px) {
+/* Nav (with its two buttons) stays in the header at every width; the row wraps instead of collapsing.
+   One line needs ~1200px, so below that the nav drops to its own line. */
+@media (max-width: 1219px) {
   .header-main { padding: 12px 20px; flex-wrap: wrap; }
   .header-main .header-logo { order: 1; }
-  .header-main .header-cta, .header-main .lang-switch { order: 2; }
+  .header-main .lang-switch { order: 2; }
   .header-main nav { order: 3; flex: 1 0 100%; }
 }
 @media (max-width: 640px) {
