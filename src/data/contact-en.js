@@ -12,7 +12,7 @@ export const contactEn = {
   ],
   faqHeading: 'Frequently asked questions',
   faq: [
-    byId('stages'),
+    byId('sessions'),
     {
       q: 'How long does a session last?',
       a: ['Sessions last 50–60 minutes, in the office or online.']

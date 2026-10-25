@@ -13,7 +13,7 @@ export const contactRo = {
   ],
   faqHeading: 'Întrebări frecvente',
   faq: [
-    byId('stages'),
+    byId('sessions'),
     {
       q: 'Cât durează o ședință?',
       a: ['Ședințele durează 50–60 de minute, fie în cabinet, fie online.']
