@@ -34,7 +34,7 @@ export const site = {
     homeCta: { label: 'Programați o consultație inițială' },
     localLine: 'Cabinet în Cluj-Napoca, pe Andrei Saguna nr. 8, sau ședințe online — în funcție de ceea ce ți se potrivește.',
     valueProp: {
-      heading: 'Cum funcționează CBT și REBT',
+      heading: 'Cum funcționează Psihoterapiile Cognitive și Comportamentale',
       // mirror al textului furnizat in engleza — pentru aprobare
       text: 'Terapia cognitiv-comportamentală (CBT) este un proces structurat, orientat spre obiective, în care lucrăm ca o echipă pentru a schimba tiparele care nu te ajută. Mai întâi mapăm modul în care credințele centrale și declanșatorii din viața de zi cu zi îți influențează dispoziția. Apoi exersăm identificarea și remodelarea gândurilor automate negative și introducem schimbări comportamentale practice, pentru a întrerupe cercurile de evitare sau de stres. Fiindcă schimbarea reală se întâmplă în viața de zi cu zi, folosim exerciții simple între ședințe, pentru a testa obiceiuri noi. Într-un proces tipic de 5–20 de ședințe, construiești un set personal de puncte forte și strategii de adaptare, astfel încât să poți naviga cu încredere provocările viitoare pe cont propriu.'
     },
@@ -112,7 +112,8 @@ export const site = {
     homeCta: { label: 'Schedule an Initial Consultation' },
     localLine: 'Sessions in my Cluj-Napoca office on Andrei Saguna no. 8, or online — whichever suits you better.',
     valueProp: {
-      heading: 'How CBT and REBT Work',
+      // mirror al heading-ului in romana — pentru aprobare
+      heading: 'How Cognitive and Behavioral Therapies Work',
       text: 'Cognitive Behavioral Therapy (CBT) is a structured, goal-oriented process where we work as a team to change unhelpful patterns. First, we map out how your core beliefs and daily triggers impact your mood. Next, we practice identifying and reshaping negative automatic thoughts while introducing practical behavioral changes to break cycles of avoidance or stress. Because real change happens in daily life, we use simple between-session practices to test new habits. Over a typical course of 5 to 20 sessions, you will build a personal toolkit of strengths and coping strategies so you can confidently navigate future challenges on your own.'
     },
     areas: {
