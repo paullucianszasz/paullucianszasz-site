@@ -26,7 +26,7 @@ export const site = {
       ],
       author: 'Dr. Paul Lucian Szasz',
       role: 'Psihoterapeut',
-      credentials: 'Psihoterapeut licențiat în Terapie Cognitiv-Comportamentală (CBT) și Terapie Rațional-Emotivă a Comportamentului (REBT)',
+      title: 'Psiholog cu drept de liberă practică în Psihoterapii cognitive și comportamentale. CB',
       credsNote: { text: 'Puteți verifica acreditarea în Registrul ', link: 'COPSI', href: 'https://www.copsi.ro/index.php/registre' },
       photo: '/assets/me-2.jpg',
       photoAlt: 'Dr. Paul Lucian Szasz în cabinet'
@@ -97,7 +97,7 @@ export const site = {
       ],
       author: 'Dr. Paul Lucian Szasz',
       role: 'Psychotherapist',
-      credentials: 'Licensed Cognitive Behavioral (CBT) & Rational Emotive Behavior (REBT) Psychotherapist',
+      title: 'Psychologist with the right to private practice in Cognitive and Behavioral Psychotherapies. CB',
       credsNote: { text: 'You can verify the accreditation in the ', link: 'COPSI Register', href: 'https://www.copsi.ro/index.php/registre' },
       photo: '/assets/me-2.jpg',
       photoAlt: 'Dr. Paul Lucian Szasz in the office'
