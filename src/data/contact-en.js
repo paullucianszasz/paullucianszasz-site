@@ -1,5 +1,9 @@
 // Contact (EN) — oglinda lui contact-ro.js; telefon, email si adresa vin din src/data/site.js (footer).
 // Hours as supplied (16:00 – 20:00); days assumed Monday – Friday, to confirm. Cancellation policy mirrors the supplied RO text.
+// Entries chosen by id come from the supplied FAQ in site.js, unchanged; the rest is new content.
+import { site } from './site.js';
+const byId = (id) => site.en.faq.find((f) => f.id === id);
+
 export const contactEn = {
   title: 'Contact',
   hours: 'Monday – Friday, between 16:00 and 20:00', // days: to confirm; hours as supplied
@@ -8,6 +12,7 @@ export const contactEn = {
   ],
   faqHeading: 'Practical questions',
   faq: [
+    byId('stages'),
     {
       q: 'How long does a session last?',
       a: ['Sessions last 50–60 minutes, in the office or online.']
@@ -19,6 +24,7 @@ export const contactEn = {
         'It depends on the complexity of the difficulties and on the goals we set together. Usually the first session is an assessment, and after that we decide the frequency and the length of the process together, based on what actually changes. I do not start a process longer than what is needed.'
       ]
     },
+    byId('costs'),
     {
       q: 'Do you offer online therapy?',
       a: ['Yes. Sessions can take place face to face or online, depending on what is more practical for you.']

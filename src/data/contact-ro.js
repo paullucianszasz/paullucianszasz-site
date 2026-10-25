@@ -1,6 +1,10 @@
 // Contact (RO) — telefon, email si adresa vin din src/data/site.js (footer), neschimbate.
 // Programul: orele furnizate (16:00 – 20:00); zilele sunt asumate Luni – Vineri, de confirmat.
 // Paragrafele marate "draft" sunt pentru aprobare; politica de anulare este textul furnizat, neschimbat.
+// Intrarile alese dupa id vin din FAQ-ul furnizat in site.js, neschimbat; restul este continut nou.
+import { site } from './site.js';
+const byId = (id) => site.ro.faq.find((f) => f.id === id);
+
 export const contactRo = {
   title: 'Contact',
   hours: 'Luni – Vineri, între 16:00 și 20:00', // zile: de confirmat; orele sunt cele furnizate
@@ -9,6 +13,7 @@ export const contactRo = {
   ],
   faqHeading: 'Întrebări practice',
   faq: [
+    byId('stages'),
     {
       q: 'Cât durează o ședință?',
       a: ['Ședințele durează 50–60 de minute, fie în cabinet, fie online.']
@@ -20,6 +25,7 @@ export const contactRo = {
         'Depinde de complexitatea problemelor și de scopurile pe care le stabilim împreună. De obicei, prima ședință este de evaluare, iar apoi frecvența și durata procesului le hotărâm împreună, în funcție de ce se schimbă. Nu încep un proces mai lung decât cel necesar.'
       ]
     },
+    byId('costs'),
     {
       q: 'Oferi ședințe online?',
       a: ['Da. Ședințele se pot desfășura atât în format față-în-față, cât și online, în funcție de ceea ce este mai practic pentru dumneavoastră.']
