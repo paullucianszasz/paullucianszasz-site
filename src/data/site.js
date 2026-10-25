@@ -26,6 +26,7 @@ export const site = {
     },
     labels: { services: 'Servicii oferite', types: 'Tipuri de servicii', readMore: 'Citește mai mult', faq: 'F.A.Q.' },
     cta: { label: 'Programează-te', href: 'tel:+40723333609' },
+    note: 'Gândește terapia ca pe un spațiu dedicat și privat pentru mintea ta. La fel cum mergi la un antrenor personal pentru a-ți dezvolta forța fizică, terapia este locul în care îți lucrezi echilibrul emoțional și mintal.',
     faq: [
       { q: 'Care sunt etapele procesului terapeutic?', a: ['Procesul terapeutic are 3 etape. În prima etapă, de evaluare psihologică, se identifică potențialele probleme și factorii psihologici implicați în aceste probleme. În a doua etapă, vom discuta despre rezultatele evaluării (cum se explică problemele identificate, cum au apărut acestea și ce se poate face mai departe pentru a le gestiona). În etapa a treia, cea de intervenție psihologică, vom lucra împreună pentru a depăși provocările, pentru a îndeplini scopurile pe care le stabilim împreună, și pentru a dezvolta resurse noi de a face față vieții de zi cu zi.'] },
       { q: 'Cât de mult durează procesul terapeutic?', a: ['Durata procesului terapeutic poate varia în funcție de complexitatea problemelor, de scopurile clientului, dar și în funcție de recomandările terapeutului. Frecvența ședințelor, care poate fi adaptată în funcție de nevoile clientului și în funcție de recomandările terapeutului, este de asemenea un factor care poate influența durata procesului terapeutic.'] },
@@ -73,6 +74,7 @@ export const site = {
     },
     labels: { services: 'Services Offered', types: 'Types of Services', readMore: 'Read More', faq: 'F.A.Q.' },
     cta: { label: 'Book an appointment', href: 'tel:+40723333609' },
+    note: 'Think of therapy as a dedicated, private space for your mind. Just like you go to a personal trainer to work on your physical strength, therapy is a place to work on your emotional and mental well-being.',
     faq: [
       { q: 'What are the stages of the therapeutic process?', a: ['The therapeutic process has 3 stages. In the first stage, of psychological evaluation, potential problems and psychological factors involved in a wide array of problems are identified. In the second stage, we will discuss the assessment results (how can the identified problems be explained, how they arose, what factors maintain these problems, and what can be done to manage them). In the third stage, of psychological intervention, we will work together to overcome challenges, achieve the goals we set together, and develop new resources to cope with daily life.'] },
       { q: 'How long does the therapeutic process last?', a: ['The duration of the therapeutic process may vary depending on the complexity of the problems, the client’s goals, and the therapist’s recommendations. The frequency of the sessions, which can be adapted to the client’s needs and the therapist’s recommendations, is also a factor that can influence the duration of the therapeutic process.'] },

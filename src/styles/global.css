@@ -188,6 +188,14 @@ p { margin: 0 0 15px; }
 }
 .hero .author small { display: block; }
 .typed-word { min-height: 1em; }
+.home-note .note-text {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--text);
+}
 
 /* ---------------- Services cards (home) ---------------- */
 .section { background: var(--white); padding: 50px 0; }
