@@ -98,4 +98,83 @@ export const publications = [
   'Szasz, P. L. (2009). Thought Suppression, Depressive Rumination and Depression: A Mediation Analysis. Journal of Cognitive and Behavioral Psychotherapies, Vol. 9, No. 2, September 2009, 199–209.'
 ];
 
+// Mirror in engleza pentru pagina /en/about-me/ (aceleasi date, doar traduse; publicatiile raman asa cum sunt citate)
+export const jobEn = [
+  {
+    year: '2020 – present',
+    role: 'Laborant I',
+    detail: 'Department of Mathematics, Faculty of Mathematics and Computer Science, Babeș-Bolyai University, Cluj-Napoca. Managing the computer network, laboratory equipment, student practice documents and the archive.'
+  },
+  {
+    year: '2001 – 2020',
+    role: 'Laborant I',
+    detail: 'Department of Computer Science, Faculty of Mathematics and Computer Science, Cluj-Napoca. Managing the computer network, laboratory equipment, secretarial work, the archive.'
+  }
+];
+
+export const educationEn = [
+  {
+    year: '2020',
+    role: 'PhD in Psychology',
+    detail: 'Grade: Excellent / Magna Cum Laude — Babeș-Bolyai University, Cluj-Napoca. 2013 – 2020, doctoral student, Doctoral School of Cognitive Psychology, supervisor Prof. Mircea Miclea, Department of Psychology, Babeș-Bolyai University.'
+  },
+  {
+    year: '2009 – 2011',
+    role: "Master's degree",
+    detail: 'Psychological techniques of behaviour control and human potential development — Faculty of Psychology, Babeș-Bolyai University.'
+  },
+  {
+    year: '2005 – 2009',
+    role: "Bachelor's degree",
+    detail: 'BA in Psychology — Faculty of Psychology and Education Sciences, Babeș-Bolyai University.'
+  },
+  {
+    year: '1999 – 2001',
+    role: 'Louis Pasteur Post-High-School School',
+    detail: 'Completion certificate; specialisation: secretariat, shorthand — word-processing and computer operator.',
+    hidden: true
+  },
+  {
+    year: '1998',
+    role: 'George Coșbuc National College',
+    detail: 'Cluj-Napoca, Mathematics–Physics section.',
+    hidden: true
+  }
+];
+
+export const trainingEn = [
+  'Workshop: “Schema Focused Therapy”, 21–23 July 2010, Jeffrey Young, Cluj-Napoca, Romania.',
+  '20–21 May: Functional Analysis and Motivational Enhancement, Behavioral Activation for Performance, Prof. Ph.D. Carl Lejuez, Maryland University — International Coaching Institute.',
+  'Workshop: Behavioral Activation. Theory and Practice. Dr. Carl W. Lejuez, 9–10 June, Cluj-Napoca, Romania.',
+  'Clinical Cognitive Neurosciences — Challenges and solutions for pediatric neuroimaging; Making MR Imaging Child’s Play: challenges and solutions for pediatric neuroimaging and clinical research. Nadine Gaab, PhD, Harvard Medical School, USA, 1–2 June, Cluj-Napoca, Romania.',
+  'Workshop: Understanding and controlling emotions. Aurora Szentagotai, PhD. “Current Trends and Perspectives”, National Conference of Psychology Students, 1 April 2009.',
+  'Acceptance and Mindfulness Techniques in Cognitive Behavioral Psychotherapies. ZFPSE3, 25 March 2009.',
+  'Advances in the Psychiatric Nosological Assessment. Clinical Structured Interviews; SCID I and SCID II. Prof. Michael First, M.D., Ph.D., 27–28 March 2009.',
+  'Rational Emotive Behavioral Therapy in Children and Adolescents. Michael Bernard, PhD, Melbourne University, 5–9 February 2009.',
+  '“Clinical Cognitive NeuroScience Project” workshop: “The combined use of EEG and fMRI in Psychopathology”. Dr. Giorgio Bonmassar, Harvard Medical School, USA, 27–28 January 2009.',
+  'Meeting of the Minds Conference Series “New Frontiers in Evidence Based Psychology”, 7–9 November 2008, Cluj-Napoca.',
+  'Obsessive-Compulsive Disorder. A problem of intensity and disability. Dr. Sharon Freeman, Dr. Aurora Szentagotai — International Congress of Cognitive and Behavioral Psychotherapies “Latini Dies”, Cluj-Napoca, 29–30 September 2007.',
+  'Cognitive Behavioral Psychotherapy in Personality Disorders. Borderline Personality Disorder. Dr. Arthur Freeman — International Congress of Cognitive and Behavioral Psychotherapies “Latini Dies”, Cluj-Napoca, 29–30 September 2007.',
+  'International Satellite Symposium of Third National Conference of Psychology, “Developmental Cognitive and Affective Neuroscience”, 20–21 May 2006: Dr. Charles Nelson (Harvard Medical School, USA), Dr. Nathan Fox (University of Maryland, USA), Dr. Heather Henderson (University of Miami, USA), Dr. Leslie Carver (University of California).',
+  'Personality Disorders in Children and Adolescents. Dr. Arthur Freeman — Third National Conference of Psychology, 18–21 May 2006, Cluj-Napoca, Romania.',
+  'Helping Students Succeed. A Multiple Levels Counseling Intervention. Glenn Hirsch, Ph.D., L.P., University of Minnesota, USA.'
+];
+
+export const qualificationsEn = [
+  '2017 — Photographer, completion certificate, COR position 343101, issued by the Ministry of Labour and the Ministry of Education.',
+  '2015 — Photography training in Brașov, “People in photography”, Photolife diploma.',
+  '2009 – 2010 — Performance scholarship, Babeș-Bolyai University, Cluj-Napoca, obtained with a research article published in an ISI-indexed journal (impact factor 5.02). Supervisor: Aurora Szentagotai, PhD.',
+  'Other merit and study scholarships, 2008 – 2010.'
+];
+
+export const reviewingEn = [
+  'Ad-hoc reviewer: Psychiatry Research (Elsevier), Canadian Journal of Behavioural Science (APA), International Journal of Environmental Research and Public Health (Open Access), Appetite (Elsevier), Cognitive Therapy and Research (Springerlink), Anxiety, Stress & Coping (Taylor & Francis).'
+];
+
+export const volunteeringEn = [
+  '2012 – 2014 — Volunteer, Minte Forte organisation.',
+  '2014 – present — Volunteer, organising mountain hikes (Drumeții Montane).',
+  '2022 – present — Regular practitioner of yoga, meditation and fitness; practising Buddhism.'
+];
+
 export const scholarUrl = 'https://scholar.google.com/citations?user=vQ0ArgQAAAAJ';

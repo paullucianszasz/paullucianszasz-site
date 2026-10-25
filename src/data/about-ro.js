@@ -1,10 +1,9 @@
 // Despre mine (RO) — structura: Parcurs profesional / Credentials & accreditation / Filozofie terapeutică
-// Textul narativ este draft pentru aprobare; lista CV vine din src/data/cv.js, neschimbata.
+// Textul narativ este draft pentru aprobare, in ton personal; lista CV vine din src/data/cv.js, neschimbata.
 import {
   cvPhoto, job, education, training, qualifications, reviewing, volunteering, publications, scholarUrl, accreditation
 } from './cv.js';
 
-// Doar campurile completate se afiseaza; cele goale se renunta la ele.
 const accItems = [accreditation.cpr, accreditation.institute, ...accreditation.associations]
   .filter((i) => i.role || i.detail);
 
@@ -18,9 +17,9 @@ export const aboutRo = {
     {
       heading: 'Parcurs profesional',
       paragraphs: [
-        'Am venit spre psihologie din curiozitatea pentru modul în care interpretările noastre produc emoțiile și, apoi, comportamentul. Masteratul în tehnici psihologice de control al comportamentului și doctoratul în psihologie cognitivă mi-au arătat cât de concret și de măsurabil este acest proces.',
-        'Practic psihoterapie cognitiv-comportamentală (CBT) și REBT pentru că sunt modalități orientate spre obiective, structurate și active. Nu este un proces fără sfârșit: obiectivele le stabilim împreună la început, fiecare ședință are un subiect clar, iar progresul se măsoară în ce se schimbă în viața ta, nu doar în ce înțelegi.',
-        'REBT este miezul acestei abordări. Distincția dintre eveniment, interpretare și emoție este ceea ce transformă înțelegerea în acțiune, iar cercetarea pe care am publicat-o despre credințele iraționale și reglarea emoțiilor este motivul pentru care rămân atent la mecanism, nu doar la simptom.'
+        'Am ajuns la psihologie pentru că mă interesează modul în care interpretările noastre ne fac să simțim și, apoi, să acționăm. Masterul și doctoratul mi-au arătat că acest proces este concret și măsurabil, nu doar teoretic — și asta mi-a dat încrederea în metodele pe care le folosesc astăzi.',
+        'Practic CBT și REBT pentru că sunt terapii orientate spre obiective, structurate și active. Asta înseamnă că nu stăm în cerc, la nesfârșit. La început stabilim împreună ce vrei să se schimbe, fiecare ședință are un subiect clar, iar progresul îl vedem în ce se schimbă în viața ta, nu doar în ce înțelegi despre ea.',
+        'REBT este miezul modului în care lucrăm. Distincția dintre eveniment, interpretare și emoție este ceea ce transformă înțelegerea în acțiune. Am cercetat credințele iraționale și reglarea emoțiilor și am publicat pe această temă, motiv pentru care rămân atent la mecanism, nu doar la simptom.'
       ],
       blocks: [{ subheading: 'Activitate academică', items: job }]
     },
@@ -45,9 +44,9 @@ export const aboutRo = {
     {
       heading: 'Filozofie terapeutică',
       paragraphs: [
-        'Înțeleg terapia ca pe un parteneriat colaborativ. Tu aduci ce se întâmplă în viața ta, eu aduc structura și metodele. Nu dețin răspunsurile despre tine și nu ofer sfaturi nesolicitate: lucrăm împreună pe ce ai adus, în ritmul în care îți este util.',
-        'Scopul este ca, în timp, să devii propriul tău terapeut. Analiza funcțională, identificarea interpretărilor care întrețin suferința, exercițiile dintre ședințe — sunt instrumente pe care le poți folosi fără mine. Când poți continua pe cont propriu, terapia și-a făcut treaba.',
-        'Asta cere claritate de ambele părți: îți spun ce poate și ce nu poate face o modalitate, vedem ce funcționează și ajustăm când nu funcționează. Diferența dintre „înțeleg” și „se schimbă” este locul unde lucrez.'
+        'Înțeleg terapia ca pe un parteneriat. Tu aduci ce se întâmplă în viața ta, eu aduc structura și metodele, și hotărâm împreună pe ce lucrăm. Nu îți dau sfaturi nesolicitate și nu pretind că dețin răspunsurile despre tine; îți ofer un loc sigur în care poți gândi cu voce tare.',
+        'Scopul este ca, în timp, să poți continua fără mine. Analiza funcțională, observarea interpretărilor care întrețin suferința, exercițiile dintre ședințe — aceste lucruri le poți folosi singur, în viața ta. Când ajungi acolo, înseamnă că terapia a fost făcută bine.',
+        'Ca acest parteneriat să funcționeze, trebuie să fiu clar cu tine: îți spun ce poate și ce nu poate face o terapie, vedem ce merge și schimbăm direcția când nu merge. Diferența dintre „înțeleg” și „se schimbă” este locul unde lucrez.'
       ]
     },
     {
