@@ -238,12 +238,15 @@ p { margin: 0 0 15px; }
 }
 .hero .hero-photo {
   display: block;
-  width: min(300px, 80%);
+  width: min(270px, 74%);
   aspect-ratio: 4 / 5;
   object-fit: cover;
+  padding: 10px;
+  background: var(--white);
+  border: 1px solid var(--input-bd);
   border-radius: 14px;
   margin: 0 auto 24px;
-  box-shadow: 0 12px 28px rgba(63, 49, 35, 0.14);
+  box-shadow: 0 6px 18px rgba(63, 49, 35, 0.09);
 }
 .hero .author .creds, .hero .author .creds-note { display: block; font-size: 14px; margin-top: 6px; color: #7a6a57; }
 .hero .author .creds-note a { color: var(--link); font-weight: 600; }
