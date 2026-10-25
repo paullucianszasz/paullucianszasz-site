@@ -19,8 +19,8 @@ export const site = {
     hero: {
       headline: 'Bine ai venit — acesta este un loc în care poți gândi cu voce tare.',
       lines: [
-        'Te simți blocat, anxios sau pur și simplu ai nevoie de claritate în viața ta?',
-        'Fără judecată, fără sfaturi necerute și fără soluții magice. Mă poți privi ca pe un partener de încredere: aici ca să te ajut să îți descifrezi tiparele, să vezi imaginea de ansamblu și să îți dezvolți resursele ca să faci față a ceea ce urmează.',
+        'Treci printr-o perioadă în care emoțiile te copleșesc, te simți blocat sau pur și simplu ai nevoie de un spațiu sigur și de claritate în viața ta? Împreună putem găsi calea spre liniștea ta interioară.',
+        'Fără judecată și fără soluții magice de suprafață. Sunt aici ca un partener de încredere — să te ajut să-ți înțelegi tiparele, să vezi imaginea de ansamblu și să-ți ofer resursele necesare pentru a naviga orice provocare.',
         'Oricum ajungi aici, e în regulă. Când ești gata, sunt aici.'
       ],
       author: 'Dr. Paul Lucian Szasz',
@@ -68,7 +68,7 @@ export const site = {
     hero: {
       headline: 'Welcome — this is a place where you can think out loud.',
       lines: [
-        'Do you feel stuck, anxious, or simply need clarity in your life?',
+        'Going through a period where your emotions overwhelm you, feeling stuck, or simply needing a safe space and clarity in your life? Together we can find the way to your inner peace.',
         'No judgment, no unsolicited advice, and no pretend magic solutions. Think of me as a trusted sounding board: here to help you unpack your patterns, see the full picture, and equip you to handle whatever comes next.',
         'However you arrive, it is okay. Whenever you are ready, I am here.'
       ],

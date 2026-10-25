@@ -3,11 +3,13 @@ const { t } = Astro.props;
 ---
 <section class="hero">
   <div class="container">
-    <h1>{t.hero.headline}</h1>
-    {t.hero.lines.map((line) => <p>{line}</p>)}
-    <div class="author">
-      {t.hero.author}
-      <small>{t.hero.role}</small>
+    <div class="welcome-card">
+      <h1>{t.hero.headline}</h1>
+      {t.hero.lines.map((line) => <p>{line}</p>)}
+      <div class="author">
+        {t.hero.author}
+        <small>{t.hero.role}</small>
+      </div>
     </div>
   </div>
 </section>

@@ -167,26 +167,50 @@ p { margin: 0 0 15px; }
 
 /* ---------------- Home / hero ---------------- */
 .hero {
-  padding: 50px 0;
+  padding: 60px 0 55px;
   text-align: center;
+  background: radial-gradient(120% 90% at 50% 0%, rgba(123, 94, 69, 0.10), rgba(123, 94, 69, 0) 65%);
+}
+.hero .welcome-card {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 38px 34px;
+  background: var(--white);
+  border: 1px solid var(--input-bd);
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(63, 49, 35, 0.07);
 }
 .hero h1 {
-  font-size: 38px;
-  font-weight: 300;
-  line-height: 42px;
-  color: var(--dark);
-  margin: 0 0 30px;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.35;
+  color: var(--link);
+  margin: 0 0 24px;
   text-align: center;
 }
-.hero p { max-width: 620px; margin: 0 auto 20px; }
+.hero p {
+  max-width: 640px;
+  margin: 0 auto 18px;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--text);
+}
 .hero .author {
   font-size: 19px;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--dark);
   text-align: center;
-  margin-top: 30px;
+  margin-top: 26px;
+  padding-top: 22px;
+  border-top: 1px solid var(--input-bd);
 }
-.hero .author small { display: block; }
+.hero .author small { display: block; font-size: 15px; color: var(--text-light); margin-top: 4px; }
+
+@media (max-width: 640px) {
+  .hero { padding: 40px 0; }
+  .hero .welcome-card { padding: 26px 20px; }
+  .hero h1 { font-size: 26px; line-height: 1.4; }
+}
 
 /* ---------------- Services cards (home) ---------------- */
 .section { background: var(--white); padding: 50px 0; }
