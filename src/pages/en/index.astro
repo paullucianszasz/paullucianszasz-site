@@ -2,8 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Home from '../../components/Home.astro';
 import { site } from '../../data/site.js';
-import { servicesEn } from '../../data/services-en.js';
 ---
 <Base t={site.en} active="Home">
-  <Home t={site.en} services={servicesEn} />
+  <Home t={site.en} />
 </Base>
