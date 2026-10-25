@@ -388,7 +388,8 @@ h1, h2, h4, .faq-item .q, .hero .eyebrow {
 .page .tl-item .tl-body { flex: 1; }
 .page .tl-item .role { font-weight: 700; color: var(--dark); margin-bottom: 4px; }
 .page .tl-item .thesis { margin-top: 6px; color: var(--dark); }
-.page .tl-item .thesis-summary { margin: 8px 0 0; }
+.page .tl-item .thesis-summary { margin: 8px 0 0; font-size: 15px; line-height: 1.65; }
+.page .tl-item .thesis-summary + .thesis-summary { margin-top: 6px; }
 .about-grid { display: flex; gap: 40px; }
 .about-photo { flex: 0 0 19%; }
 .about-photo img { width: 100%; border-radius: 6px; }

@@ -44,7 +44,11 @@ const { t, about } = Astro.props;
                               {i.thesis && (
                                 <div class="thesis">{t.lang === 'ro' ? 'Titlul tezei' : 'Thesis title'}: {i.thesis}</div>
                               )}
-                              {i.summary && <p class="thesis-summary">{i.summary}</p>}
+                              {i.summary && (
+                                Array.isArray(i.summary)
+                                  ? i.summary.map((p) => <p class="thesis-summary">{p}</p>)
+                                  : <p class="thesis-summary">{i.summary}</p>
+                              )}
                             </div>
                           </div>
                         ))

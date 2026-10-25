@@ -50,7 +50,11 @@ export const education = [
     role: 'Diplomă de Doctor în Psihologie',
     detail: 'Calificativ: Foarte bine / Magna Cum Laude — Universitatea Babeș-Bolyai, Cluj-Napoca. 2013 – 2020, Doctorand, Școala Doctorală de Psihologie Cognitiva, coordonator prof. univ. dr. Mircea Miclea, Departamentul de Psihologie, Universitatea Babeș-Bolyai.',
     thesis: 'SELECȚIA STRATEGIILOR DE REGLARE EMOȚIONALĂ ȘI INTENSITATEA AFECTIVĂ',
-    summary: ''
+    summary: [
+      'Situații de intensitate emoțională crescută: pe măsură ce intensitatea crește, oamenii tind să folosească mai multe strategii de reglare, să resimtă niveluri mai mari de dezgust și să depună un efort de reglare mai mare. În aceste contexte sunt preferate formele de recadrare cognitivă (reappraisal), în special distanțarea / recadrarea detașată.',
+      'Situații de intensitate scăzută: în contrast, contexte de intensitate scăzută sunt asociate cu niveluri mai scăzute de emoții negative, iar o singură strategie (posibil una adaptivă, precum acceptarea) este folosită în măsură mai mare.',
+      'Implicarea participanților și comparația cu literatura anterioară: unii participanți au raportat că nu au folosit nicio strategie, ceea ce poate indica o strategie nemăsurată sau absența reglării în totalitate. Extinzând cercetarea anterioară care compara recadrarea cu distragerea (de exemplu, Sheppes et al., 2011), acest studiu a comparat distanțarea și acceptarea, arătând că acceptarea este aleasă în contexte de intensitate scăzută, iar formele de recadrare orientate spre detașare sunt preferate în contexte de intensitate crescută.'
+    ]
   },
   {
     year: '2009 – 2011',
@@ -138,7 +142,11 @@ export const educationEn = [
     role: 'PhD in Psychology',
     detail: 'Grade: Excellent / Magna Cum Laude — Babeș-Bolyai University, Cluj-Napoca. 2013 – 2020, doctoral student, Doctoral School of Cognitive Psychology, supervisor Prof. Mircea Miclea, Department of Psychology, Babeș-Bolyai University.',
     thesis: 'SELECȚIA STRATEGIILOR DE REGLARE EMOȚIONALĂ ȘI INTENSITATEA AFECTIVĂ',
-    summary: ''
+    summary: [
+      'High-intensity situations: as emotional intensity increases, individuals tend to use multiple regulation strategies, experience greater levels of disgust, and exert enhanced regulatory effort. Specifically, forms of reappraisal (such as distancing / detached reappraisal) are preferred in these high-intensity contexts.',
+      'Low-intensity situations: in contrast, low-intensity contexts are associated with lower levels of negative emotions, and a single strategy (potentially an adaptive one like acceptance) is implemented to a greater extent.',
+      'Participant engagement and comparison to previous work: some participants reported not engaging in any strategy, which could indicate the use of an unmeasured strategy or a lack of regulation entirely. Expanding on previous research comparing reappraisal and distraction (e.g., Sheppes et al., 2011), this study uniquely compared distancing and acceptance, showing that acceptance is chosen in low-intensity contexts while disengagement-leaning reappraisal forms are preferred in high-intensity ones.'
+    ]
   },
   {
     year: '2009 – 2011',
