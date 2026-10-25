@@ -17,11 +17,10 @@ export const site = {
       { label: 'Contact', href: '/contacts/' }
     ],
     hero: {
-      headline: 'Treci printr-o perioadă în care emoțiile te copleșesc sau simți că ai nevoie de un spațiu sigur?',
+      headline: 'Pentru corp găsești timp, bani și un antrenor. Pentru minte, amâni.',
       lines: [
         'Te simți blocat, anxios sau pur și simplu ai nevoie de claritate în viața ta?',
-        'Împreună putem găsi calea spre liniștea ta interioară.',
-        'Gândește terapia ca pe un spațiu dedicat și privat pentru mintea ta. La fel cum mergi la un antrenor personal pentru a-ți dezvolta forța fizică, terapia este locul în care îți lucrezi echilibrul emoțional și mintal.'
+        'Fără judecată, fără sfaturi necerute și fără soluții magice. Mă poți privi ca pe un partener de încredere: aici ca să te ajut să îți descifrezi tiparele, să vezi imaginea de ansamblu și să îți dezvolți resursele ca să faci față a ceea ce urmează.'
       ],
       author: 'Dr. Paul Lucian Szasz',
       role: 'Psihoterapeut'
@@ -66,11 +65,10 @@ export const site = {
       { label: 'Contact', href: '/en/contact/' }
     ],
     hero: {
-      headline: 'Going through a period where your emotions overwhelm you or feeling that you need a safe space?',
+      headline: 'You make time and money for your body — for your mind, you postpone.',
       lines: [
         'Do you feel stuck, anxious, or simply need clarity in your life?',
-        'Together we can find the way to your inner peace.',
-        'Think of therapy as a dedicated, private space for your mind. Just like you go to a personal trainer to work on your physical strength, therapy is a place to work on your emotional and mental well-being.'
+        'No judgment, no unsolicited advice, and no pretend magic solutions. Think of me as a trusted sounding board: here to help you unpack your patterns, see the full picture, and equip you to handle whatever comes next.'
       ],
       author: 'Dr. Paul Lucian Szasz',
       role: 'Psychotherapist'
