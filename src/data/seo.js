@@ -26,7 +26,7 @@ const personRo = {
   },
   knowsAbout: [
     'Terapie cognitiv-comportamentală (CBT)',
-    'Terapie rațional-emotivă a comportamentului (REBT)',
+    'Terapie Rațional-Emotivă și Comportamentală (REBT)',
     'Psihoterapie',
     'Anxietate și atacuri de panică',
     'Depresie',
@@ -77,7 +77,7 @@ export const seo = {
       },
       '/services/psihoterapie/': {
         title: 'Psihoterapie CBT și REBT în Cluj-Napoca | Paul Lucian Szasz',
-        desc: 'Terapie cognitiv-comportamentală (CBT) și rațional-emotivă a comportamentului (REBT), în ședințe de 50–60 minute, în cabinet în Cluj-Napoca sau online.',
+        desc: 'Terapie cognitiv-comportamentală (CBT) și Terapie Rațional-Emotivă și Comportamentală (REBT), în ședințe de 50–60 minute, în cabinet în Cluj-Napoca sau online.',
         canonical: '/services/psihoterapie/',
         alt: '/en/services/psychotherapy/'
       },
