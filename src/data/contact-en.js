@@ -10,7 +10,7 @@ export const contactEn = {
   booking: [
     'Bookings are made by phone, WhatsApp or email. I do not use an online scheduling platform, so the first contact is enough: we look at the available hours together and set the first session.'
   ],
-  faqHeading: 'Practical questions',
+  faqHeading: 'Frequently asked questions',
   faq: [
     byId('stages'),
     {

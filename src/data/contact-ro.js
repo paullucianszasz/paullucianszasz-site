@@ -11,7 +11,7 @@ export const contactRo = {
   booking: [
     'Programarea se face telefonic, prin WhatsApp sau prin email. Nu folosesc o platformă de programare online, așa că primul contact este suficient: verificăm împreună orele disponibile și stabilim prima ședință.'
   ],
-  faqHeading: 'Întrebări practice',
+  faqHeading: 'Întrebări frecvente',
   faq: [
     byId('stages'),
     {
