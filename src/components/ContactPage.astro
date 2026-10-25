@@ -1,10 +1,11 @@
 ---
 import Base from '../layouts/Base.astro';
+import WhatsAppIcon from './WhatsAppIcon.astro';
 
 const { t } = Astro.props;
 const labels = t.lang === 'ro'
-  ? { title: 'Contact', phoneLabel: 'Număr de telefon', whatsappNote: '*disponibil și pe Whatsapp', emailLabel: 'Email' }
-  : { title: 'Contact', phoneLabel: 'Phone Number', whatsappNote: '*also available on WhatsApp', emailLabel: 'Email' };
+  ? { title: 'Contact', phoneLabel: 'Număr de telefon', waBefore: '*disponibil și pe', emailLabel: 'Email' }
+  : { title: 'Contact', phoneLabel: 'Phone Number', waBefore: '*also available on', emailLabel: 'Email' };
 // Inlocuieste FORMSPREE_ID cu ID-ul formularului Formspree dupa ce il creezi.
 const formAction = 'https://formspree.io/f/XXXXXXXXXX';
 const active = 'Contact';
@@ -18,8 +19,14 @@ const mapSrc = 'https://maps.google.com/maps?q=Andrei%20Saguna%2C%20Nr.%208%2C%2
       <div class="contact-grid">
         <div class="contact-col">
           <h2>{labels.phoneLabel}</h2>
-          <p>{t.footer.phone}</p>
-          <p>{t.lang === 'ro' ? labels.whatsappNote : <>*<i>{labels.whatsappNote.slice(1)}</i></>}</p>
+          <p><a href={t.cta.href}>{t.footer.phone}</a></p>
+          <p class="wa-line">
+            {labels.waBefore}&nbsp;
+            <a class="wa-pill" href={t.whatsapp.href} aria-label={`WhatsApp — ${t.footer.phone}`} target="_blank" rel="noopener">
+              <WhatsAppIcon />
+              <span class="wa-label">{t.whatsapp.label}</span>
+            </a>
+          </p>
           <h2>{labels.emailLabel}</h2>
           <ul class="email-list">
             {t.footer.emails.map((e) => <li><a href={`mailto:${e}`}>{e}</a></li>)}

@@ -69,10 +69,10 @@ p { margin: 0 0 15px; }
 }
 .header-main.dark .header-nav > li > .nav-link { color: #cfc1ac; }
 
-/* Header buttons: single-line pills that sit inline with the nav links */
+/* WhatsApp pills (header, contact page, footer) use the same shape */
 .nav-cta-item, .nav-wa-item { display: inline-flex; align-items: center; list-style: none; }
 .header-cta,
-.header-wa {
+.wa-pill {
   display: inline-flex;
   align-items: center;
   gap: 7px;
@@ -151,10 +151,13 @@ p { margin: 0 0 15px; }
 .header-cta .cta-phone { font-weight: 600; letter-spacing: 0.5px; color: rgba(251, 247, 241, 0.85); }
 .header-cta .cta-phone::before { content: '\00B7'; margin-right: 7px; font-weight: 400; opacity: 0.75; }
 
-/* WhatsApp pill: soft sage green, dark green text, brand-green glyph */
-.header-wa { background: #e3efe7; color: #1d4d38; }
-.header-wa:hover { background: #d4e6dc; }
-.header-wa svg { width: 15px; height: 15px; fill: #25d366; flex: 0 0 auto; }
+/* WhatsApp pill: soft sage green, dark green text, brand-green glyph (header, contact page, footer) */
+.wa-pill { background: #e3efe7; color: #1d4d38; }
+.wa-pill:hover { background: #d4e6dc; }
+.wa-pill svg { width: 15px; height: 15px; fill: #25d366; flex: 0 0 auto; }
+.contact-page .wa-line { display: flex; align-items: center; gap: 10px; }
+/* Block-level pill in the footer, so its colours beat the muted footer link colour */
+.site-footer .contacts .wa-pill { display: flex; width: fit-content; margin: 12px 0 8px; color: #1d4d38; }
 /* On the dark bar the button is cream with dark text, so it pops against #3f3123 */
 .header-main.dark .header-cta { background: var(--white); color: var(--dark); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18); }
 .header-main.dark .header-cta:hover { background: #efe5d9; }

@@ -1,4 +1,6 @@
 ---
+import WhatsAppIcon from './WhatsAppIcon.astro';
+
 const { t, active = '' } = Astro.props;
 ---
 <footer class="site-footer">
@@ -12,8 +14,12 @@ const { t, active = '' } = Astro.props;
     <div class="footer-bottom">
       <div class="addr">{t.footer.address}</div>
       <div class="contacts">
-        <a href={`tel:+40723333609`}>{t.footer.phone}</a><br />
-        {t.footer.emails.map((e) => <a href={`mailto:${e}`}>{e}</a>)}
+        <a href={t.cta.href}>{t.footer.phone}</a>
+        <a class="wa-pill" href={t.whatsapp.href} aria-label={`WhatsApp — ${t.footer.phone}`} target="_blank" rel="noopener">
+          <WhatsAppIcon />
+          <span class="wa-label">{t.whatsapp.label}</span>
+        </a>
+        <div>{t.footer.emails.map((e) => <a href={`mailto:${e}`}>{e}</a>)}</div>
       </div>
     </div>
   </div>
