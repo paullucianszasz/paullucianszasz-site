@@ -17,10 +17,10 @@ export const site = {
       { label: 'Contact', href: '/contacts/' }
     ],
     hero: {
-      title1: 'Te confrunți cu probleme emoționale sau',
-      typed: 'comportamentale?',
-      text: 'Îți dorești să gestionezi mai bine stresul și situațiile dificile cu care te confrunți? Sau ești interesat/ă de autocunoaștere și îți dorești să explorezi diferite perspective asupra vieții?',
-      help: 'Sunt aici ca să te ajut.',
+      title1: 'Treci printr-o perioadă în care emoțiile te copleșesc',
+      typed: 'sau simți că ai nevoie de un spațiu sigur?',
+      text: 'Te simți blocat, anxios sau pur și simplu ai nevoie de claritate în viața ta?',
+      help: 'Împreună putem găsi calea spre liniștea ta interioară.',
       author: 'Dr. Paul Lucian Szasz',
       role: 'Psihoterapeut'
     },
@@ -65,10 +65,10 @@ export const site = {
       { label: 'Contact', href: '/en/contact/' }
     ],
     hero: {
-      title1: 'Are you facing emotional or behavioral',
-      typed: 'problems?',
-      text: "Would you like to better manage stress and other difficult situations you're encountering? Or are you interested in self-discovery and want to explore different perspectives on life?",
-      help: 'I am here to help.',
+      title1: 'Going through a period where your emotions overwhelm you',
+      typed: 'or feeling that you need a safe space?',
+      text: 'Do you feel stuck, anxious, or simply need clarity in your life?',
+      help: 'Together we can find the way to your inner peace.',
       author: 'Dr. Paul Lucian Szasz',
       role: 'Psychotherapist'
     },
