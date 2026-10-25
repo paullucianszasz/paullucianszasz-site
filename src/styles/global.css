@@ -1,7 +1,7 @@
 /* Design tokens (site-ul original paullucianszasz.ro), adaptate la paleta maro deschis */
 :root {
-  --text: #6b6e71;
-  --dark: #0d111c;
+  --text: #6e6a61;
+  --dark: #223039;
   --bar: #3f3123;
   --bg: #f6f1ea;
   --white: #fbf7f1;
@@ -11,6 +11,11 @@
   --link-hover: #614832;
   --text-light: #868076;
   --input-bd: #ddd5cb;
+  /* Accents (Tone & Aesthetics): albastrul blung e folosit doar ca accent, ~10% din pagina.
+     Contrast pe fond: #4a6572 = 5.50:1, folosit pentru titluri mici; --panel = 11.06:1 cu --dark. */
+  --accent: #4a6572;
+  --panel: #eef1f4;
+  --serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
 }
 
 * { box-sizing: border-box; }
@@ -36,6 +41,15 @@ body {
 
 a { color: inherit; text-decoration: none; }
 p { margin: 0 0 15px; }
+
+/* Titluri: serif lin, in sentence case. Uppercase ramane doar pentru etichetele mici
+   (nav, pill-uri, .section-label), care sunt labelformat, nu titlu. */
+h1, h2, h4, .faq-item .q, .hero .eyebrow {
+  font-family: var(--serif);
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+}
 
 /* ---------------- Header ---------------- */
 .site-header { position: relative; z-index: 50; }
@@ -152,10 +166,11 @@ p { margin: 0 0 15px; }
 .header-cta .cta-phone { font-weight: 600; letter-spacing: 0.5px; color: rgba(251, 247, 241, 0.85); }
 .header-cta .cta-phone::before { content: '\00B7'; margin-right: 7px; font-weight: 400; opacity: 0.75; }
 
-/* WhatsApp pill: soft sage green, dark green text, brand-green glyph (header, contact page, footer) */
+/* WhatsApp pill: sage green, dark green text; glyphul e estompat la #4f8a70 (3.42:1),
+   nu #25d366, ca sa ramana in paleta calma (recunoascble ca WhatsApp, dar nu strident) */
 .wa-pill { background: #e3efe7; color: #1d4d38; }
 .wa-pill:hover { background: #d4e6dc; }
-.wa-pill svg { width: 15px; height: 15px; fill: #25d366; flex: 0 0 auto; }
+.wa-pill svg { width: 15px; height: 15px; fill: #4f8a70; flex: 0 0 auto; }
 .contact-page .wa-line { display: flex; align-items: center; gap: 10px; }
 /* Block-level pill in the footer, so its colours beat the muted footer link colour */
 .site-footer .contacts .wa-pill { display: flex; width: fit-content; margin: 12px 0 8px; color: #1d4d38; }
@@ -230,11 +245,9 @@ p { margin: 0 0 15px; }
   max-width: none;
   margin: 0 0 20px;
   text-align: center;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 600;
-  letter-spacing: 1.4px;
-  text-transform: uppercase;
-  color: var(--link-hover);
+  color: var(--accent);
 }
 .hero .hero-photo {
   display: block;
@@ -262,8 +275,8 @@ p { margin: 0 0 15px; }
 .areas { padding: 40px 0 60px; }
 .area-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .area {
-  background: var(--bg);
-  border: 1px solid var(--input-bd);
+  background: var(--panel);
+  border: 1px solid #e3e8ec;
   border-radius: 12px;
   padding: 18px 20px;
   font-size: 15px;
