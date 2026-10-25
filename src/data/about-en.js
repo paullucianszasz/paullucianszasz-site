@@ -1,4 +1,4 @@
-// About me (EN) — ordinea: Professional journey / Therapeutic philosophy / Credentials & accreditation
+// About me (EN) — ordinea: The person behind the role / Professional journey / Therapeutic philosophy / Credentials & accreditation / Volunteering
 // Narativ in ton personal, oglinda a variantei RO; CV-ul in engleza (cv.js, listele *En)
 import {
   cvPhoto, educationEn, trainingEn, qualificationsEn, reviewingEn, volunteeringEn, publications, scholarUrl, accreditation
@@ -13,6 +13,14 @@ export const aboutEn = {
   title: 'About me',
   photo: cvPhoto,
   sections: [
+    {
+      // mirror al textului furnizat in romana — pentru aprobare
+      heading: 'The person behind the role',
+      paragraphs: [
+        'Behind the role of psychotherapist, I am a person guided by the belief that each of us has an innate capacity for healing, transformation and growth. I believe firmly that therapy is not only about repairing what is suffering, but above all about rediscovering the resources, joy and meaning that are already in you.',
+        'My training combines the scientific rigor of the cognitive and behavioral psychotherapies (CBT, REBT and CT-R) with the warm, mindful presence inspired by Buddhist philosophy. In the room, you will not find an expert who tells you what to do, but an empathic, dedicated companion on the road. I meet you exactly as you are, offering a space of safety, unconditional acceptance and deep respect for your own pace. Together, we turn challenges into opportunities to learn and build, step by step, a life lived with a free, steady and peaceful heart.'
+      ]
+    },
     {
       heading: 'Professional journey',
       paragraphs: [

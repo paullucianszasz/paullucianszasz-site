@@ -1,4 +1,4 @@
-// Despre mine (RO) — ordinea: Parcurs profesional / Filozofie terapeutică / Credentials & accreditation
+// Despre mine (RO) — ordinea: Omul din spatele rolului / Parcurs profesional / Filozofie terapeutică / Credentials & accreditation / Voluntariat
 // Narativ in ton personal, draft pentru aprobare; lista CV vine din src/data/cv.js, neschimbata.
 import {
   cvPhoto, education, training, qualifications, reviewing, volunteering, publications, scholarUrl, accreditation
@@ -14,6 +14,13 @@ export const aboutRo = {
   title: 'Despre mine',
   photo: cvPhoto,
   sections: [
+    {
+      heading: 'Omul din spatele rolului',
+      paragraphs: [
+        'În spatele rolului de psihoterapeut, sunt un om ghidat de convingerea că fiecare dintre noi are o capacitate înnăscută de vindecare, transformare și creștere. Cred cu tărie că terapia nu înseamnă doar repararea a ceea ce este suferind, ci mai ales redescoperirea resurselor, bucuriei și sensului care se află deja în tine.',
+        'Formarea mea îmbină rigoarea științifică a psihoterapeutiilor cognitive și comportamentale (CBT, REBT și CT-R) cu prezența caldă și conștientă inspirată din filosofia budistă. În cabinet, nu vei găsi un expert care îți spune ce să faci, ci un partener de drum empatic și dedicat. Te întâmpin exact așa cum ești, oferindu-ți un spațiu de siguranță, acceptare necondiționată și respect profund pentru ritmul tău unic. Împreună, transformăm provocările în oportunități de învățare și construim pas cu pas o viață trăită cu o inimă liberă, stabilă și împăcată.'
+      ]
+    },
     {
       heading: 'Parcurs profesional',
       paragraphs: [
