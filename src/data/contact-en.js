@@ -34,7 +34,8 @@ export const contactEn = {
       a: [
         'Cancellations or rescheduling by the client must be made at least 24 hours before the scheduled session. Otherwise, the client agrees to pay the full price of the cancelled session within 24 hours of the date the cancelled session was scheduled, because the time allocated to your appointment cannot be reallocated to another client in time, and part of the therapeutic effort has already been invested before your session.'
       ]
-    }
+    },
+    byId('emergency')
   ],
   privacyHeading: 'Confidentiality and data protection',
   privacy: [

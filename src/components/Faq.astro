@@ -11,6 +11,12 @@ const { t, items = t.faq, heading = t.labels.faq } = Astro.props;
         <div class="q"><span class="marker">▸</span><span>{f.q}</span></div>
         <div class="a">
           {f.a.map((p) => <p>{p}</p>)}
+          {f.groups && f.groups.map((g) => (
+            <div class="group">
+              <p class="group-label">{g.label}</p>
+              <ul>{g.items.map((l) => <li>{l}</li>)}</ul>
+            </div>
+          ))}
           {f.list && <ul>{f.list.map((l) => <li>{l}</li>)}</ul>}
         </div>
       </div>

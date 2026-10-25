@@ -56,13 +56,15 @@ export const site = {
       { q: 'Cât de mult durează procesul terapeutic?', a: ['Durata procesului terapeutic poate varia în funcție de complexitatea problemelor, de scopurile clientului, dar și în funcție de recomandările terapeutului. Frecvența ședințelor, care poate fi adaptată în funcție de nevoile clientului și în funcție de recomandările terapeutului, este de asemenea un factor care poate influența durata procesului terapeutic.'] },
       { id: 'costs', q: 'Care sunt costurile pentru o ședință de terapie?', a: ['Prețurile sunt stabilite în funcție de tipul de ședință și de complexitatea problemelor cu care vă confruntați.'] },
       { q: 'Trebuie să mă deplasez la cabinet pentru a beneficia de intervenție psihologică?', a: ['Ședințele de intervenție se pot desfășura atât în format față-în-față, cât și online, în funcție de nevoile dumneavoastră.'] },
-      { q: 'Ce pot face în caz de urgențe psihologice?', a: ['În caz de urgențe psihologice, puteți apela la următoarele resurse (până intrați în contact cu un specialist în sănătate mintală):'], list: [
-        'Telefonul Verde Antisuicid: 0800 801 200 (disponibil de vineri până duminică, între orele 19:00 – 7:00)',
-        'HelpLine depresie și anxietate: 0374 456 420 (disponibil 24/7)',
-        'Urgențe pentru victimele violenței domestice: 0800 500 333 (disponibil 24/7)',
-        'Dependențe de substanțe: https://preventis.ro/',
-        'Dependențe jocuri de noroc: 0800 800 099 (disponibil 24/7)',
-        'Suport legat de COVID-19: 0800 070 030 (disponibil de luni până sâmbătă, între orele 8:00 – 24:00)'
+      { id: 'emergency', q: 'Ce poți face în caz de urgențe psihologice?', a: [
+        'Dacă te confrunți cu o criză acută sau simți că este o urgență medicală/psihiatrică majoră, te rugăm să apelezi imediat 112 sau să te prezinți la cea mai apropiată Unitate de Primiri Urgențe (UPU).',
+        'Pentru sprijin de specialitate în regim de criză sau consiliere telefonică, ai la dispoziție următoarele linii de asistență:'
+      ], groups: [
+        { label: 'Urgențe majore și pericol iminent:', items: ['112 (Apel unic de urgență, disponibil 24/7)'] },
+        { label: 'Suport în criză suicidală:', items: ['Telefonul Verde Antisuicid: 0800 801 200 (disponibil de vineri până duminică, între orele 19:00 – 07:00; în afara acestor ore, apelați 112)'] },
+        { label: 'Depresie, anxietate și suferință emoțională:', items: ['HelpLine Depresie și Anxietate: 0374 456 420 (disponibil 24/7)'] },
+        { label: 'Situații de criză domestică / violență în familie:', items: ['Linia pentru victimele violenței domestice: 0800 500 333 (disponibil 24/7)'] },
+        { label: 'Dependențe (jocuri de noroc și substanțe):', items: ['Joc Responsabil (jocuri de noroc): 0800 800 099 (disponibil 24/7)', 'Asociația Preventis (dependențe de substanțe): preventis.ro'] }
       ] }
     ],
     footer: {
@@ -128,9 +130,15 @@ export const site = {
       { q: 'How long does the therapeutic process last?', a: ['The duration of the therapeutic process may vary depending on the complexity of the problems, the client’s goals, and the therapist’s recommendations. The frequency of the sessions, which can be adapted to the client’s needs and the therapist’s recommendations, is also a factor that can influence the duration of the therapeutic process.'] },
       { id: 'costs', q: 'What are the costs of a therapy session?', a: ['Prices are set according to the type of session and the complexity of the problems you are facing.'] },
       { q: 'Do I need to go somewhere for psychological intervention?', a: ['Intervention sessions can take place either face-to-face or online, depending on your needs.'] },
-      { q: 'What can I do in case of psychological emergencies?', a: ['In case of psychological emergencies, the following resources are available (until you get in contact with a mental health specialist):'], list: [
-        'Suicidal Crisis Support: https://www.iasp.info/suicidalthoughts/',
-        'Helplines from across the globe: https://www.helpguide.org/find-help'
+      { id: 'emergency', q: 'What can I do in case of psychological emergencies?', a: [
+        'If you are facing an acute crisis or feel this is a major medical or psychiatric emergency, please call 112 immediately or go to the nearest Emergency Reception Unit (UPU).',
+        'For specialist support in a crisis or for phone counselling, the following helplines are available:'
+      ], groups: [
+        { label: 'Major emergencies and imminent danger:', items: ['112 (single emergency number, available 24/7)'] },
+        { label: 'Support in suicidal crisis:', items: ['Anti-suicide Helpline: 0800 801 200 (available Friday to Sunday, 19:00 – 07:00; outside these hours, call 112)'] },
+        { label: 'Depression, anxiety and emotional distress:', items: ['HelpLine for Depression and Anxiety: 0374 456 420 (available 24/7)'] },
+        { label: 'Domestic crisis / domestic violence:', items: ['Line for victims of domestic violence: 0800 500 333 (available 24/7)'] },
+        { label: 'Addictions (gambling and substances):', items: ['Joc Responsabil (gambling): 0800 800 099 (available 24/7)', 'Asociația Preventis (substance addictions): preventis.ro'] }
       ] }
     ],
     footer: {

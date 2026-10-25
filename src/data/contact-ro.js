@@ -35,7 +35,8 @@ export const contactRo = {
       a: [
         'Anularea sau reprogramarea ședinței de către beneficiar se face cu cel puţin 24 de ore înainte de data la care aceasta este stabilita. În caz contrar, beneficiarul se obligă să achite integral furnizorului prețul ședinței anulate în termen de 24 de ore de la data la care fusese stabilită ședința anulată, având în vedere că timpul alocat programării dumneavostră nu poate fi realocat unui alt client în timp util, iar o parte din efortul terapeutului a fost investit în avans ședinței dumneavoastră.'
       ]
-    }
+    },
+    byId('emergency')
   ],
   privacyHeading: 'Confidențialitate și protecția datelor',
   privacy: [
