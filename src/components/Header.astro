@@ -45,6 +45,10 @@ const navLabel = t.lang === 'ro' ? 'Navigare' : 'Navigation';
           ))}
         </ul>
       </nav>
+      <a class="header-cta" href={t.cta.href} aria-label={`${t.cta.label} — ${t.footer.phone}`}>
+        <span class="cta-label">{t.cta.label}</span>
+        <span class="cta-phone">{t.footer.phone}</span>
+      </a>
       <a class="lang-switch" href={t.otherLang.href}>
         <img src={t.lang === 'ro' ? '/assets/flag-en.png' : '/assets/flag-ro.png'} alt={t.otherLang.label} /> {t.otherLang.label}
       </a>
@@ -89,6 +93,10 @@ const navLabel = t.lang === 'ro' ? 'Navigare' : 'Navigation';
         ))}
       </ul>
     </nav>
+    <a class="header-cta" href={t.cta.href} aria-label={`${t.cta.label} — ${t.footer.phone}`}>
+      <span class="cta-label">{t.cta.label}</span>
+      <span class="cta-phone">{t.footer.phone}</span>
+    </a>
     {!dark && (
       <a class="lang-switch" href={t.otherLang.href}>
         <img src={t.lang === 'ro' ? '/assets/flag-en.png' : '/assets/flag-ro.png'} alt={t.otherLang.label} /> {t.otherLang.label}
