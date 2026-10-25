@@ -1,0 +1,8 @@
+node_modules/
+.astro/
+.env
+.DS_Store
+
+# Build output (generat de `npm run build`; hosting static il poate folosi direct)
+# Comenteaza linia de mai jos daca vrei ca dist/ sa fie in repo.
+dist/

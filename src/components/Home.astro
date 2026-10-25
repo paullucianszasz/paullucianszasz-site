@@ -1,0 +1,39 @@
+---
+import Faq from './Faq.astro';
+
+const { t, services } = Astro.props;
+const groups = {
+  servicii: { label: t.labels.services },
+  tipuri: { label: t.labels.types }
+};
+---
+<section class="hero">
+  <div class="container">
+    <h1>{t.hero.title1} <span class="typed-word">{t.hero.typed}</span></h1>
+    <p>{t.hero.text}</p>
+    <p>{t.hero.help}</p>
+    <div class="author">
+      {t.hero.author}
+      <small>{t.hero.role}</small>
+    </div>
+  </div>
+</section>
+
+{Object.entries(groups).map(([g, meta]) => (
+  <section class="section">
+    <div class="container section-inner">
+      <div class="section-label-col"><div class="section-label">{meta.label}</div></div>
+      <div class="section-cards cards-{g === 'servicii' ? '2' : '3'}">
+        {services.filter((s) => s.group === g).map((s) => (
+          <div class="service-card">
+            <h4><a href={t.lang === 'ro' ? `/services/${s.slug}/` : `/en/services/${s.slug}/`}>{s.title}</a></h4>
+            <p>{s.short}</p>
+            <a class="arrow" href={t.lang === 'ro' ? `/services/${s.slug}/` : `/en/services/${s.slug}/`} title={t.labels.readMore}>→</a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+))}
+
+<Faq t={t} />

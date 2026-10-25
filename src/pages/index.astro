@@ -1,0 +1,9 @@
+---
+import Base from '../layouts/Base.astro';
+import Home from '../components/Home.astro';
+import { site } from '../data/site.js';
+import { servicesRo } from '../data/services-ro.js';
+---
+<Base t={site.ro} active="Home">
+  <Home t={site.ro} services={servicesRo} />
+</Base>

@@ -1,0 +1,44 @@
+---
+import Base from '../layouts/Base.astro';
+
+const { t, about } = Astro.props;
+---
+<Base t={t} title={about.title} active={t.lang === 'ro' ? 'Despre mine' : 'About me'}>
+  <section class="page">
+    <div class="container">
+      <h1>{about.title}</h1>
+      <div class="about-grid">
+        <div class="about-photo">
+          <img src={about.photo} alt="Dr. Paul Lucian Szasz" />
+        </div>
+        <div class="about-content">
+          {(about.paragraphs || []).map((p) => <p>{p}</p>)}
+          <div class="timeline">
+            {about.sections.map((sec) => (
+              <div>
+                <h3>{sec.heading}</h3>
+                {sec.subheading ? <p class="subheading">{sec.subheading}</p> : null}
+                {sec.items.every((i) => typeof i === 'string') ? (
+                  <ul>
+                    {sec.items.map((i) => <li>{i}</li>)}
+                  </ul>
+                ) : (
+                  sec.items.map((i) => (
+                    <div class="tl-item">
+                      <div class="year">{i.year}</div>
+                      <div class="tl-body">
+                        <div class="role">{i.role}</div>
+                        <div>{i.detail}</div>
+                      </div>
+                    </div>
+                  ))
+                )}
+                {sec.link ? <p class="section-link"><a href={sec.link.href}>{sec.link.label}</a></p> : null}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>

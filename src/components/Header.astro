@@ -1,0 +1,98 @@
+---
+const { t, active = '', dark = false } = Astro.props;
+const hasSub = (item) => Array.isArray(item.children) && item.children.length > 0;
+const subId = (label, scope) => `nav-${scope}-${label.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
+const navLabel = t.lang === 'ro' ? 'Navigare' : 'Navigation';
+---
+<header class="site-header">
+  {dark && (
+    <div class="header-topbar">
+      <a class="header-logo" href={t.home}>
+        <img src="/assets/logo-sc-prim-white.png" alt={`Dr. Paul Lucian Szasz - ${t.hero.role}`} />
+      </a>
+      <nav aria-label={navLabel}>
+        <ul class="header-nav">
+          {t.nav.map((item) => (
+            <li class={"nav-item" + (item.label === active ? ' active' : '') + (hasSub(item) ? ' has-sub' : '')}>
+              {hasSub(item) ? (
+                <button class="nav-link nav-toggle" type="button" aria-expanded="false" aria-controls={subId(item.label, 'top')}>
+                  {item.label}
+                </button>
+              ) : (
+                <a class="nav-link" href={item.href}>{item.label}</a>
+              )}
+              {hasSub(item) && (
+                <ul class="nav-sub" id={subId(item.label, 'top')}>
+                  {item.children.map((c) => (
+                    <li class={"nav-sub-item" + (hasSub(c) ? ' has-sub' : '')}>
+                      {hasSub(c) ? (
+                        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls={subId(c.label, 'top')}>
+                          {c.label}
+                        </button>
+                      ) : (
+                        <a href={c.href}>{c.label}</a>
+                      )}
+                      {hasSub(c) && (
+                        <ul class="nav-sub-inline" id={subId(c.label, 'top')}>
+                          {c.children.map((cc) => <li><a href={cc.href}>{cc.label}</a></li>)}
+                        </ul>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </li>
+          ))}
+        </ul>
+      </nav>
+      <a class="lang-switch" href={t.otherLang.href}>
+        <img src={t.lang === 'ro' ? '/assets/flag-en.png' : '/assets/flag-ro.png'} alt={t.otherLang.label} /> {t.otherLang.label}
+      </a>
+    </div>
+  )}
+  <div class="header-main">
+    <a class="header-logo" href={t.home}>
+      <img src="/assets/logo-sc-prim-black-1.png" alt={`Dr. Paul Lucian Szasz - ${t.hero.role}`} />
+    </a>
+    <nav aria-label={navLabel}>
+      <ul class="header-nav">
+        {t.nav.map((item) => (
+          <li class={"nav-item" + (item.label === active && !dark ? ' active' : '') + (hasSub(item) ? ' has-sub' : '')}>
+            {hasSub(item) ? (
+              <button class="nav-link nav-toggle" type="button" aria-expanded="false" aria-controls={subId(item.label, 'main')}>
+                {item.label}
+              </button>
+            ) : (
+              <a class="nav-link" href={item.href}>{item.label}</a>
+            )}
+            {hasSub(item) && (
+              <ul class="nav-sub" id={subId(item.label, 'main')}>
+                {item.children.map((c) => (
+                  <li class={"nav-sub-item" + (hasSub(c) ? ' has-sub' : '')}>
+                    {hasSub(c) ? (
+                      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls={subId(c.label, 'main')}>
+                        {c.label}
+                      </button>
+                    ) : (
+                      <a href={c.href}>{c.label}</a>
+                    )}
+                    {hasSub(c) && (
+                      <ul class="nav-sub-inline" id={subId(c.label, 'main')}>
+                        {c.children.map((cc) => <li><a href={cc.href}>{cc.label}</a></li>)}
+                      </ul>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))}
+      </ul>
+    </nav>
+    {!dark && (
+      <a class="lang-switch" href={t.otherLang.href}>
+        <img src={t.lang === 'ro' ? '/assets/flag-en.png' : '/assets/flag-ro.png'} alt={t.otherLang.label} /> {t.otherLang.label}
+      </a>
+    )}
+  </div>
+</header>

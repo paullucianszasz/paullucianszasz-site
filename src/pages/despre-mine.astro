@@ -1,0 +1,7 @@
+---
+import Base from '../layouts/Base.astro';
+import AboutPage from '../components/AboutPage.astro';
+import { site } from '../data/site.js';
+import { aboutRo } from '../data/about-ro.js';
+---
+<AboutPage t={site.ro} about={aboutRo} />

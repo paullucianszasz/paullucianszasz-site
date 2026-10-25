@@ -1,0 +1,20 @@
+---
+const { t, active = '' } = Astro.props;
+---
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <img src="/assets/logo-sc-prim-white.png" alt={`Dr. Paul Lucian Szasz - ${t.hero.role}`} />
+      <nav class="footer-nav">
+        {t.footerNav.map((i) => <a href={i.href} class={i.label === active ? 'active' : ''}>{i.label}</a>)}
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <div class="addr">{t.footer.address}</div>
+      <div class="contacts">
+        <a href={`tel:+40723333609`}>{t.footer.phone}</a><br />
+        {t.footer.emails.map((e) => <a href={`mailto:${e}`}>{e}</a>)}
+      </div>
+    </div>
+  </div>
+</footer>

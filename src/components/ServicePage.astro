@@ -1,0 +1,21 @@
+---
+import Base from '../layouts/Base.astro';
+
+const { t, service } = Astro.props;
+---
+<Base t={t} title={service.title} active={t.lang === 'ro' ? 'Psihoterapie' : 'Psychotherapy'}>
+  <section class="page">
+    <div class="container">
+      <h1>{service.title}</h1>
+      {service.blocks.map((b) => (
+        b.t === 'p' ? <p>{b.v}</p> :
+        b.t === 'h3' ? <h3>{b.v}</h3> :
+        b.t === 'ul' ? <ul>{b.v.map((li) => <li>{li}</li>)}</ul> :
+        b.t === 'ol' ? <ol>{b.v.map((li) => (
+          typeof li === 'string' ? <li>{li}</li> :
+          <li>{li.text}{li.sub && <ul>{li.sub.map((s) => <li>{s}</li>)}</ul>}</li>
+        ))}</ol> : null
+      ))}
+    </div>
+  </section>
+</Base>

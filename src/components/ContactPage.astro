@@ -1,0 +1,64 @@
+---
+import Base from '../layouts/Base.astro';
+
+const { t } = Astro.props;
+const labels = t.lang === 'ro'
+  ? { title: 'Contact', phoneLabel: 'Număr de telefon', whatsappNote: '*disponibil și pe Whatsapp', emailLabel: 'Email' }
+  : { title: 'Contact', phoneLabel: 'Phone Number', whatsappNote: '*also available on WhatsApp', emailLabel: 'Email' };
+// Inlocuieste FORMSPREE_ID cu ID-ul formularului Formspree dupa ce il creezi.
+const formAction = 'https://formspree.io/f/XXXXXXXXXX';
+const active = 'Contact';
+const mapTitle = 'Andrei Saguna, Nr. 8, Cluj-Napoca';
+const mapSrc = 'https://maps.google.com/maps?q=Andrei%20Saguna%2C%20Nr.%208%2C%20Cluj-Napoca&t=m&z=10&output=embed&iwloc=near';
+---
+<Base t={t} active={active} title="Contact">
+  <section class="page contact-page">
+    <div class="container">
+      <h1>{labels.title}</h1>
+      <div class="contact-grid">
+        <div class="contact-col">
+          <h2>{labels.phoneLabel}</h2>
+          <p>{t.footer.phone}</p>
+          <p>{t.lang === 'ro' ? labels.whatsappNote : <>*<i>{labels.whatsappNote.slice(1)}</i></>}</p>
+          <h2>{labels.emailLabel}</h2>
+          <ul class="email-list">
+            {t.footer.emails.map((e) => <li><a href={`mailto:${e}`}>{e}</a></li>)}
+          </ul>
+          <div class="contact-map">
+            <iframe loading="lazy" src={mapSrc} title={mapTitle} aria-label={mapTitle} referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div class="contact-col">
+          <form class="contact-form form-style-7" action={formAction} method="post">
+            <p class="field icon-name">
+              <input size="40" type="text" name="name" placeholder="Name" aria-required="true" required />
+              <span class="line"></span>
+            </p>
+            <p class="field icon-phone">
+              <input size="40" type="tel" name="phone" placeholder="Phone number" aria-required="true" required />
+              <span class="line"></span>
+            </p>
+            <p class="field icon-email">
+              <input size="40" type="email" name="email" placeholder="Email" aria-required="true" required />
+              <span class="line"></span>
+            </p>
+            <p class="field icon-subject">
+              <input size="40" type="text" name="subject" placeholder="Subject" aria-required="true" required />
+              <span class="line"></span>
+            </p>
+            <p class="field icon-textarea">
+              <textarea cols="40" rows="10" name="message" placeholder="How can i help you?" aria-required="true" required></textarea>
+              <span class="line"></span>
+            </p>
+            <p>
+              <span class="field-btn">
+                <input class="wpcf7-submit" type="submit" value="Send message" />
+                <span class="submit-style-in"></span>
+              </span>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,19 @@
+---
+const { t } = Astro.props;
+---
+<section class="faq">
+  <div class="glow g1" aria-hidden="true"></div>
+  <div class="glow g2" aria-hidden="true"></div>
+  <div class="container">
+    <h2>{t.labels.faq}</h2>
+    {t.faq.map((f) => (
+      <div class="faq-item">
+        <div class="q"><span class="marker">▸</span><span>{f.q}</span></div>
+        <div class="a">
+          {f.a.map((p) => <p>{p}</p>)}
+          {f.list && <ul>{f.list.map((l) => <li>{l}</li>)}</ul>}
+        </div>
+      </div>
+    ))}
+  </div>
+</section>

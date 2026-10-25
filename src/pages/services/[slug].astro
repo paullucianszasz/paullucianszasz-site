@@ -1,0 +1,12 @@
+---
+import { site } from '../../data/site.js';
+import { servicesRo } from '../../data/services-ro.js';
+import ServicePage from '../../components/ServicePage.astro';
+
+export function getStaticPaths() {
+  return servicesRo.map((s) => ({ params: { slug: s.slug }, props: { service: s } }));
+}
+
+const { service } = Astro.props;
+---
+<ServicePage t={site.ro} service={service} />

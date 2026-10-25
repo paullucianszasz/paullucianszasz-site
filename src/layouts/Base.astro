@@ -1,0 +1,87 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+const { t, active = '', title = '' } = Astro.props;
+const homeRoutes = ['/', '/en/', '/en/homepage-english/'];
+const darkHeader = homeRoutes.includes(Astro.url.pathname);
+const brand = t.lang === 'ro' ? 'Paul Lucian Szasz - Psihoterapeut' : 'Paul Lucian Szasz - Psychotherapist';
+const pageTitle = title ? `${title} - ${brand}` : `Dr. ${brand}`;
+---
+<!doctype html>
+<html lang={t.lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <link rel="icon" href="/assets/cropped-logo-sc-prim-white-e1597734161660.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <Header t={t} active={active} dark={darkHeader} />
+    <main>
+      <slot />
+    </main>
+    <Footer t={t} active={active} />
+
+    <div class="scroll-top" title="Scroll to top">↑</div>
+
+    <script>
+      // Header dropdowns: open on click/tap (hover still works on desktop)
+      const setOpen = (li, open) => {
+        if (open) {
+          li.classList.add('open');
+        } else {
+          li.classList.remove('open');
+          li.querySelectorAll('.open').forEach((d) => d.classList.remove('open'));
+        }
+        const toggle = li.querySelector(':scope > .nav-toggle');
+        if (toggle) toggle.setAttribute('aria-expanded', String(open));
+      };
+
+      const closeAllNav = () =>
+        document.querySelectorAll('.nav-item.open, .nav-sub-item.open').forEach((li) => setOpen(li, false));
+
+      document.querySelectorAll('.nav-toggle').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const li = btn.closest('li');
+          const wasOpen = li.classList.contains('open');
+          // Close only the entries at the same level, so a nested group keeps its parent open.
+          li.parentElement.querySelectorAll(':scope > li.open').forEach((s) => setOpen(s, false));
+          setOpen(li, !wasOpen);
+        });
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!e.target.closest('.nav-item')) closeAllNav();
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeAllNav();
+      });
+
+      // FAQ accordion
+      document.querySelectorAll('.faq-item .q').forEach((q) => {
+        q.addEventListener('click', () => q.closest('.faq-item').classList.toggle('open'));
+      });
+
+      // Scroll to top
+      document.querySelector('.scroll-top').addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+      // Typed word in hero (like the original)
+      const typed = document.querySelector('.typed-word');
+      if (typed) {
+        const word = typed.textContent.trim();
+        typed.textContent = '';
+        let i = 0;
+        const tick = () => {
+          typed.textContent = word.slice(0, i);
+          if (i <= word.length) { i++; setTimeout(tick, 60); }
+        };
+        tick();
+      }
+    </script>
+  </body>
+</html>
