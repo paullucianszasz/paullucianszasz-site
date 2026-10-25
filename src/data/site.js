@@ -17,10 +17,11 @@ export const site = {
       { label: 'Contact', href: '/contacts/' }
     ],
     hero: {
-      headline: 'Pentru corp găsești timp, bani și un antrenor. Pentru minte, amâni.',
+      headline: 'Bine ai venit — acesta este un loc în care poți gândi cu voce tare.',
       lines: [
         'Te simți blocat, anxios sau pur și simplu ai nevoie de claritate în viața ta?',
-        'Fără judecată, fără sfaturi necerute și fără soluții magice. Mă poți privi ca pe un partener de încredere: aici ca să te ajut să îți descifrezi tiparele, să vezi imaginea de ansamblu și să îți dezvolți resursele ca să faci față a ceea ce urmează.'
+        'Fără judecată, fără sfaturi necerute și fără soluții magice. Mă poți privi ca pe un partener de încredere: aici ca să te ajut să îți descifrezi tiparele, să vezi imaginea de ansamblu și să îți dezvolți resursele ca să faci față a ceea ce urmează.',
+        'Oricum ajungi aici, e în regulă. Când ești gata, sunt aici.'
       ],
       author: 'Dr. Paul Lucian Szasz',
       role: 'Psihoterapeut'
@@ -65,10 +66,11 @@ export const site = {
       { label: 'Contact', href: '/en/contact/' }
     ],
     hero: {
-      headline: 'You make time and money for your body — for your mind, you postpone.',
+      headline: 'Welcome — this is a place where you can think out loud.',
       lines: [
         'Do you feel stuck, anxious, or simply need clarity in your life?',
-        'No judgment, no unsolicited advice, and no pretend magic solutions. Think of me as a trusted sounding board: here to help you unpack your patterns, see the full picture, and equip you to handle whatever comes next.'
+        'No judgment, no unsolicited advice, and no pretend magic solutions. Think of me as a trusted sounding board: here to help you unpack your patterns, see the full picture, and equip you to handle whatever comes next.',
+        'However you arrive, it is okay. Whenever you are ready, I am here.'
       ],
       author: 'Dr. Paul Lucian Szasz',
       role: 'Psychotherapist'
