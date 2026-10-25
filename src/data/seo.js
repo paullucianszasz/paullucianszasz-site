@@ -2,7 +2,7 @@
 // "psihoterapeut CBT Cluj-Napoca", "psihoterapie cognitiv-comportamentala", "terapie REBT online".
 // canonical = ruta indexata; alt = pagina oglinda in cealalta limba (hreflang).
 // Titluri max ~60 caractere, descrieri max ~160.
-const ogImage = '/assets/cropped-logo-sc-prim-white-e1597734161660.png';
+const ogImage = '/assets/og-image.png';
 
 // JSON-LD: schema.org nu are tipul "Psychologist", asa ca Person este tipul corect.
 // Fara openingHours, coordonate, postal code, priceRange sau sameAs — acele date lipsesc.

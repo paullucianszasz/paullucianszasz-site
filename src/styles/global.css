@@ -438,19 +438,20 @@ h1, h2, h4, .faq-item .q, .hero .eyebrow {
   position: absolute;
   left: 0;
   top: 0;
-  background-color: var(--dark);
+  background-color: var(--accent);
   transition: all 0.4s ease;
 }
 .field:focus-within .line::before { width: 100%; }
+/* Icon font: glyphurile nu pot fi serif, asa ca le aliniam la prima linie de text si le dam accentul */
 .field[class*="icon-"]::before {
-  color: var(--text);
+  color: var(--accent);
   display: block;
   font-family: 'fontello';
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 400;
   position: absolute;
   z-index: 1;
-  top: 10px;
+  top: 11px;
   left: 0;
 }
 .field.icon-name::before { content: "\e9ae"; }
