@@ -51,7 +51,7 @@ const personEn = {
   },
   knowsAbout: [
     'Cognitive Behavioral Therapy (CBT)',
-    'Rational Emotive Behavior Therapy (REBT)',
+    'Rational Emotive and Behavioral Therapy (REBT)',
     'Psychotherapy',
     'Anxiety and panic attacks',
     'Depression',
@@ -117,7 +117,7 @@ export const seo = {
       },
       '/en/services/psychotherapy/': {
         title: 'Cognitive Behavioral Therapy (CBT) & REBT | Paul Lucian Szasz',
-        desc: 'Cognitive Behavioral Therapy (CBT) and Rational Emotive Behavior Therapy (REBT), in 50–60 minute sessions, in the Cluj-Napoca office or online.',
+        desc: 'Cognitive Behavioral Therapy (CBT) and Rational Emotive and Behavioral Therapy (REBT), in 50–60 minute sessions, in the Cluj-Napoca office or online.',
         canonical: '/en/services/psychotherapy/',
         alt: '/services/psihoterapie/'
       },
