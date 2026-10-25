@@ -239,7 +239,7 @@ p { margin: 0 0 15px; }
 .hero .hero-photo {
   display: block;
   width: min(300px, 80%);
-  aspect-ratio: 1;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
   border-radius: 14px;
   margin: 0 auto 24px;

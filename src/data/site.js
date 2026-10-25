@@ -28,8 +28,8 @@ export const site = {
       role: 'Psihoterapeut',
       title: 'Psiholog cu drept de liberă practică în Psihoterapii cognitive și comportamentale.',
       credsNote: { text: 'Puteți verifica acreditarea în Registrul ', link: 'COPSI', href: 'https://www.copsi.ro/index.php/registre' },
-      photo: '/assets/me-2.jpg',
-      photoAlt: 'Dr. Paul Lucian Szasz în cabinet'
+      photo: '/assets/DSC_3756-portrait.jpg',
+      photoAlt: 'Dr. Paul Lucian Szasz, portret alb-negru'
     },
     homeCta: { label: 'Programați o consultație inițială' },
     localLine: 'Cabinet în Cluj-Napoca, pe Andrei Saguna nr. 8, sau ședințe online — în funcție de ceea ce ți se potrivește.',
@@ -100,8 +100,8 @@ export const site = {
       role: 'Psychotherapist',
       title: 'Psychologist with the right to private practice in Cognitive and Behavioral Psychotherapies.',
       credsNote: { text: 'You can verify the accreditation in the ', link: 'COPSI Register', href: 'https://www.copsi.ro/index.php/registre' },
-      photo: '/assets/me-2.jpg',
-      photoAlt: 'Dr. Paul Lucian Szasz in the office'
+      photo: '/assets/DSC_3756-portrait.jpg',
+      photoAlt: 'Dr. Paul Lucian Szasz, black and white portrait'
     },
     homeCta: { label: 'Schedule an Initial Consultation' },
     localLine: 'Sessions in my Cluj-Napoca office on Andrei Saguna no. 8, or online — whichever suits you better.',
