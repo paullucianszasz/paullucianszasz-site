@@ -11,16 +11,5 @@ export const servicesEn = [
       { t: 'p', v: 'These sessions aim to understand psychological mechanisms involved in emotional and behavioral difficulties, to apply techniques and strategies that manage emotional distress and problematic behaviors, and to continuously monitor the therapeutic relationship and goals that are set collaboratively. The sessions last approximately 50 – 60 minutes and are conducted in a one-on-one format (just the client and the therapist).' }
     ]
   },
-  {
-    slug: 'individual-therapy',
-    title: 'Individual Therapy',
-    short: 'Personalized and confidential sessions held one-on-one, between the client and the therapist.',
-    group: 'tipuri',
-    blocks: [
-      { t: 'p', v: 'Individual therapy sessions provide a confidential and supportive space, where the client can explore their thoughts, emotions, and behaviors. Through a collaborative and non-judgmental approach, the therapist helps the client gain a broad perspective on the various contexts and challenges they face. The goal of these sessions is to increase well-being, identify problematic behavior patterns, and develop the skills necessary for more effectively navigating personal obstacles and life challenges.' },
-      { t: 'p', v: 'Sessions are conducted in a one-on-one format (just the client and the therapist), are scheduled regularly (according to the client’s needs and the therapist’s recommendations), and last approximately 50 – 60 minutes.' },
-      { t: 'h3', v: 'Individual Psychotherapy' },
-      { t: 'p', v: 'Psychotherapy explores the interaction between thoughts, behaviors, emotions, and personal experiences, in order to understand present difficulties. This type of therapy often aims for long-term changes, exploring vulnerabilities and healing psychological “wounds”. Psychotherapy sessions may involve exploring childhood experiences, significant life events, and recurring behavior patterns in order to gain a broader perspective on life challenges. Psychotherapy can continue over an extended period of time, depending on the complexity of the issues addressed, individual progress, and the therapist’s recommendations.' }
-    ]
-  }
+  // The new service goes here when you have the copy (mirror of services-ro.js).
 ];
