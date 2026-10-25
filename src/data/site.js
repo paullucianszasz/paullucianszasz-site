@@ -58,7 +58,7 @@ export const site = {
       { q: 'Trebuie să mă deplasez la cabinet pentru a beneficia de intervenție psihologică?', a: ['Ședințele de intervenție se pot desfășura atât în format față-în-față, cât și online, în funcție de nevoile dumneavoastră.'] },
       { id: 'emergency', q: 'Ce poți face în caz de urgențe psihologice?', a: [
         'Dacă te confrunți cu o criză acută sau simți că este o urgență medicală/psihiatrică majoră, te rugăm să apelezi imediat 112 sau să te prezinți la cea mai apropiată Unitate de Primiri Urgențe (UPU).',
-        'Pentru sprijin de specialitate în regim de criză sau consiliere telefonică, ai la dispoziție următoarele linii de asistență:'
+        'Pentru sprijin de specialitate în regim de criză sau consiliere telefonică, ai la dispoziție următoarele linii de asistență, valabile în România:'
       ], groups: [
         { label: 'Urgențe majore și pericol iminent:', items: ['112 (Apel unic de urgență, disponibil 24/7)'] },
         { label: 'Suport în criză suicidală:', items: ['Telefonul Verde Antisuicid: 0800 801 200 (disponibil de vineri până duminică, între orele 19:00 – 07:00; în afara acestor ore, apelați 112)'] },
@@ -132,7 +132,7 @@ export const site = {
       { q: 'Do I need to go somewhere for psychological intervention?', a: ['Intervention sessions can take place either face-to-face or online, depending on your needs.'] },
       { id: 'emergency', q: 'What can I do in case of psychological emergencies?', a: [
         'If you are facing an acute crisis or feel this is a major medical or psychiatric emergency, please call 112 immediately or go to the nearest Emergency Reception Unit (UPU).',
-        'For specialist support in a crisis or for phone counselling, the following helplines are available:'
+        'For specialist support in a crisis or for phone counselling, the following helplines are available in Romania:'
       ], groups: [
         { label: 'Major emergencies and imminent danger:', items: ['112 (single emergency number, available 24/7)'] },
         { label: 'Support in suicidal crisis:', items: ['Anti-suicide Helpline: 0800 801 200 (available Friday to Sunday, 19:00 – 07:00; outside these hours, call 112)'] },
