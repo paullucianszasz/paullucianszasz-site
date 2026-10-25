@@ -165,28 +165,28 @@ p { margin: 0 0 15px; }
   .nav-sub { min-width: 200px; max-width: calc(100vw - 40px); }
 }
 
-/* ---------------- Home / cursive message ---------------- */
+/* ---------------- Home / hero ---------------- */
 .hero {
-  padding: 55px 0;
+  padding: 50px 0;
   text-align: center;
 }
-.hero .message-text {
-  max-width: 700px;
-  margin: 0 auto;
-  font-family: 'Caveat', cursive;
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 1.6;
+.hero h1 {
+  font-size: 38px;
+  font-weight: 300;
+  line-height: 42px;
   color: var(--dark);
+  margin: 0 0 30px;
+  text-align: center;
 }
+.hero p { max-width: 620px; margin: 0 auto 20px; }
 .hero .author {
-  font-family: 'Caveat', cursive;
-  font-size: 22px;
+  font-size: 19px;
+  font-weight: 300;
   color: var(--dark);
   text-align: center;
-  margin-top: 24px;
+  margin-top: 30px;
 }
-.hero .author small { display: block; font-size: 15px; color: var(--text-light); }
+.hero .author small { display: block; }
 
 /* ---------------- Services cards (home) ---------------- */
 .section { background: var(--white); padding: 50px 0; }

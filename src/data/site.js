@@ -17,7 +17,12 @@ export const site = {
       { label: 'Contact', href: '/contacts/' }
     ],
     hero: {
-      message: 'Treci printr-o perioadă în care emoțiile te copleșesc sau simți că ai nevoie de un spațiu sigur? Te simți blocat, anxios sau pur și simplu ai nevoie de claritate în viața ta? Împreună putem găsi calea spre liniștea ta interioară. Gândește terapia ca pe un spațiu dedicat și privat pentru mintea ta. La fel cum mergi la un antrenor personal pentru a-ți dezvolta forța fizică, terapia este locul în care îți lucrezi echilibrul emoțional și mintal.',
+      headline: 'Treci printr-o perioadă în care emoțiile te copleșesc sau simți că ai nevoie de un spațiu sigur?',
+      lines: [
+        'Te simți blocat, anxios sau pur și simplu ai nevoie de claritate în viața ta?',
+        'Împreună putem găsi calea spre liniștea ta interioară.',
+        'Gândește terapia ca pe un spațiu dedicat și privat pentru mintea ta. La fel cum mergi la un antrenor personal pentru a-ți dezvolta forța fizică, terapia este locul în care îți lucrezi echilibrul emoțional și mintal.'
+      ],
       author: 'Dr. Paul Lucian Szasz',
       role: 'Psihoterapeut'
     },
@@ -61,7 +66,12 @@ export const site = {
       { label: 'Contact', href: '/en/contact/' }
     ],
     hero: {
-      message: 'Going through a period where your emotions overwhelm you or feeling that you need a safe space? Do you feel stuck, anxious, or simply need clarity in your life? Together we can find the way to your inner peace. Think of therapy as a dedicated, private space for your mind. Just like you go to a personal trainer to work on your physical strength, therapy is a place to work on your emotional and mental well-being.',
+      headline: 'Going through a period where your emotions overwhelm you or feeling that you need a safe space?',
+      lines: [
+        'Do you feel stuck, anxious, or simply need clarity in your life?',
+        'Together we can find the way to your inner peace.',
+        'Think of therapy as a dedicated, private space for your mind. Just like you go to a personal trainer to work on your physical strength, therapy is a place to work on your emotional and mental well-being.'
+      ],
       author: 'Dr. Paul Lucian Szasz',
       role: 'Psychotherapist'
     },
