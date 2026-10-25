@@ -136,22 +136,21 @@ p { margin: 0 0 15px; }
 }
 .lang-switch img { height: 11px; width: auto; }
 
-/* Header booking CTA: label + phone number, placed before the language switch */
+/* Header booking CTA: filled taupe button with label + phone number, before the language switch */
 .header-cta {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 3px;
-  padding: 7px 14px;
-  border: 1px solid rgba(123, 94, 69, 0.4);
+  padding: 9px 16px;
   border-radius: 4px;
-  background: rgba(123, 94, 69, 0.08);
+  background: var(--link);
+  color: var(--white);
+  transition: background 0.25s;
 }
-.header-cta .cta-label { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; color: var(--link-hover); }
-.header-cta .cta-phone { font-size: 13px; font-weight: 600; letter-spacing: 0.5px; color: var(--text); }
-.header-topbar .header-cta { border-color: rgba(251, 247, 241, 0.35); background: rgba(251, 247, 241, 0.08); }
-.header-topbar .header-cta .cta-label { color: #e9d9c3; }
-.header-topbar .header-cta .cta-phone { color: #cfc1ac; }
+.header-cta:hover { background: var(--link-hover); }
+.header-cta .cta-label { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; color: inherit; }
+.header-cta .cta-phone { font-size: 13px; font-weight: 600; letter-spacing: 0.5px; color: rgba(251, 247, 241, 0.85); }
 
 /* Nav stays in the header at every width; the row wraps instead of collapsing */
 @media (max-width: 1023px) {
