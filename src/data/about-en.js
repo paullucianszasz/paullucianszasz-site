@@ -6,6 +6,9 @@ import {
 const accItems = [accreditation.cpr, accreditation.institute, ...accreditation.associations]
   .filter((i) => i.role || i.detail);
 
+// Intrarile marate hidden nu apar pe pagina credibilitatii (studii preuniversitare)
+const degrees = education.filter((i) => !i.hidden);
+
 export const aboutEn = {
   title: 'About me',
   photo: cvPhoto,
@@ -26,7 +29,7 @@ export const aboutEn = {
       ],
       blocks: [
         { subheading: 'Accreditation', items: accItems },
-        { subheading: 'Degrees', items: education },
+        { subheading: 'Degrees', items: degrees },
         { subheading: 'Training in CBT and REBT', items: training },
         { subheading: 'Other qualifications', items: qualifications },
         { subheading: 'Reviewing activity', items: reviewing },

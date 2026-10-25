@@ -42,12 +42,14 @@ export const education = [
   {
     year: '1999 – 2001',
     role: 'Școala Postliceală Louis Pasteur',
-    detail: 'Certificat de absolvire; Specializarea: Secretariat, Stenodactilografie — Operator Birotică/Calculatoare.'
+    detail: 'Certificat de absolvire; Specializarea: Secretariat, Stenodactilografie — Operator Birotică/Calculatoare.',
+    hidden: true
   },
   {
     year: '1998',
     role: 'Colegiul Național George Coșbuc',
-    detail: 'Cluj-Napoca, Secția Matematică–Fizică.'
+    detail: 'Cluj-Napoca, Secția Matematică–Fizică.',
+    hidden: true
   }
 ];
 
