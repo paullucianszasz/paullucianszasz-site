@@ -1,6 +1,14 @@
 // CV — textul furnizat de Dr. Paul Lucian Szasz (folosit de paginile "Despre mine" si "About me")
 export const cvPhoto = '/assets/me-2.jpg';
 
+// Acreditare — completeaza datele aici; campurile goale nu sunt afisate pe pagina,
+// asa ca nimic neconfirmat nu ajunge in HTML.
+export const accreditation = {
+  cpr: { year: '', role: '', detail: '' },
+  institute: { year: '', role: '', detail: '' },
+  associations: []
+};
+
 // Sectiile cu structura anuala (year / role / detail)
 export const job = [
   {

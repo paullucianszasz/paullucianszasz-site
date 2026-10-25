@@ -17,23 +17,30 @@ const { t, about } = Astro.props;
             {about.sections.map((sec) => (
               <div>
                 <h3>{sec.heading}</h3>
-                {sec.subheading ? <p class="subheading">{sec.subheading}</p> : null}
-                {sec.items.every((i) => typeof i === 'string') ? (
-                  <ul>
-                    {sec.items.map((i) => <li>{i}</li>)}
-                  </ul>
-                ) : (
-                  sec.items.map((i) => (
-                    <div class="tl-item">
-                      <div class="year">{i.year}</div>
-                      <div class="tl-body">
-                        <div class="role">{i.role}</div>
-                        <div>{i.detail}</div>
-                      </div>
+                {(sec.paragraphs || []).map((p) => <p>{p}</p>)}
+                {(sec.blocks || [{ items: sec.items, link: sec.link }]).map((block) => (
+                  block.items && block.items.length > 0 && (
+                    <div class="tl-block">
+                      {block.subheading && <h4>{block.subheading}</h4>}
+                      {block.items.every((i) => typeof i === 'string') ? (
+                        <ul>
+                          {block.items.map((i) => <li>{i}</li>)}
+                        </ul>
+                      ) : (
+                        block.items.map((i) => (
+                          <div class="tl-item">
+                            <div class="year">{i.year}</div>
+                            <div class="tl-body">
+                              <div class="role">{i.role}</div>
+                              <div>{i.detail}</div>
+                            </div>
+                          </div>
+                        ))
+                      )}
+                      {block.link ? <p class="section-link"><a href={block.link.href}>{block.link.label}</a></p> : null}
                     </div>
-                  ))
-                )}
-                {sec.link ? <p class="section-link"><a href={sec.link.href}>{sec.link.label}</a></p> : null}
+                  )
+                ))}
               </div>
             ))}
           </div>

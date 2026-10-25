@@ -375,6 +375,11 @@ h1, h2, h4, .faq-item .q, .hero .eyebrow {
 .page ul li, .page ol > li { margin-bottom: 8px; }
 .page ol > li > ul { margin-top: 10px; list-style-type: circle; }
 .page .timeline h3 { margin-top: 35px; }
+/* Sectiunile paginii "Despre mine": titlul sectiunii serif, sub-blocurile mai mici */
+.about-content .timeline h3 { font-family: var(--serif); font-weight: 400; font-size: 22px; margin-top: 34px; }
+.about-content .timeline .tl-block + .tl-block { margin-top: 18px; }
+/* Titlurile de sub-bloc din sectiunile de mai mare (CV) */
+.page .timeline h4 { font-size: 17px; color: var(--dark); margin: 16px 0 10px; }
 .page .timeline .subheading { font-size: 17px; font-weight: 600; color: var(--dark); margin: 0 0 14px; }
 .page .timeline .section-link { margin: 14px 0 0; }
 .page .timeline .section-link a { color: var(--link); }
