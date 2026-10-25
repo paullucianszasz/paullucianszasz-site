@@ -5,7 +5,7 @@ const { t, active = '', dark = false } = Astro.props;
 const hasSub = (item) => Array.isArray(item.children) && item.children.length > 0;
 const subId = (label) => `nav-${label.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
 const navLabel = t.lang === 'ro' ? 'Navigare' : 'Navigation';
-const logo = dark ? '/assets/logo-sc-prim-blue-light.png' : '/assets/logo-sc-prim-blue.png';
+const logo = dark ? '/assets/logo-sc-prim-white.png' : '/assets/logo-sc-prim-black-1.png';
 ---
 <header class="site-header">
   <div class={"header-main" + (dark ? ' dark' : '')}>

@@ -6,7 +6,7 @@ const { t, active = '' } = Astro.props;
 <footer class="site-footer">
   <div class="container">
     <div class="footer-top">
-      <img src="/assets/logo-sc-prim-blue-light.png" alt={`Dr. Paul Lucian Szasz - ${t.hero.role}`} />
+      <img src="/assets/logo-sc-prim-white.png" alt={`Dr. Paul Lucian Szasz - ${t.hero.role}`} />
       <nav class="footer-nav">
         {t.footerNav.map((i) => <a href={i.href} class={i.label === active ? 'active' : ''}>{i.label}</a>)}
       </nav>
