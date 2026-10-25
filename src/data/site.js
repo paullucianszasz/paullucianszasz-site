@@ -27,7 +27,7 @@ export const site = {
       author: 'Dr. Paul Lucian Szasz',
       role: 'Psihoterapeut',
       title: 'Psiholog cu drept de liberă practică în Psihoterapii cognitive și comportamentale.',
-      credsNote: { text: 'Puteți verifica acreditarea în ', link: 'registrul public al Colegiului Psihologilor din România (CPR)', href: 'https://www.copsi.ro/index.php/registre' },
+      credsNote: { text: 'Poți verifica acreditarea în ', link: 'registrul public al Colegiului Psihologilor din România (CPR)', href: 'https://www.copsi.ro/index.php/registre' },
       photo: '/assets/DSC_3756-portrait.jpg',
       photoAlt: 'Dr. Paul Lucian Szasz, portret alb-negru'
     },
