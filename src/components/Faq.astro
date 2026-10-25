@@ -1,12 +1,12 @@
 ---
-const { t } = Astro.props;
+const { t, items = t.faq, heading = t.labels.faq } = Astro.props;
 ---
 <section class="faq">
   <div class="glow g1" aria-hidden="true"></div>
   <div class="glow g2" aria-hidden="true"></div>
   <div class="container">
-    <h2>{t.labels.faq}</h2>
-    {t.faq.map((f) => (
+    <h2>{heading}</h2>
+    {items.map((f) => (
       <div class="faq-item">
         <div class="q"><span class="marker">▸</span><span>{f.q}</span></div>
         <div class="a">

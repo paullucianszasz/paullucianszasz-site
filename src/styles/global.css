@@ -406,6 +406,12 @@ h1, h2, h4, .faq-item .q, .hero .eyebrow {
 .contact-col .email-list li { color: var(--dark); }
 .contact-col .email-list li + li { margin-top: 12px; }
 .contact-map iframe { width: 100%; max-width: 475px; height: 300px; border: 0; }
+.contact-block { margin-top: 34px; }
+.contact-block p + p { margin-top: 10px; }
+.contact-page .form-note { margin-top: 14px; font-size: 14px; line-height: 1.5; color: var(--text-light); }
+.contact-page .form-note a { color: var(--link); }
+.privacy p { line-height: 1.65; }
+.privacy p + p, .privacy ul { margin-top: 12px; }
 
 /* Formular clona CF7 form-style-7 */
 @font-face {

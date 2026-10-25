@@ -1,24 +1,23 @@
 ---
 import Base from '../layouts/Base.astro';
+import Faq from './Faq.astro';
 import WhatsAppIcon from './WhatsAppIcon.astro';
 
-const { t } = Astro.props;
-const labels = t.lang === 'ro'
-  ? { title: 'Contact', phoneLabel: 'Număr de telefon', waBefore: '*disponibil și pe', emailLabel: 'Email' }
-  : { title: 'Contact', phoneLabel: 'Phone Number', waBefore: '*also available on', emailLabel: 'Email' };
+const { t, page } = Astro.props;
 // Inlocuieste FORMSPREE_ID cu ID-ul formularului Formspree dupa ce il creezi.
 const formAction = 'https://formspree.io/f/XXXXXXXXXX';
 const active = 'Contact';
-const mapTitle = 'Andrei Saguna, Nr. 8, Cluj-Napoca';
-const mapSrc = 'https://maps.google.com/maps?q=Andrei%20Saguna%2C%20Nr.%208%2C%20Cluj-Napoca&t=m&z=10&output=embed&iwloc=near';
+const labels = page.labels;
+const mapTitle = t.footer.address;
+const mapSrc = `https://maps.google.com/maps?q=${encodeURIComponent(t.footer.address)}&t=m&z=10&output=embed&iwloc=near`;
 ---
-<Base t={t} active={active} title="Contact">
+<Base t={t} active={active} title={page.title}>
   <section class="page contact-page">
     <div class="container">
-      <h1>{labels.title}</h1>
+      <h1>{page.title}</h1>
       <div class="contact-grid">
         <div class="contact-col">
-          <h2>{labels.phoneLabel}</h2>
+          <h2>{labels.phone}</h2>
           <p><a href={t.cta.href}>{t.footer.phone}</a></p>
           <p class="wa-line">
             {labels.waBefore}&nbsp;
@@ -27,10 +26,14 @@ const mapSrc = 'https://maps.google.com/maps?q=Andrei%20Saguna%2C%20Nr.%208%2C%2
               <span class="wa-label">{t.whatsapp.label}</span>
             </a>
           </p>
-          <h2>{labels.emailLabel}</h2>
+          <h2>{labels.email}</h2>
           <ul class="email-list">
             {t.footer.emails.map((e) => <li><a href={`mailto:${e}`}>{e}</a></li>)}
           </ul>
+          <h2>{labels.hours}</h2>
+          <p>{page.hours}</p>
+          <h2>{labels.location}</h2>
+          <p>{t.footer.address}</p>
           <div class="contact-map">
             <iframe loading="lazy" src={mapSrc} title={mapTitle} aria-label={mapTitle} referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
@@ -63,9 +66,28 @@ const mapSrc = 'https://maps.google.com/maps?q=Andrei%20Saguna%2C%20Nr.%208%2C%2
                 <span class="submit-style-in"></span>
               </span>
             </p>
+            <p class="form-note"><a href="#privacy">{page.formNote}</a></p>
           </form>
         </div>
       </div>
+
+      <div class="contact-block">
+        <h3>{labels.booking}</h3>
+        {page.booking.map((p) => <p>{p}</p>)}
+      </div>
+    </div>
+  </section>
+
+  <Faq t={t} items={page.faq} heading={page.faqHeading} />
+
+  <section class="page">
+    <div class="container privacy" id="privacy">
+      <h3>{page.privacyHeading}</h3>
+      {page.privacy.map((p) => <p>{p}</p>)}
+      <ul>
+        {page.rights.map((r) => <li>{r}</li>)}
+      </ul>
+      <p><a href={`mailto:${t.footer.emails[0]}`}>{t.footer.emails[0]}</a></p>
     </div>
   </section>
 </Base>

@@ -1,0 +1,61 @@
+// Contact (RO) — telefon, email si adresa vin din src/data/site.js (footer), neschimbate.
+// Programul este un placeholder: confirma/l editheaza inainte de publicare.
+// Paragrafele marate "draft" sunt pentru aprobare; politica de anulare este textul furnizat, neschimbat.
+export const contactRo = {
+  title: 'Contact',
+  hours: 'Luni – Vineri, 10:00 – 19:00', // PLACEHOLDER — de confirmat
+  booking: [
+    'Programarea se face telefonic, prin WhatsApp sau prin email. Nu folosesc o platformă de programare online, așa că primul contact este suficient: verificăm împreună orele disponibile și stabilim prima ședință.'
+  ],
+  faqHeading: 'Întrebări practice',
+  faq: [
+    {
+      q: 'Cât durează o ședință?',
+      a: ['Ședințele durează 50–60 de minute, fie în cabinet, fie online.']
+    },
+    {
+      q: 'Câte ședințe voi avea nevoie?',
+      // draft pentru aprobare
+      a: [
+        'Depinde de complexitatea problemelor și de scopurile pe care le stabilim împreună. De obicei, prima ședință este de evaluare, iar apoi frecvența și durata procesului le hotărâm împreună, în funcție de ce se schimbă. Nu încep un proces mai lung decât cel necesar.'
+      ]
+    },
+    {
+      q: 'Oferi ședințe online?',
+      a: ['Da. Ședințele se pot desfășura atât în format față-în-față, cât și online, în funcție de ceea ce este mai practic pentru dumneavoastră.']
+    },
+    {
+      q: 'Care este politica de anulare?',
+      a: [
+        'Anularea sau reprogramarea ședinței de către beneficiar se face cu cel puţin 24 de ore înainte de data la care aceasta este stabilita. În caz contrar, beneficiarul se obligă să achite integral furnizorului prețul ședinței anulate în termen de 24 de ore de la data la care fusese stabilită ședința anulată, având în vedere că timpul alocat programării dumneavostră nu poate fi realocat unui alt client în timp util, iar o parte din efortul terapeutului a fost investit în avans ședinței dumneavoastră.'
+      ]
+    }
+  ],
+  privacyHeading: 'Confidențialitate și protecția datelor',
+  privacy: [
+    'Datele pe care le trimiteți prin acest formular — nume, telefon, email, subiect și mesaj — sunt folosite exclusiv pentru a vă răspunde și pentru a stabili o programare.',
+    'Mesajul poate conține informații despre sănătate, care sunt date personale de categorie specială în sensul GDPR (art. 9). Le procesez doar pentru scopul menționat, pe baza consimțământului explicit pe care îl acordați prin faptul că trimiteți voluntar aceste informații.',
+    'Nu folosesc aceste date în scopuri de marketing, nu le vând și nu le partajez, cu excepția situațiilor prevăzute de lege. Submisiile formularului sunt procesate prin serviciul Formspree, care acționează ca procesator de date.',
+    'Solicitările de contact sunt păstrate doar pentru perioada necesară răspunsului și, dacă începeți un proces terapeutic, pentru perioada cerută de legislația privind documentele clinice. Site-ul nu folosește cookie-uri de urmărire sau instrumente de analiză.',
+    'Operatorul de date este Dr. Paul Lucian Szasz, psiholog, Cluj-Napoca. Drepturile legate de datele personale le puteți exercita prin email.'
+  ],
+  rights: [
+    'Dreptul de acces la datele personale',
+    'Dreptul la rectificare',
+    'Dreptul la ștergere',
+    'Dreptul de a restricționa prelucrarea',
+    'Dreptul de a vă opuneți prelucrării',
+    'Dreptul la portabilitatea datelor',
+    'Dreptul de a retrage consimțământul oricând',
+    'Dreptul de a depune o plângere la ANSPDCP'
+  ],
+  formNote: 'Trimițând formularul, confirmați că ați citit informațiile despre confidențialitate de mai jos.',
+  labels: {
+    phone: 'Număr de telefon',
+    waBefore: '*disponibil și pe',
+    email: 'Email',
+    hours: 'Program',
+    location: 'Locație',
+    booking: 'Programare'
+  }
+};
