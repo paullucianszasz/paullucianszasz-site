@@ -1,0 +1,133 @@
+// SEO pe ruta (RO/EN) — titluri si meta descriptions orientate spre cautari locale:
+// "psihoterapeut CBT Cluj-Napoca", "psihoterapie cognitiv-comportamentala", "terapie REBT online".
+// canonical = ruta indexata; alt = pagina oglinda in cealalta limba (hreflang).
+// Titluri max ~60 caractere, descrieri max ~160.
+const ogImage = '/assets/cropped-logo-sc-prim-white-e1597734161660.png';
+
+// JSON-LD: schema.org nu are tipul "Psychologist", asa ca Person este tipul corect.
+// Fara openingHours, coordonate, postal code, priceRange sau sameAs — acele date lipsesc.
+const personRo = {
+  name: 'Dr. Paul Lucian Szasz',
+  jobTitle: 'Psiholog cu drept de liberă practică în Psihoterapii cognitive și comportamentale',
+  url: 'https://paullucianszasz.ro/despre-mine/',
+  image: '/assets/me-2.jpg',
+  telephone: '+40723333609',
+  email: 'paullucianszaszpsihoterapeut@gmail.com',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Andrei Saguna, Nr. 8',
+    addressLocality: 'Cluj-Napoca',
+    addressCountry: 'RO'
+  },
+  knowsAbout: [
+    'Terapie cognitiv-comportamentală (CBT)',
+    'Terapie rațional-emotivă a comportamentului (REBT)',
+    'Psihoterapie',
+    'Anxietate și atacuri de panică',
+    'Depresie',
+    'Gestionarea furiei',
+    'Stres și epuizare (burnout)',
+    'Perfecționism'
+  ]
+};
+
+const personEn = {
+  name: 'Dr. Paul Lucian Szasz',
+  jobTitle: 'Psychologist with the right to private practice in Cognitive and Behavioral Psychotherapies',
+  url: 'https://paullucianszasz.ro/en/about-me/',
+  image: '/assets/me-2.jpg',
+  telephone: '+40723333609',
+  email: 'paullucianszaszpsihoterapeut@gmail.com',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Andrei Saguna, Nr. 8',
+    addressLocality: 'Cluj-Napoca',
+    addressCountry: 'RO'
+  },
+  knowsAbout: [
+    'Cognitive Behavioral Therapy (CBT)',
+    'Rational Emotive Behavior Therapy (REBT)',
+    'Psychotherapy',
+    'Anxiety and panic attacks',
+    'Depression',
+    'Anger management',
+    'Stress and burnout',
+    'Perfectionism'
+  ]
+};
+
+export const seo = {
+  ro: {
+    lang: 'ro',
+    ogImage,
+    siteName: 'Paul Lucian Szasz',
+    defaultDesc: 'Psihoterapeut CBT și REBT în Cluj-Napoca. Ședințe în cabinet sau online. Programează o consultație inițială.',
+    person: personRo,
+    pages: {
+      '/': {
+        title: 'Psihoterapeut CBT și REBT în Cluj-Napoca | Paul Lucian Szasz',
+        desc: 'Psihoterapeut CBT și REBT în Cluj-Napoca. Ședințe în cabinet sau online, pentru anxietate, depresie, furie și stres. Acreditare în Registrul COPSI.',
+        canonical: '/',
+        alt: '/en/homepage-english/'
+      },
+      '/services/psihoterapie/': {
+        title: 'Psihoterapie CBT și REBT în Cluj-Napoca | Paul Lucian Szasz',
+        desc: 'Terapie cognitiv-comportamentală (CBT) și rațional-emotivă a comportamentului (REBT), în ședințe de 50–60 minute, în cabinet în Cluj-Napoca sau online.',
+        canonical: '/services/psihoterapie/',
+        alt: '/en/services/psychotherapy/'
+      },
+      '/despre-mine/': {
+        title: 'Despre mine | Paul Lucian Szasz, psihoterapeut CBT Cluj-Napoca',
+        desc: 'Psiholog cu drept de liberă practică în Psihoterapii cognitive și comportamentale, acreditat în Registrul COPSI. Cabinet în Cluj-Napoca și ședințe online.',
+        canonical: '/despre-mine/',
+        alt: '/en/about-me/'
+      },
+      '/contacts/': {
+        title: 'Contact | Psihoterapeut CBT Cluj-Napoca — Paul Lucian Szasz',
+        desc: 'Programări la +40 723 333 609, WhatsApp sau email. Cabinet Andrei Saguna nr. 8, Cluj-Napoca. Ședințe față-în-față sau online.',
+        canonical: '/contacts/',
+        alt: '/en/contact/'
+      }
+    }
+  },
+  en: {
+    lang: 'en',
+    ogImage,
+    siteName: 'Paul Lucian Szasz',
+    defaultDesc: 'CBT and REBT psychotherapist in Cluj-Napoca. Sessions in the office or online. Book an initial consultation.',
+    person: personEn,
+    pages: {
+      '/en/homepage-english/': {
+        title: 'CBT & REBT Psychotherapist in Cluj-Napoca | Paul Lucian Szasz',
+        desc: 'CBT and REBT psychotherapist in Cluj-Napoca. Sessions in the office or online, for anxiety, depression, anger and stress. Book an initial consultation.',
+        // /en/ este forma scurta a acelei pagini; canonica ramane /en/ ca cele doua nu se indexeaza separat.
+        canonical: '/en/',
+        alt: '/'
+      },
+      '/en/': {
+        title: 'CBT & REBT Psychotherapist in Cluj-Napoca | Paul Lucian Szasz',
+        desc: 'CBT and REBT psychotherapist in Cluj-Napoca. Sessions in the office or online, for anxiety, depression, anger and stress. Book an initial consultation.',
+        canonical: '/en/',
+        alt: '/'
+      },
+      '/en/services/psychotherapy/': {
+        title: 'Cognitive Behavioral Therapy (CBT) & REBT | Paul Lucian Szasz',
+        desc: 'Cognitive Behavioral Therapy (CBT) and Rational Emotive Behavior Therapy (REBT), in 50–60 minute sessions, in the Cluj-Napoca office or online.',
+        canonical: '/en/services/psychotherapy/',
+        alt: '/services/psihoterapie/'
+      },
+      '/en/about-me/': {
+        title: 'About me | Paul Lucian Szasz, CBT & REBT Psychotherapist',
+        desc: 'Psychologist with the right to private practice in Cognitive and Behavioral Psychotherapies, listed in the COPSI Register. Cluj-Napoca office, sessions online.',
+        canonical: '/en/about-me/',
+        alt: '/despre-mine/'
+      },
+      '/en/contact/': {
+        title: 'Contact | CBT Psychotherapist Cluj-Napoca — Paul Lucian Szasz',
+        desc: 'Book by phone on +40 723 333 609, WhatsApp or email. Office at Andrei Saguna no. 8, Cluj-Napoca. Sessions in person or online.',
+        canonical: '/en/contact/',
+        alt: '/contacts/'
+      }
+    }
+  }
+};

@@ -32,6 +32,7 @@ export const site = {
       photoAlt: 'Dr. Paul Lucian Szasz în cabinet'
     },
     homeCta: { label: 'Programați o consultație inițială' },
+    localLine: 'Cabinet în Cluj-Napoca, pe Andrei Saguna nr. 8, sau ședințe online — în funcție de ceea ce ți se potrivește.',
     valueProp: {
       heading: 'Cum funcționează CBT și REBT',
       text: 'Terapia cognitiv-comportamentală (CBT) și terapia rațional-emotivă a comportamentului (REBT) pornesc de la o idee simplă: modul în care interpretăm evenimentele ne influențează emoțiile și comportamentele. În ședințe, identificăm gândurile care te blochează, le contestăm împreună și le înlocuim cu interpretări mai realiste. Rămâi cu instrumente practice, pe care le poți folosi în fiecare zi, pentru o schimbare care ține.'
@@ -103,6 +104,7 @@ export const site = {
       photoAlt: 'Dr. Paul Lucian Szasz in the office'
     },
     homeCta: { label: 'Schedule an Initial Consultation' },
+    localLine: 'Sessions in my Cluj-Napoca office on Andrei Saguna no. 8, or online — whichever suits you better.',
     valueProp: {
       heading: 'How CBT and REBT Work',
       text: 'Cognitive Behavioral Therapy (CBT) and Rational Emotive Behavior Therapy (REBT) start from a simple idea: how we interpret events shapes how we feel and behave. In session, we identify the thoughts that trap you, dispute them together, and replace them with more realistic interpretations. You keep practical tools you can use every day, for change that lasts.'
