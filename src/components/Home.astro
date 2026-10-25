@@ -4,12 +4,34 @@ const { t } = Astro.props;
 <section class="hero">
   <div class="container">
     <div class="welcome-card">
+      <p class="eyebrow">{t.hero.eyebrow}</p>
+      <img class="hero-photo" src={t.hero.photo} alt={t.hero.photoAlt} />
       <h1>{t.hero.headline}</h1>
       {t.hero.lines.map((line) => <p>{line}</p>)}
       <div class="author">
         {t.hero.author}
         <small>{t.hero.role}</small>
+        <small class="creds">{t.hero.credentials}</small>
       </div>
+      <p class="cta-line">
+        <a class="home-cta" href={t.whatsapp.href} aria-label={`${t.homeCta.label} — WhatsApp`} target="_blank" rel="noopener">{t.homeCta.label}</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section value-prop">
+  <div class="container">
+    <h2>{t.valueProp.heading}</h2>
+    <p>{t.valueProp.text}</p>
+  </div>
+</section>
+
+<section class="section areas">
+  <div class="container">
+    <h2>{t.areas.heading}</h2>
+    <div class="area-grid">
+      {t.areas.items.map((area) => <div class="area">{area}</div>)}
     </div>
   </div>
 </section>

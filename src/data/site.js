@@ -17,6 +17,7 @@ export const site = {
       { label: 'Contact', href: '/contacts/' }
     ],
     hero: {
+      eyebrow: 'Terapie bazată pe dovezi, pentru o schimbare emoțională și comportamentală de durată',
       headline: 'Bine ai venit — acesta este un loc în care poți gândi cu voce tare.',
       lines: [
         'Treci printr-o perioadă în care emoțiile te copleșesc, te simți blocat sau pur și simplu ai nevoie de un spațiu sigur și de claritate în viața ta? Împreună putem găsi calea spre liniștea ta interioară.',
@@ -24,7 +25,26 @@ export const site = {
         'Oricum ajungi aici, e în regulă. Când ești gata, sunt aici.'
       ],
       author: 'Dr. Paul Lucian Szasz',
-      role: 'Psihoterapeut'
+      role: 'Psihoterapeut',
+      credentials: 'Psihoterapeut licențiat în Terapie Cognitiv-Comportamentală (CBT) și Terapie Rațional-Emotivă a Comportamentului (REBT)',
+      photo: '/assets/me-2.jpg',
+      photoAlt: 'Dr. Paul Lucian Szasz în cabinet'
+    },
+    homeCta: { label: 'Programați o consultație inițială' },
+    valueProp: {
+      heading: 'Cum funcționează CBT și REBT',
+      text: 'Terapia cognitiv-comportamentală (CBT) și terapia rațional-emotivă a comportamentului (REBT) pornesc de la o idee simplă: modul în care interpretăm evenimentele ne influențează emoțiile și comportamentele. În ședințe, identificăm gândurile care te blochează, le contestăm împreună și le înlocuim cu interpretări mai realiste. Rămâi cu instrumente practice, pe care le poți folosi în fiecare zi, pentru o schimbare care ține.'
+    },
+    areas: {
+      heading: 'Domenii de expertiză',
+      items: [
+        'Anxietate și atacuri de panică',
+        'Depresie',
+        'Gestionarea furiei',
+        'Stres și epuizare (burnout)',
+        'Difficultăți în relații',
+        'Perfecționism'
+      ]
     },
     labels: { services: 'Servicii oferite', types: 'Tipuri de servicii', readMore: 'Citește mai mult', faq: 'F.A.Q.' },
     cta: { label: 'Programează-te', href: 'tel:+40723333609' },
@@ -67,6 +87,7 @@ export const site = {
       { label: 'Contact', href: '/en/contact/' }
     ],
     hero: {
+      eyebrow: 'Evidence-Based Psychotherapy for Lasting Emotional & Behavioral Change',
       headline: 'Welcome — this is a place where you can think out loud.',
       lines: [
         'Going through a period where your emotions overwhelm you, feeling stuck, or simply needing a safe space and clarity in your life? Together we can find the way to your inner peace.',
@@ -74,7 +95,26 @@ export const site = {
         'However you arrive, it is okay. Whenever you are ready, I am here.'
       ],
       author: 'Dr. Paul Lucian Szasz',
-      role: 'Psychotherapist'
+      role: 'Psychotherapist',
+      credentials: 'Licensed Cognitive Behavioral (CBT) & Rational Emotive Behavior (REBT) Psychotherapist',
+      photo: '/assets/me-2.jpg',
+      photoAlt: 'Dr. Paul Lucian Szasz in the office'
+    },
+    homeCta: { label: 'Schedule an Initial Consultation' },
+    valueProp: {
+      heading: 'How CBT and REBT Work',
+      text: 'Cognitive Behavioral Therapy (CBT) and Rational Emotive Behavior Therapy (REBT) start from a simple idea: how we interpret events shapes how we feel and behave. In session, we identify the thoughts that trap you, dispute them together, and replace them with more realistic interpretations. You keep practical tools you can use every day, for change that lasts.'
+    },
+    areas: {
+      heading: 'Areas of Expertise',
+      items: [
+        'Anxiety & Panic',
+        'Depression',
+        'Anger Management',
+        'Stress & Burnout',
+        'Relationship Struggles',
+        'Perfectionism'
+      ]
     },
     labels: { services: 'Services Offered', types: 'Types of Services', readMore: 'Read More', faq: 'F.A.Q.' },
     cta: { label: 'Book an appointment', href: 'tel:+40723333609' },
