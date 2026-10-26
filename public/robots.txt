@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://paullucianszasz.ro/sitemap.xml
+Sitemap: https://paullucianszasz.ro/sitemap-index.xml
