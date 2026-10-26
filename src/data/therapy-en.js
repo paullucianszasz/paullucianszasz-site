@@ -1,4 +1,5 @@
 // Psihoterapie (EN) — oglenda copiei RO; frazele din textul clientului sunt pastrate unde se potrivesc.
+// Durata de 50 de minute este adaugata la inceputul sectiunii "How a Session Works" (aprobata).
 export const therapyEn = {
   title: 'Psychotherapy',
   blocks: [
@@ -25,6 +26,7 @@ export const therapyEn = {
       '**Unconditional self-acceptance:** discovering how to value yourself fully, even in moments of uncertainty.'
     ] },
     { t: 'h3', v: 'How a Session Works: What to Expect' },
+    { t: 'p', v: 'Sessions last 50 minutes, in the office or online.' },
     { t: 'p', v: 'If you have only ever experienced traditional talk therapy, your first CBT or REBT session may feel a little different. A safe, empathetic space is always the foundation, but our work together is **active, structured, and focused on results**.' },
     { t: 'ol', lead: true, v: [
       '**A true collaboration (an active partnership)** — I am not only a silent listener. I bring the expertise in psychological tools and structure, while you bring the knowledge of your own experience. We work as a team.',

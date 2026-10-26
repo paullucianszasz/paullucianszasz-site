@@ -1,7 +1,7 @@
 // Psihoterapie (RO) — copia furnizata, aplicata ca atare; ton informal, catre cititor.
 // Alegeri: italicul din paragraful REBT iese (pagina nu foloseste italic), a doua linie din lista REBT
-// evita repetitia "transformarea", randul de inaintea tabelului pastreaza fraza aprobata,
-// iar prima coloana a tabelului este aldinata prin CSS (nu prin marcaj).
+// evita repetitia "transformarea", randul de inaintea tabelului pastreaza fraza aprobata, durata de 50 de minute
+// este adaugata la inceputul sectiunii "Cum functioneaza o sedinta" (aprobata), iar prima coloana a tabelului este aldinata prin CSS (nu prin marcaj).
 export const therapyRo = {
   title: 'Psihoterapie',
   blocks: [
@@ -28,6 +28,7 @@ export const therapyRo = {
       '**Autoacceptare necondiționată:** descoperirea modului în care te poți prețui pe deplin, chiar și în momentele de incertitudine.'
     ] },
     { t: 'h3', v: 'Cum funcționează o ședință: Ce poți aștepta' },
+    { t: 'p', v: 'Ședințele durează 50 de minute, în cabinet sau online.' },
     { t: 'p', v: 'Dacă ai experimentat până acum doar terapia clasică bazată pe discuții libere, prima ședință de CBT sau REBT poate părea puțin diferită. Un spațiu sigur și empatic rămâne baza, dar munca noastră este **activă, structurată și orientată spre rezultate**.' },
     { t: 'ol', lead: true, v: [
       '**Un parteneriat activ (colaborare adevărată)** — nu voi fi doar un ascultător tăcut. Eu aduc expertiza în instrumente psihologice și structură, iar tu aduci cunoașterea propriei tale experiențe. Lucrăm ca o echipă.',
