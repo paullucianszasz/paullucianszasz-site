@@ -5,7 +5,7 @@
 const ogImage = '/assets/og-image.png';
 
 // JSON-LD: Person (schema.org nu are tipul "Psychologist", asa ca Person este tipul corect) + LocalBusiness pentru cabinet.
-// Postal code si coordonate geo lipsesc; acele date le adaugam cand le confirma.
+// Coordonele geo lipsesc; le adaugam cand confirmi locatia din Google Maps.
 // sameAs vine din retelele afisate in footer (src/data/site.js), doar cele cu url completat.
 import { site } from './site.js';
 const social = site.ro.footer.social.filter((s) => s.url).map((s) => s.url);
@@ -17,14 +17,16 @@ const address = {
   '@type': 'PostalAddress',
   streetAddress: 'Andrei Șaguna, Nr. 8',
   addressLocality: 'Cluj-Napoca',
+  postalCode: '400186',
   addressCountry: 'RO'
 };
 
 // Cabinet (LocalBusiness): programul afisat pe Contact, Luni – Vineri 16:00 – 20:00.
-// Numele trebuie sa ramana identic cu cel din Google Business Profile (NAP).
-const business = (name, url) => ({
+// Numele exact din Google Business Profile; ramane identic in ambele limbi, pentru NAP.
+const businessName = 'Cabinet individual de psihologie Paul Lucian Szasz';
+const business = (url) => ({
   '@type': 'LocalBusiness',
-  name,
+  name: businessName,
   url,
   telephone: '+40723333609',
   address,
@@ -90,7 +92,7 @@ export const seo = {
     siteName: 'Paul Lucian Szasz',
     defaultDesc: 'Psihoterapeut CBT și REBT în Cluj-Napoca. Ședințe în cabinet sau online. Programează o consultație inițială.',
     person: personRo,
-    business: business('Dr. Paul Lucian Szasz - Psihoterapie', 'https://paullucianszasz.ro/contacts/'),
+    business: business('https://paullucianszasz.ro/contacts/'),
     pages: {
       '/': {
         title: 'Psihoterapeut CBT și REBT în Cluj-Napoca | Paul Lucian Szasz',
@@ -130,7 +132,7 @@ export const seo = {
     siteName: 'Paul Lucian Szasz',
     defaultDesc: 'CBT and REBT psychotherapist in Cluj-Napoca. Sessions in the office or online. Book an initial consultation.',
     person: personEn,
-    business: business('Dr. Paul Lucian Szasz - Psychotherapy', 'https://paullucianszasz.ro/en/contact/'),
+    business: business('https://paullucianszasz.ro/en/contact/'),
     pages: {
       '/en/homepage-english/': {
         title: 'CBT & REBT Psychotherapist in Cluj-Napoca | Paul Lucian Szasz',
