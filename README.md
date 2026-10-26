@@ -19,7 +19,7 @@ npm run dev      # dev server pe http://localhost:4321
 npm run build    # genereaza dist/ — fisiere statice, se pot hosta direct
 ```
 
-`dist/` contine build-ul curent, deci site-ul poate fi urcat direct pe orice hosting static, fara npm.
+`dist/` este build-ul curent; pe un hosting static care face build-ul din repo, `dist/` nu trebuie urcat (nici nu este in repo, este in `.gitignore`). Il folosesti doar daca hostingul cere fisiere generate manual.
 
 ## De verificat inainte de publicare
 
@@ -50,7 +50,28 @@ Textul articolului, in paragrafe. `##` pentru subtitluri, `-` pentru liste, `>` 
 
 `mirror` = slugul articolului oglinda din cealalta limba; fara el, pagina nu afiseaza linkul catre cealalta limba si nu primeste perechea hreflang. Titlul, descrierea, canonical, hreflang si JSON-LD (BlogPosting) sunt luate din frontmatter, iar articolele intra automat in sitemap.
 
-Publicare: adaugi fisierul (si oglinda), rulezi `npm run build`, urci `dist/`. Nu este nevoie de niciun serviciu extern.
+`mirror` = slugul articolului oglinda din cealalta limba; fara el, pagina nu afiseaza linkul catre cealalta limba si nu primeste perechea hreflang. Titlul, descrierea, canonical, hreflang si JSON-LD (BlogPosting) sunt luate din frontmatter, iar articolele intra automat in sitemap.
+
+### Publicare dupa ce site-ul este online (hosting static din repo)
+
+Hostingul (Netlify, Cloudflare Pages sau Vercel) cloneaza repo-ul, ruleaza `npm install` si `npm run build` la fiecare push. `dist/` nu este in repo (este in `.gitignore`) pentru ca hostingul il genereaza.
+
+1. Deschide repo-ul pe GitHub, butonul „Add file" → „Create new file", in `src/content/blog/ro/`, nume: `numele-articolului.md`.
+2. Lipeste frontmatter-ul de mai sus si textul. Salvezi (commit pe `main`).
+3. Oglinda in `src/content/blog/en/`, cu acelasi nume de fisier si `mirror:` completat. Commit.
+4. Hostingul face build-ul (un minut sau doua); articolul apare pe `/blog/<numele-fisier>/` si `/en/blog/<numele-fisier>/`, in lista de pe pagina Blog.
+
+Nu rulezi nimic local, nu urci nimic manual. Se poate face din browser, de pe orice dispozitiv.
+
+Cateva reguluri ca build-ul de pe hosting sa nu esueze:
+- Frontmatter obligatoriu: `title`, `date`, `description`. Lipseste una, build-ul da eroare si site-ul ramane la varianta anterioara.
+- `date` in format `YYYY-MM-DD` (fara ore).
+- Numele fisierului: fara diacritice, fara spatii, cu cratime (`cum-functioneaza-disputarea.md`).
+- Un fisier markdown nou se vede doar dupa build; un commit care nu schimba frontmatterul si corpul nu schimba pagina.
+
+Node pe hosting: `.nvmrc` cere Node 22 (Astro 5 merge pe Node 18.17+, 20.3+ sau 22+).
+
+Daca hostingul nu face build din repo (de exemplu hosting shared cu FTP), atunci publish inseamna `npm run build` local si urcarea lui `dist/`; pot adauga un workflow GitHub Actions care face build si urca prin SFTP la fiecare push.
 
 ## Structura
 
