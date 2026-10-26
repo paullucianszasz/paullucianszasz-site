@@ -1,5 +1,5 @@
-// About me (EN) — ordinea: The person behind the role (includes the partnership paragraphs) / Professional journey / Credentials & accreditation / Volunteering
-// Narativ in ton personal, oglinda a variantei RO; CV-ul in engleza (cv.js, listele *En)
+// About me (EN) — ordinea: The person behind the role / Professional journey / Credentials & accreditation / Volunteering
+// Oglinda varianta RO scurtata; textul EN este draft pentru aprobare.
 import {
   cvPhoto, educationEn, trainingEn, qualificationsEn, reviewingEn, volunteeringEn, publications, scholarUrl, accreditation
 } from './cv.js';
@@ -16,19 +16,15 @@ export const aboutEn = {
     {
       heading: 'The person behind the role',
       paragraphs: [
-        'Behind the role of psychotherapist, I am a person guided by the belief that each of us has an innate capacity for healing, transformation and growth. I believe firmly that therapy is not only about repairing what is suffering, but above all about rediscovering the resources, joy and meaning that are already in you.',
-        'My training combines the scientific rigor of the cognitive and behavioral psychotherapies (CBT, REBT and CT-R) with the warm, mindful presence inspired by Buddhist philosophy. In the room, you will not find an expert who tells you what to do, but an empathic, dedicated companion on the road. I meet you exactly as you are, offering a space of safety, unconditional acceptance and deep respect for your own pace. Together, we turn challenges into opportunities to learn and build, step by step, a life lived with a free, steady and peaceful heart.',
-        'I see therapy as a partnership. You bring what is happening in your life, I bring the structure and the methods, and we decide together what we work on. I do not give unsolicited advice and I do not pretend to hold the answers about you; I offer a safe place where you can think out loud.',
-        'The aim is that, over time, you can continue without me. Functional analysis, noticing the interpretations that keep distress going, the practice between sessions — these are things you can use on your own, in your life. When you get there, the therapy has done its job.',
-        'For this partnership to work I need to be clear with you: I tell you what a therapy can and cannot do, we look at what is going well and change direction when it is not. The distance between “I understand” and “it changes” is where the work happens.'
+        'Beyond the role of psychotherapist, I am a person guided by the belief that everyone has an innate capacity for healing and growth. Therapy is not repair, but rediscovering the resources and meaning that are already in you.',
+        'I combine the rigor of the cognitive-behavioral therapies (CBT, REBT, CT-R) with a warm presence, inspired by Buddhist philosophy. In the room you do not find an expert who gives you advice, but an empathic partner. I offer you a safe space and respect for your pace, the goal being that, over time, you can continue on your own.'
       ]
     },
     {
       heading: 'Professional journey',
       paragraphs: [
-        'I came to psychology because I am interested in how our interpretations make us feel and then act. My master’s degree and doctorate showed me that this process is concrete and measurable, not only theoretical — and that is why I trust the methods I use today.',
-        'I practise CBT and REBT because they are goal-oriented, structured and active. That means we do not go round in circles indefinitely. At the start we decide together what you want to change, each session has a clear focus, and we measure progress by what changes in your life, not only by what you understand about it.',
-        'REBT is the core of how I work. The distinction between event, interpretation and emotion is what turns understanding into action. I have researched irrational beliefs and emotion regulation and published on this subject, which is why I stay close to the mechanism, not only to the symptom.'
+        'I practise CBT and REBT because they are structured, goal-oriented therapies: we establish what you want to change, each session has a clear focus, and progress shows up in your real life, not only in the discussions.',
+        'REBT is the basis of how we work: the distinction between event, interpretation and emotion turns understanding into action. With a doctorate in the field and published research on irrational beliefs and emotion regulation, I stay attentive to the deeper mechanisms, not only to the symptoms.'
       ]
     },
     {
