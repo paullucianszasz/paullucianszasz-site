@@ -1,5 +1,7 @@
 ---
-const { t } = Astro.props;
+import Faq from './Faq.astro';
+
+const { t, home } = Astro.props;
 ---
 <section class="hero">
   <div class="container">
@@ -36,3 +38,13 @@ const { t } = Astro.props;
     </div>
   </div>
 </section>
+
+{home && (
+  <Faq
+    t={t}
+    items={home.faq}
+    heading={home.faqHeading}
+    variant="faq-home"
+    link={{ text: home.faqLink.text, label: home.faqLink.link, href: t.pages.contact }}
+  />
+)}

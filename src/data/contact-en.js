@@ -14,10 +14,12 @@ export const contactEn = {
   faq: [
     byId('sessions'),
     {
+      id: 'session-length',
       q: 'How long does a session last?',
       a: ['Sessions last 50–60 minutes, in the office or online.']
     },
     {
+      id: 'number-of-sessions',
       q: 'How many sessions will I need?',
       a: [
         'It depends on the complexity of the difficulties and on the goals we set together. Usually the first session is an assessment, and after that we decide the frequency and the length of the process together, based on what actually changes. I do not start a process longer than what is needed.'
@@ -25,10 +27,12 @@ export const contactEn = {
     },
     byId('costs'),
     {
+      id: 'online',
       q: 'Do you offer online therapy?',
       a: ['Yes. Sessions can take place face to face or online, depending on what is more practical for you.']
     },
     {
+      id: 'cancellation',
       q: 'What is the cancellation policy?',
       a: [
         'Cancellations or rescheduling by the client must be made at least 24 hours before the scheduled session. Otherwise, the client agrees to pay the full price of the cancelled session within 24 hours of the date the cancelled session was scheduled, because the time allocated to your appointment cannot be reallocated to another client in time, and part of the therapeutic effort has already been invested before your session.'

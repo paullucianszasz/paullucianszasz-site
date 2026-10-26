@@ -382,6 +382,12 @@ h1, h2, h4, .faq-item .q, .hero .eyebrow {
 .faq-item.open .q .marker { transform: rotate(90deg); }
 .faq-item .a { display: none; padding: 0 0 18px; }
 .faq-item.open .a { display: block; }
+/* FAQ pe prima pagina: fara fundal alb, ca sa se vada lotusul; link catre FAQ-ul complet de pe Contact */
+.faq-home { background: transparent; }
+.faq-home .glow { display: none; }
+.faq-link { margin-top: 26px; font-size: 15px; color: var(--text-light); }
+.faq-link a { color: var(--link); font-weight: 600; }
+.faq-link a:hover { color: var(--link-hover); text-decoration: underline; }
 .faq-item .a ul { margin: 0 0 10px; padding-left: 20px; }
 .faq-item .a li { margin-bottom: 6px; }
 .faq-item .a .group + .group { margin-top: 12px; }

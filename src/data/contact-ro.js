@@ -15,10 +15,12 @@ export const contactRo = {
   faq: [
     byId('sessions'),
     {
+      id: 'session-length',
       q: 'Cât durează o ședință?',
       a: ['Ședințele durează 50–60 de minute, fie în cabinet, fie online.']
     },
     {
+      id: 'number-of-sessions',
       q: 'Câte ședințe voi avea nevoie?',
       a: [
         'Depinde de complexitatea problemelor și de scopurile pe care le stabilim împreună. De obicei, prima ședință este de evaluare, iar apoi frecvența și durata procesului le hotărâm împreună, în funcție de ce se schimbă. Nu încep un proces mai lung decât cel necesar.'
@@ -26,10 +28,12 @@ export const contactRo = {
     },
     byId('costs'),
     {
+      id: 'online',
       q: 'Oferi ședințe online?',
       a: ['Da. Ședințele se pot desfășura atât în format față-în-față, cât și online, în funcție de ceea ce este mai practic pentru dumneavoastră.']
     },
     {
+      id: 'cancellation',
       q: 'Care este politica de anulare?',
       a: [
         'Anularea sau reprogramarea ședinței de către beneficiar se face cu cel puţin 24 de ore înainte de data la care aceasta este stabilită. În caz contrar, beneficiarul se obligă să achite integral furnizorului prețul ședinței anulate în termen de 24 de ore de la data la care fusese stabilită ședința anulată, având în vedere că timpul alocat programării dumneavoastră nu poate fi realocat unui alt client în timp util, iar o parte din efortul terapeutului a fost investit în avans în ședința dumneavoastră.'

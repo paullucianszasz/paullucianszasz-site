@@ -1,7 +1,7 @@
 ---
-const { t, items = t.faq, heading = t.labels.faq } = Astro.props;
+const { t, items = t.faq, heading = t.labels.faq, link = null, variant = '' } = Astro.props;
 ---
-<section class="faq">
+<section class={`faq ${variant}`}>
   <div class="glow g1" aria-hidden="true"></div>
   <div class="glow g2" aria-hidden="true"></div>
   <div class="container">
@@ -22,5 +22,6 @@ const { t, items = t.faq, heading = t.labels.faq } = Astro.props;
         </div>
       </div>
     ))}
+    {link && <p class="faq-link">{link.text} <a href={link.href}>{link.label}</a></p>}
   </div>
 </section>
