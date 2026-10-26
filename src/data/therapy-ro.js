@@ -24,7 +24,7 @@ export const therapyRo = {
       'Identificăm tiparele de gândire care nu te ajută: recunoaștem modurile subtile în care mintea ta poate să sară la cel mai rău scenariu sau să te blocheze.',
       'Construim instrumente practice pentru zi de zi: înveți strategii concrete cu care poți răspunde provocărilor vieții cu claritate și încredere stabilă.'
     ] },
-    { t: 'h4', v: 'Terapia Rațional-Emotivă și Comportamentală (REBT): reclaimarea libertății emoționale' },
+    { t: 'h4', v: 'Terapia Rațional-Emotivă și Comportamentală (REBT): redobândirea libertății emoționale' },
     { t: 'p', v: 'Viața ne pune adesea în fața unor cerințe grele, care duc la așteptări interne rigide — acel „trebuie să nu eșuez” sau „lucrurile ar trebui să fie altfel”. REBT te ajută să renunți la aceste cerințe epuizante și să cultivi autocompasiunea.' },
     { t: 'p', v: 'Împreună, lucrăm la:' },
     { t: 'ul', lead: true, v: [
