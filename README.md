@@ -2,6 +2,9 @@
 
 Site static (RO + EN) pentru cabinetul de psihoterapie — rebuild Astro, paleta maro deschis, continut si date de contact actualizate.
 
+- **Hosting si publicare:** `DEPLOY.md` (Cloudflare Pages, DNS la RoTLD, redirectionarile 301, pasii pentru un articol nou).
+- **Templateuri de articol pentru Blog:** `templates/article-ro.md` si `templates/article-en.md`.
+
 ## Rulare
 
 1. Instaleaza Node.js (LTS) de la https://nodejs.org/
