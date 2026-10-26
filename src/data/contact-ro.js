@@ -17,7 +17,7 @@ export const contactRo = {
     {
       id: 'session-length',
       q: 'Cât durează o ședință?',
-      a: ['Ședințele durează 50–60 de minute, fie în cabinet, fie online.']
+      a: ['Ședințele durează 50 de minute, fie în cabinet, fie online.']
     },
     {
       id: 'number-of-sessions',

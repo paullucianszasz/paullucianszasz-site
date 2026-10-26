@@ -16,7 +16,7 @@ export const contactEn = {
     {
       id: 'session-length',
       q: 'How long does a session last?',
-      a: ['Sessions last 50–60 minutes, in the office or online.']
+      a: ['Sessions last 50 minutes, in the office or online.']
     },
     {
       id: 'number-of-sessions',
