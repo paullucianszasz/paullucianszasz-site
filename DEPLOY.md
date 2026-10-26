@@ -2,8 +2,9 @@
 
 ## Ce este gata acum
 
-- Repo pe GitHub: creat, dar încă nu este împins de pe acest calculator (remoteul lipsește):
-  `git remote add origin <url-repo>`, apoi `git push -u origin main`.
+- Repo pe GitHub: `https://github.com/paullucianszasz/paullucianszasz-site` — remote adăugat și primul push făcut (`main`).
+  Accountul GitHub (`paullucianszasz@gmail.com`) este acelasi cu cel de Cloudflare; commit author = `Paul Lucian Szasz / paullucianszasz@gmail.com`.
+  Repo este public in acest moment; poate deveni privat, Cloudflare poate construi din el oricum (trebuie doar acordat accesul la repo cand conectam Pages).
 - Build static: `npm run build` → `dist/` (15 pagini, `sitemap-index.xml`, `sitemap-0.xml`, `robots.txt`).
 - `dist/` nu este în repo (`.gitignore`); hostingul îl generează.
 - Node 22 (`.nvmrc`), build command `npm run build`, output directory `dist`.
