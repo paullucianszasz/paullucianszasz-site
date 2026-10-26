@@ -1,10 +1,10 @@
 // Texte generale + nav + FAQ + pagini (RO/EN) — din site-ul furnizat
 
-// Retelele sunt aceleasi in ambele limbi; cele fara url nu se afiseaza (handle de completat).
+// Retelele sunt aceleasi in ambele limbi; o intrare fara url nu se afiseaza.
 const social = [
   { name: 'Instagram', url: 'https://www.instagram.com/paullucianszaszpsiholog/' },
   { name: 'Facebook', url: 'https://www.facebook.com/paullucianszasz' },
-  { name: 'LinkedIn', url: '' },
+  { name: 'LinkedIn', url: 'https://www.linkedin.com/in/paul-lucian-szasz' },
   { name: 'YouTube', url: 'https://www.youtube.com/@paullucianszasz' }
 ];
 
