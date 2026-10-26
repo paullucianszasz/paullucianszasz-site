@@ -114,7 +114,6 @@ export const site = {
     homeCta: { label: 'Schedule an Initial Consultation' },
     localLine: 'Sessions in my Cluj-Napoca office on Andrei Saguna no. 8, or online — whichever suits you better.',
     valueProp: {
-      // mirror al textului furnizat in romana — pentru aprobare
       heading: 'Who I am and how I can walk alongside you',
       text: [
         'I am a psychotherapist specialized in cognitive and behavioral therapies, and my mission is to support you in building a kinder, more harmonious relationship with yourself and with the world around you. My integrative approach combines the scientifically validated tools of CBT, REBT and CT-R with the principles of mindfulness and self-compassion.',

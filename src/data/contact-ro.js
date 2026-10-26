@@ -1,6 +1,6 @@
 // Contact (RO) — telefon, email si adresa vin din src/data/site.js (footer), neschimbate.
 // Programul: orele furnizate (16:00 – 20:00); zilele sunt asumate Luni – Vineri, de confirmat.
-// Paragrafele marate "draft" sunt pentru aprobare; politica de anulare este textul furnizat, neschimbat.
+// Wording aprobat ca atare (ramas din draft); politica de anulare este textul furnizat, neschimbat.
 // Intrarile alese dupa id vin din FAQ-ul furnizat in site.js, neschimbat; restul este continut nou.
 import { site } from './site.js';
 const byId = (id) => site.ro.faq.find((f) => f.id === id);
@@ -20,7 +20,6 @@ export const contactRo = {
     },
     {
       q: 'Câte ședințe voi avea nevoie?',
-      // draft pentru aprobare
       a: [
         'Depinde de complexitatea problemelor și de scopurile pe care le stabilim împreună. De obicei, prima ședință este de evaluare, iar apoi frecvența și durata procesului le hotărâm împreună, în funcție de ce se schimbă. Nu încep un proces mai lung decât cel necesar.'
       ]
@@ -64,7 +63,6 @@ export const contactRo = {
     subject: 'Subiect',
     message: 'Cu ce vă pot ajuta?',
     submit: 'Trimite mesajul',
-    // draft pentru aprobare
     consent: 'Confirm că îmi acordați consimțământul explicit pentru prelucrarea datelor pe care le introduceți în acest formular (inclusiv eventualele informații despre sănătate), exclusiv în scopul răspunsului la solicitarea dumneavoastră, conform informațiilor de mai jos.',
     body: { name: 'Nume', phone: 'Telefon', email: 'Email', subject: 'Subiect', message: 'Mesaj' },
     mailtoNote: 'Dacă programul dumneavoastră de email nu se deschide, ne puteți scrie direct la:'

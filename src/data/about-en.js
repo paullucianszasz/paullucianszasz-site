@@ -14,7 +14,6 @@ export const aboutEn = {
   photo: cvPhoto,
   sections: [
     {
-      // mirror al textului furnizat in romana — pentru aprobare
       heading: 'The person behind the role',
       paragraphs: [
         'Behind the role of psychotherapist, I am a person guided by the belief that each of us has an innate capacity for healing, transformation and growth. I believe firmly that therapy is not only about repairing what is suffering, but above all about rediscovering the resources, joy and meaning that are already in you.',

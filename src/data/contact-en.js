@@ -19,7 +19,6 @@ export const contactEn = {
     },
     {
       q: 'How many sessions will I need?',
-      // draft for approval
       a: [
         'It depends on the complexity of the difficulties and on the goals we set together. Usually the first session is an assessment, and after that we decide the frequency and the length of the process together, based on what actually changes. I do not start a process longer than what is needed.'
       ]
@@ -63,7 +62,6 @@ export const contactEn = {
     subject: 'Subject',
     message: 'How can I help you?',
     submit: 'Send message',
-    // mirror al textului din romana — pentru aprobare
     consent: 'I confirm that I give my explicit consent for the processing of the data I enter in this form (including any health information), solely in order to answer my request, as described in the information below.',
     body: { name: 'Name', phone: 'Phone', email: 'Email', subject: 'Subject', message: 'Message' },
     mailtoNote: 'If your email program does not open, you can write to us directly at:'
