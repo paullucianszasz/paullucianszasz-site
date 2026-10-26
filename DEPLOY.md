@@ -3,7 +3,9 @@
 ## Status
 
 - Repo GitHub: conectat la Cloudflare Pages (build `npm run build`, output `dist`, Node 22 din `.nvmrc`).
-- Cloudflare: zona `paullucianszasz.ro` creată (Free, Full setup), nameservers `harvey.ns.cloudflare.com` / `val.ns.cloudflare.com`; la RoTLD schimbarea este de făcut — zona rămâne Pending până atunci.
+- Cloudflare: zona `paullucianszasz.ro` creată (Free, Full setup), nameservers `harvey.ns.cloudflare.com` / `val.ns.cloudflare.com`.
+- RoTLD: nameservers salvate pe 26 Oct 2026. RoTLD cere validarea datelor de înregistrare cu actul de identitate (meniul **Validare date** / „Validați acum", încărcare securizată în panou); procesare manuală, câteva zile.
+- Domeniul nu rezolvă încă (NXDOMAIN la zonă). Un domeniu .ro nevalidat poate fi suspendat și atunci nameservers nu se publică; verificat din când în când până apare răspunsul DNS.
 - Domeniu înregistrat la RoTLD (12 €/an); Cloudflare nu poate găzdui un domeniu `.ro` la registrar, deci rămâne la RoTLD și doar DNS-ul este la Cloudflare. La data verificării, domeniul nu rezolvă deloc (NXDOMAIN): nu există zonă activă și nu există inregistrari de păstrat.
 
 ## Ce este gata acum

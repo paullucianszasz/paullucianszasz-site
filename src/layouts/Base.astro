@@ -8,7 +8,7 @@ import { seo } from '../data/seo.js';
 const { t, active = '', title = '', meta = null } = Astro.props;
 const s = seo[t.lang];
 const pathname = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${Astro.url.pathname}/`;
-const darkHeader = ['/', '/en/', '/en/homepage-english/'].includes(pathname);
+const darkHeader = ['/', '/en/'].includes(pathname);
 const brand = t.lang === 'ro' ? 'Paul Lucian Szasz - Psihoterapeut' : 'Paul Lucian Szasz - Psychotherapist';
 
 // Titlu si descriere pe ruta, din src/data/seo.js; meta (per articol, din frontmatter) are intai.
@@ -21,9 +21,10 @@ const abs = (path) => new URL(path, Astro.site).toString();
 const canonical = abs(meta?.canonical || (page ? page.canonical : pathname));
 const ogImage = abs(s.ogImage);
 
-// Coduri hreflang cu tara (RO), pentru cautari din Romania; x-default ramane pagina in romana.
-const hreflang = t.lang === 'ro' ? 'ro-RO' : 'en-RO';
-const hreflangOther = t.lang === 'ro' ? 'en-RO' : 'ro-RO';
+// Coduri hreflang doar cu limba: acopera orice vorbitor de romana (nu numai cei din Romania), iar
+// Google recomanda codul simplu cand nu exista variante regionale ale aceleasi limbi. x-default ramane romana.
+const hreflang = t.lang;
+const hreflangOther = t.lang === 'ro' ? 'en' : 'ro';
 
 // JSON-LD: Person (schema.org nu are "Psychologist"), doar datele cunoscute; pentru articole se adauga BlogPosting.
 // LocalBusiness (cabinet) insoteste Person pentru rezultatele locale din Romania.

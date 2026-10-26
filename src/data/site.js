@@ -21,7 +21,7 @@ const social = [
 export const site = {
   ro: {
     lang: 'ro',
-    otherLang: { label: 'EN', href: '/en/homepage-english/' },
+    otherLang: { label: 'EN', href: '/en/' },
     home: '/',
     pages: { about: '/despre-mine/', contact: '/contacts/', blog: '/blog/' },
     nav: [
@@ -106,17 +106,17 @@ export const site = {
   en: {
     lang: 'en',
     otherLang: { label: 'RO', href: '/' },
-    home: '/en/homepage-english/',
+    home: '/en/',
     pages: { about: '/en/about-me/', contact: '/en/contact/', blog: '/en/blog/' },
     nav: [
-      { label: 'Home', href: '/en/homepage-english/' },
+      { label: 'Home', href: '/en/' },
       { label: 'About me', href: '/en/about-me/' },
       { label: 'Psychotherapy', href: '/en/psychotherapy/' },
       { label: 'Blog', href: '/en/blog/' },
       { label: 'Contact', href: '/en/contact/' }
     ],
     footerNav: [
-      { label: 'Home', href: '/en/homepage-english/' },
+      { label: 'Home', href: '/en/' },
       { label: 'About me', href: '/en/about-me/' },
       { label: 'Blog', href: '/en/blog/' },
       { label: 'Contact', href: '/en/contact/' }
