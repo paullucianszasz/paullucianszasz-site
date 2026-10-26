@@ -2,6 +2,16 @@
 export const therapyEn = {
   title: 'Psychotherapy',
   blocks: [
+    { t: 'ul', lead: true, v: [
+      'Cognitive Behavioral Therapy (CBT): Focuses on the connection between thoughts, feelings, and behaviors. Emphasize practical skill-building and symptom relief.',
+      'Rational Emotive Behavior Therapy (REBT): Focuses on identifying rigid "musts," "shoulds," and irrational beliefs, helping clients develop an accepting, flexible, and rational mindset.'
+    ] },
+    { t: 'h4', v: 'Formats Offered:' },
+    { t: 'ul', v: [
+      'Individual Therapy (Adults / Adolescents)',
+      'Online Therapy Sessions (via Zoom/secure video platform)',
+      'In-Person Sessions (Office Location)'
+    ] },
     { t: 'h3', v: 'What We Can Work On Together' },
     { t: 'p', v: 'Therapy is not a one-size-fits-all process, nor is it about fixing what is "broken" in you. It is a collaborative space where we gently explore the patterns holding you back and build practical tools to help you feel grounded, resilient, and at peace.' },
     { t: 'p', v: 'In my practice, I integrate Cognitive Behavioral Therapy (CBT) and Rational Emotive Behavior Therapy (REBT)—two active, evidence-based approaches that focus on helping you understand the deep connection between your thoughts, emotions, and actions.' },

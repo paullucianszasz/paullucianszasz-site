@@ -3,6 +3,16 @@
 export const therapyRo = {
   title: 'Psihoterapie',
   blocks: [
+    { t: 'ul', lead: true, v: [
+      'Terapia cognitiv-comportamentală (CBT): pune accent pe legătura dintre gânduri, emoții și comportamente. Insistă pe construirea de abilități practice și pe reducerea simptomelor.',
+      'Terapia Rațional-Emotivă și Comportamentală (REBT): identifică „trebuie”, „ar trebui” și celelalte credințe iraționale rigide și te ajută să dezvolți o atitudine acceptantă, flexibilă și rațională.'
+    ] },
+    { t: 'h4', v: 'Formate oferite:' },
+    { t: 'ul', v: [
+      'Terapie individuală (adulți / adolescenți)',
+      'Ședințe online (Zoom sau platformă video securizată)',
+      'Ședințe față în față, la cabinet'
+    ] },
     { t: 'h3', v: 'Ce putem lucra împreună' },
     { t: 'p', v: 'Terapia nu este un proces unic pentru toți și nu înseamnă să repari ceea ce ar fi „defect” în tine. Este un spațiu colaborativ, în care explorăm cu blândețe tiparele care te blochează și construim instrumente practice care te ajută să te simți stabil, rezilient și împăcat.' },
     { t: 'p', v: 'În practica mea integrez Terapia cognitiv-comportamentală (CBT) și Terapia Rațional-Emotivă și Comportamentală (REBT) — două abordări active, bazate pe dovezi, care te ajută să înțelegi legătura profundă dintre gânduri, emoții și acțiuni.' },
