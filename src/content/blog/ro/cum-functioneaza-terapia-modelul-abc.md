@@ -5,7 +5,7 @@ description: 'Modelul ABC explică cum se formează reacțiile emoționale: even
 mirror: 'understanding-how-therapy-works-the-abc-model'
 ---
 
-Dacă ai simțit vreodată că o situație dificilă te copleșește, e firesc să simți că situația în sine îți pilotează stresul, anxietatea sau tristețea.
+Dacă ai simțit vreodată că o situație dificilă te copleșește, e firesc să simți că situația în sine îți alimentează stresul, anxietatea sau tristețea.
 
 În Terapia cognitiv-comportamentală (CBT) și în Terapia Rațional-Emotivă și Comportamentală (REBT), folosim un cadru simplu, dar împuternicitor, cu care privim distresul emoțional altfel: modelul ABC.
 

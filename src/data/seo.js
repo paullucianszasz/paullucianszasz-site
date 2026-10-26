@@ -25,7 +25,7 @@ const personRo = {
   },
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'Andrei Saguna, Nr. 8',
+    streetAddress: 'Andrei Șaguna, Nr. 8',
     addressLocality: 'Cluj-Napoca',
     addressCountry: 'RO'
   },
@@ -51,7 +51,7 @@ const personEn = {
   email: 'paullucianszaszpsihoterapeut@gmail.com',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'Andrei Saguna, Nr. 8',
+    streetAddress: 'Andrei Șaguna, Nr. 8',
     addressLocality: 'Cluj-Napoca',
     addressCountry: 'RO'
   },
@@ -102,7 +102,7 @@ export const seo = {
       },
       '/contacts/': {
         title: 'Contact | Psihoterapeut CBT Cluj-Napoca — Paul Lucian Szasz',
-        desc: 'Programări la +40 723 333 609, WhatsApp sau email. Cabinet Andrei Saguna nr. 8, Cluj-Napoca. Ședințe față-în-față sau online.',
+        desc: 'Programări la +40 723 333 609, WhatsApp sau email. Cabinet Andrei Șaguna nr. 8, Cluj-Napoca. Ședințe față în față sau online.',
         canonical: '/contacts/',
         alt: '/en/contact/'
       }
@@ -148,7 +148,7 @@ export const seo = {
       },
       '/en/contact/': {
         title: 'Contact | CBT Psychotherapist Cluj-Napoca — Paul Lucian Szasz',
-        desc: 'Book by phone on +40 723 333 609, WhatsApp or email. Office at Andrei Saguna no. 8, Cluj-Napoca. Sessions in person or online.',
+        desc: 'Book by phone on +40 723 333 609, WhatsApp or email. Office at Andrei Șaguna no. 8, Cluj-Napoca. Sessions in person or online.',
         canonical: '/en/contact/',
         alt: '/contacts/'
       }

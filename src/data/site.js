@@ -43,7 +43,7 @@ export const site = {
       photoAlt: 'Dr. Paul Lucian Szasz, portret alb-negru'
     },
     homeCta: { label: 'Programați o consultație inițială' },
-    localLine: 'Cabinet în Cluj-Napoca, pe Andrei Saguna nr. 8, sau ședințe online — în funcție de ceea ce ți se potrivește.',
+    localLine: 'Cabinet în Cluj-Napoca, pe Andrei Șaguna nr. 8, sau ședințe online — în funcție de ceea ce ți se potrivește.',
     valueProp: {
       heading: 'Cine sunt și cum te pot însoți',
       text: [
@@ -58,7 +58,7 @@ export const site = {
         'Depresie',
         'Gestionarea furiei',
         'Stres și epuizare (burnout)',
-        'Difficultăți în relații',
+        'Dificultăți în relații',
         'Terapie de cuplu',
         'Perfecționism'
       ]
@@ -86,7 +86,7 @@ export const site = {
       ] }
     ],
     footer: {
-      address: 'Andrei Saguna, Nr. 8, Cluj-Napoca',
+      address: 'Andrei Șaguna, Nr. 8, Cluj-Napoca',
       phone: '+40 723 333 609',
       emails: ['paullucianszaszpsihoterapeut@gmail.com'],
       social
@@ -127,7 +127,7 @@ export const site = {
       photoAlt: 'Dr. Paul Lucian Szasz, black and white portrait'
     },
     homeCta: { label: 'Schedule an Initial Consultation' },
-    localLine: 'Sessions in my Cluj-Napoca office on Andrei Saguna no. 8, or online — whichever suits you better.',
+    localLine: 'Sessions in my Cluj-Napoca office on Andrei Șaguna no. 8, or online — whichever suits you better.',
     valueProp: {
       heading: 'Who I am and how I can walk alongside you',
       text: [
@@ -170,7 +170,7 @@ export const site = {
       ] }
     ],
     footer: {
-      address: 'Andrei Saguna, Nr. 8, Cluj-Napoca',
+      address: 'Andrei Șaguna, Nr. 8, Cluj-Napoca',
       phone: '+40 723 333 609',
       emails: ['paullucianszaszpsihoterapeut@gmail.com'],
       social
