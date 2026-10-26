@@ -9,8 +9,9 @@ export const therapyRo = {
     { t: 'h4', v: 'Formate oferite:' },
     { t: 'ul', v: [
       'Terapie individuală (adulți / adolescenți)',
-      'Ședințe online (Zoom sau platformă video securizată)',
-      'Ședințe față în față, la cabinet'
+      'Ședințe online (platformă video securizată)',
+      'Ședințe față în față, la cabinet',
+      'Terapie de cuplu'
     ] },
     { t: 'h3', v: 'Ce putem lucra împreună' },
     { t: 'p', v: 'Terapia nu este un proces unic pentru toți și nu înseamnă să repari ceea ce ar fi „defect” în tine. Este un spațiu colaborativ, în care explorăm cu blândețe tiparele care te blochează și construim instrumente practice care te ajută să te simți stabil, rezilient și împăcat.' },

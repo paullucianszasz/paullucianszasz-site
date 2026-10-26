@@ -9,8 +9,9 @@ export const therapyEn = {
     { t: 'h4', v: 'Formats Offered:' },
     { t: 'ul', v: [
       'Individual Therapy (Adults / Adolescents)',
-      'Online Therapy Sessions (via Zoom/secure video platform)',
-      'In-Person Sessions (Office Location)'
+      'Online Therapy Sessions (via a secure video platform)',
+      'In-Person Sessions (Office Location)',
+      'Couples Therapy'
     ] },
     { t: 'h3', v: 'What We Can Work On Together' },
     { t: 'p', v: 'Therapy is not a one-size-fits-all process, nor is it about fixing what is "broken" in you. It is a collaborative space where we gently explore the patterns holding you back and build practical tools to help you feel grounded, resilient, and at peace.' },
