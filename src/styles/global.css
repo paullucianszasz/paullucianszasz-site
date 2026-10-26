@@ -413,8 +413,24 @@ h1, h2, h4, .faq-item .q, .hero .eyebrow {
 .page h4 { font-size: 17px; color: var(--dark); margin: 18px 0 8px; }
 .page ul, .page ol { padding-left: 22.5px; margin: 0 0 20px; }
 .page ul li, .page ol > li { margin-bottom: 8px; }
-.page ul li strong { font-weight: 600; color: var(--dark); }
+.page ul li strong, .page ol > li strong, .page p strong, .page table th { font-weight: 600; color: var(--dark); }
 .page ol > li > ul { margin-top: 10px; list-style-type: circle; }
+/* Citatul de inceput al paginii Psihoterapie */
+.page blockquote {
+  margin: 20px 0;
+  padding-left: 16px;
+  border-left: 3px solid var(--panel-bd);
+  color: var(--dark);
+  font-family: var(--serif);
+  font-size: 16px;
+  line-height: 1.55;
+}
+/* Comparatia terapai clasice cu CBT si REBT */
+.page .table-wrap { overflow-x: auto; margin: 0 0 20px; }
+.page table { width: 100%; border-collapse: collapse; font-size: 15px; line-height: 1.5; }
+.page table th, .page table td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--panel-bd); }
+.page table thead th { background: var(--panel); color: var(--dark); }
+@media (max-width: 560px) { .page table { font-size: 14px; } .page table th, .page table td { padding: 9px 10px; } }
 .page .timeline h3 { margin-top: 35px; }
 /* Sectiunile paginii "Despre mine": titlul sectiunii serif, sub-blocurile mai mici */
 .about-content .timeline h3 { font-family: var(--serif); font-weight: 400; font-size: 22px; margin-top: 34px; }

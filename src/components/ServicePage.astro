@@ -3,10 +3,16 @@ import Base from '../layouts/Base.astro';
 
 const { t, service } = Astro.props;
 
-// Pentru listele unde fiecare linie este "lead: explicatie", lead-ul se afiseaza aldinat (bloc cu lead: true).
-const splitLead = (li, boldLead) => {
-  const i = boldLead ? li.indexOf(': ') : -1;
-  return i > 0 ? { lead: li.slice(0, i), rest: li.slice(i) } : { lead: '', rest: li };
+// Astreiskurile din copia furnizata devin bold; la listele cu lead: si primul segment este afisat aldinat (bloc cu lead: true).
+const runs = (s) => s.split(/\*\*([^*]+)\*\*/g).map((v, i) => ({ b: i % 2 === 1, v }));
+
+const listRuns = (s, boldLead) => {
+  const r = runs(s);
+  if (boldLead && !r[0].b) {
+    const i = r[0].v.indexOf(': ');
+    if (i > 0) return [{ b: true, v: r[0].v.slice(0, i) }, { b: false, v: r[0].v.slice(i) }, ...r.slice(1)];
+  }
+  return r;
 };
 ---
 <Base t={t} title={service.title} active={t.lang === 'ro' ? 'Psihoterapie' : 'Psychotherapy'}>
@@ -14,21 +20,33 @@ const splitLead = (li, boldLead) => {
     <div class="container">
       <h1>{service.title}</h1>
       {service.blocks.map((b) => (
-        b.t === 'p' ? <p>{b.v}</p> :
+        b.t === 'p' ? <p>{runs(b.v).map((r) => (r.b ? <strong>{r.v}</strong> : r.v))}</p> :
+        b.t === 'quote' ? <blockquote>{runs(b.v).map((r) => (r.b ? <strong>{r.v}</strong> : r.v))}</blockquote> :
         b.t === 'h3' ? <h3>{b.v}</h3> :
         b.t === 'h4' ? <h4>{b.v}</h4> :
         b.t === 'ul' ? (
-          <ul>
-            {b.v.map((li) => {
-              const p = splitLead(li, b.lead);
-              return <li>{p.lead && <strong>{p.lead}</strong>}{p.rest}</li>;
-            })}
-          </ul>
+          <ul>{b.v.map((li) => <li>{listRuns(li, b.lead).map((r) => (r.b ? <strong>{r.v}</strong> : r.v))}</li>)}</ul>
         ) :
-        b.t === 'ol' ? <ol>{b.v.map((li) => (
-          typeof li === 'string' ? <li>{li}</li> :
-          <li>{li.text}{li.sub && <ul>{li.sub.map((s) => <li>{s}</li>)}</ul>}</li>
-        ))}</ol> : null
+        b.t === 'ol' ? (
+          <ol>{b.v.map((li) => <li>{listRuns(li, b.lead).map((r) => (r.b ? <strong>{r.v}</strong> : r.v))}</li>)}</ol>
+        ) :
+        b.t === 'table' ? (
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>{b.head.map((h) => <th>{h}</th>)}</tr>
+              </thead>
+              <tbody>
+                {b.rows.map((row) => (
+                  <tr>
+                    <th scope="row">{row[0]}</th>
+                    {row.slice(1).map((c) => <td>{c}</td>)}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        ) : null
       ))}
     </div>
   </section>
