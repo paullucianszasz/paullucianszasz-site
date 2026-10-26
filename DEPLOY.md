@@ -47,11 +47,13 @@
 
 ## Rămâne de făcut (nu ține de cod)
 
-- Google Business Profile: nume exact `Cabinet individual de psihologie Paul Lucian Szasz`, adresă, telefon, program Luni – Vineri 16:00 – 20:00.
+- Google Business Profile: nume exact `Cabinet individual de psihologie Paul Lucian Szasz`, adresă `Str. Scortarilor nr. 3, Cluj-Napoca 400186`, telefon `+40 723 333 609`, program Luni – Vineri 16:00 – 20:00, categorie Psihoterapeut. Model: storefront (clienții vin la adresă), pentru pin pe hartă.
 - Search Console: verificăm `https://paullucianszasz.ro/` (după ce zona este Active, cel mai simplu: înregistrare TXT în Cloudflare DNS, valoarea dată de Google), Target audience → Romania, trimitem `sitemap-index.xml`.
 - Citări cu aceeași adresă/telefon (NAP): CPR, APCCR, directoare.
 - `geo` (coordonatele) lipsește din JSON-LD — se adaugă când confirmi locația din Google Maps.
-- La mutarea cabinetului (începutul anului): schimbi `office` în `src/data/site.js` și, în aceeași zi, adresa din Google Business Profile și pinul de pe hartă. Codul postal actual, 400103, este pentru Str. Șaguna Andrei; pentru Str. Scortarilor este 400186.
+- Adresa NAP folosită peste tot este `Str. Scortarilor nr. 3, Cluj-Napoca 400186`, dintr-un singur loc: `office` în `src/data/site.js` (footer în ambele limbi, propozitia din Home, descrierile Contact, JSON-LD, pinul din hartă). Google Business Profile trebuie să aibă exact aceeași adresă.
+- La Str. Andrei Șaguna nr. 8 spațiul este închiriat (The Inner Bridge Psychology); listarea de acolo aparține altcuiva și nu se revendică. Dacă adresa rămâne menționată pe site, doar ca text pe Contact, nu în JSON-LD (NAP trebuie să rămână o singură adresă).
+- Listarea nouă se verifică cel mai sigur cu un num afișat la adresă (plăcuță/inscripție). Fără inscripție, verificarea prin video poate eșua; se acceptă de obicei cardul poștal cu PIN pentru listările de tip storefront.
 
 ## După primul build pe domeniu
 

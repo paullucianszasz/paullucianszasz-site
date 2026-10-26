@@ -1,13 +1,14 @@
 // Texte generale + nav + FAQ + pagini (RO/EN) — din site-ul furnizat
 
-// Adresa cabinetului (NAP). Cand se muta la inceputul anului, se schimba aici, intr-un singur loc:
+// Adresa cabinetului (NAP). Se schimba aici, intr-un singur loc:
 // footer (ambele limbi), propozitia din Home, descrierile Contact, JSON-LD si pinul din Google Maps.
+// Aceeasi adresa este si in Google Business Profile.
 export const office = {
-  street: 'Andrei Șaguna, Nr. 8',   // forma afisata in footer si in JSON-LD
-  streetRo: 'Andrei Șaguna nr. 8',  // forma folosita in propozitii (RO)
-  streetEn: 'Andrei Șaguna no. 8',  // forma folosita in propozitii (EN)
+  street: 'Str. Scortarilor, Nr. 3',   // forma afisata in footer si in JSON-LD
+  streetRo: 'Str. Scortarilor nr. 3',  // forma folosita in propozitii (RO)
+  streetEn: 'Str. Scortarilor no. 3',  // forma folosita in propozitii (EN)
   locality: 'Cluj-Napoca',
-  postalCode: '400103'
+  postalCode: '400186'
 };
 
 // Retelele sunt aceleasi in ambele limbi; o intrare fara url nu se afiseaza.
