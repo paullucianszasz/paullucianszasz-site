@@ -4,12 +4,33 @@
 // Titluri max ~60 caractere, descrieri max ~160.
 const ogImage = '/assets/og-image.png';
 
-// JSON-LD: schema.org nu are tipul "Psychologist", asa ca Person este tipul corect.
-// Fara openingHours, coordonate, postal code, priceRange — acele date lipsesc.
+// JSON-LD: Person (schema.org nu are tipul "Psychologist", asa ca Person este tipul corect) + LocalBusiness pentru cabinet.
+// Postal code si coordonate geo lipsesc; acele date le adaugam cand le confirma.
 // sameAs vine din retelele afisate in footer (src/data/site.js), doar cele cu url completat.
 import { site } from './site.js';
 const social = site.ro.footer.social.filter((s) => s.url).map((s) => s.url);
 const sameAs = social.length ? { sameAs: social } : {};
+
+// Adresa exacta din footer (NAP), aceeasi cu cea din Google Business Profile.
+// Coordonele geo lipsesc: le adaugam cand confirmi locația din Google Maps.
+const address = {
+  '@type': 'PostalAddress',
+  streetAddress: 'Andrei Șaguna, Nr. 8',
+  addressLocality: 'Cluj-Napoca',
+  addressCountry: 'RO'
+};
+
+// Cabinet (LocalBusiness): programul afisat pe Contact, Luni – Vineri 16:00 – 20:00.
+// Numele trebuie sa ramana identic cu cel din Google Business Profile (NAP).
+const business = (name, url) => ({
+  '@type': 'LocalBusiness',
+  name,
+  url,
+  telephone: '+40723333609',
+  address,
+  areaServed: 'Cluj-Napoca',
+  openingHours: 'Mo-Fr 16:00-20:00'
+});
 
 const personRo = {
   name: 'Dr. Paul Lucian Szasz',
@@ -23,12 +44,9 @@ const personRo = {
     name: 'Asociația de Psihoterapii Cognitive și Comportamentale din România (APCCR)',
     url: 'https://psihoterapiecbt.ro/'
   },
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: 'Andrei Șaguna, Nr. 8',
-    addressLocality: 'Cluj-Napoca',
-    addressCountry: 'RO'
-  },
+  address,
+  areaServed: 'Cluj-Napoca',
+  knowsLanguage: ['Romanian', 'English'],
   knowsAbout: [
     'Terapie cognitiv-comportamentală (CBT)',
     'Terapie Rațional-Emotivă și Comportamentală (REBT)',
@@ -49,12 +67,9 @@ const personEn = {
   image: '/assets/me-2.jpg',
   telephone: '+40723333609',
   email: 'paullucianszaszpsihoterapeut@gmail.com',
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: 'Andrei Șaguna, Nr. 8',
-    addressLocality: 'Cluj-Napoca',
-    addressCountry: 'RO'
-  },
+  address,
+  areaServed: 'Cluj-Napoca',
+  knowsLanguage: ['Romanian', 'English'],
   knowsAbout: [
     'Cognitive Behavioral Therapy (CBT)',
     'Rational Emotive and Behavioral Therapy (REBT)',
@@ -75,6 +90,7 @@ export const seo = {
     siteName: 'Paul Lucian Szasz',
     defaultDesc: 'Psihoterapeut CBT și REBT în Cluj-Napoca. Ședințe în cabinet sau online. Programează o consultație inițială.',
     person: personRo,
+    business: business('Dr. Paul Lucian Szasz - Psihoterapie', 'https://paullucianszasz.ro/contacts/'),
     pages: {
       '/': {
         title: 'Psihoterapeut CBT și REBT în Cluj-Napoca | Paul Lucian Szasz',
@@ -114,6 +130,7 @@ export const seo = {
     siteName: 'Paul Lucian Szasz',
     defaultDesc: 'CBT and REBT psychotherapist in Cluj-Napoca. Sessions in the office or online. Book an initial consultation.',
     person: personEn,
+    business: business('Dr. Paul Lucian Szasz - Psychotherapy', 'https://paullucianszasz.ro/en/contact/'),
     pages: {
       '/en/homepage-english/': {
         title: 'CBT & REBT Psychotherapist in Cluj-Napoca | Paul Lucian Szasz',

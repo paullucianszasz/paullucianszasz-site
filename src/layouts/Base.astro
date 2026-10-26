@@ -21,8 +21,14 @@ const abs = (path) => new URL(path, Astro.site).toString();
 const canonical = abs(meta?.canonical || (page ? page.canonical : pathname));
 const ogImage = abs(s.ogImage);
 
+// Coduri hreflang cu tara (RO), pentru cautari din Romania; x-default ramane pagina in romana.
+const hreflang = t.lang === 'ro' ? 'ro-RO' : 'en-RO';
+const hreflangOther = t.lang === 'ro' ? 'en-RO' : 'ro-RO';
+
 // JSON-LD: Person (schema.org nu are "Psychologist"), doar datele cunoscute; pentru articole se adauga BlogPosting.
+// LocalBusiness (cabinet) insoteste Person pentru rezultatele locale din Romania.
 const jsonLd = { '@context': 'https://schema.org', '@type': 'Person', ...s.person };
+const businessLd = { '@context': 'https://schema.org', '@type': 'LocalBusiness', ...s.business };
 const articleLd = meta?.ld ? { '@context': 'https://schema.org', ...meta.ld } : null;
 ---
 <!doctype html>
@@ -35,8 +41,8 @@ const articleLd = meta?.ld ? { '@context': 'https://schema.org', ...meta.ld } : 
     <link rel="canonical" href={canonical} />
     {pair && (
       <>
-        <link rel="alternate" hreflang={t.lang} href={abs(pair.canonical)} />
-        {pair.alt && <link rel="alternate" hreflang={t.lang === 'ro' ? 'en' : 'ro'} href={abs(pair.alt)} />}
+        <link rel="alternate" hreflang={hreflang} href={abs(pair.canonical)} />
+        {pair.alt && <link rel="alternate" hreflang={hreflangOther} href={abs(pair.alt)} />}
         <link rel="alternate" hreflang="x-default" href={abs('/')} />
       </>
     )}
@@ -56,6 +62,7 @@ const articleLd = meta?.ld ? { '@context': 'https://schema.org', ...meta.ld } : 
     <meta name="twitter:image" content={ogImage} />
 
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)}></script>
+    <script type="application/ld+json" set:html={JSON.stringify(businessLd)}></script>
     {articleLd && <script type="application/ld+json" set:html={JSON.stringify(articleLd)}></script>}
     <link rel="icon" href="/assets/favicon.png" />
     <link rel="apple-touch-icon" href="/assets/favicon.png" />
