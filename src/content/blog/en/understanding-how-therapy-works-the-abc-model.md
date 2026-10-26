@@ -1,5 +1,4 @@
 ---
-# Titlu si descriere: draft pentru aprobare (textul din corp este verbatim, furnizat de client).
 title: 'Understanding How Therapy Works: The ABC Model'
 date: 2026-10-26
 description: 'How the ABC model explains emotional reactions: the activating event, the beliefs that interpret it, and the consequences that follow.'

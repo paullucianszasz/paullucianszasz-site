@@ -1,5 +1,4 @@
 ---
-# Draft pentru aprobare (oglenda articolului EN); corpul EN este verbatim, furnizat de client.
 title: 'Cum funcționează terapia: modelul ABC'
 date: 2026-10-26
 description: 'Modelul ABC explică cum se formează reacțiile emoționale: evenimentul activant, convingerile care îl interpretează și consecințele care urmează.'

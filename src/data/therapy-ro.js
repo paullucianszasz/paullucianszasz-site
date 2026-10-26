@@ -2,7 +2,6 @@
 export const therapyRo = {
   title: 'Psihoterapie',
   blocks: [
-    // Draft pentru aprobare (oglanda textului EN furnizat de client).
     { t: 'h3', v: 'Instrumente validate științific pentru claritate mentală și reziliență' },
     { t: 'p', v: 'Când stresul, anxietatea sau autoîndoiala preiau controlul, adesea simți că evenimentele din exterior decid în totalitate liniștea ta interioară. Dar cheia libertății emoționale stă în modul în care procesăm și provocăm povestea pe care ni-o spunem în cap.' },
     { t: 'p', v: '„Gândește-te la terapie ca la învățarea unui set nou de abilități. Nu vom doar discuta despre probleme; vom privi gândurile și credințele care îți alimentează reacțiile emoționale și vom exersa activ strategii, astfel încât, în timp, să devii propriul tău terapeut.”' },
@@ -42,7 +41,6 @@ export const therapyRo = {
       'Ședințe în cabinet: un mediu liniștit, privat și primitor, în care te poți îndepărta de zgomotele zilei.',
       'Terapie online: ședințe video confidențiale, de calitate, din confortul și liniștea casei tale.'
     ] },
-    // Draft pentru aprobare (oglenda textului EN furnizat de client).
     { t: 'h3', v: 'Ce poți aștepta: abordarea CBT și REBT' },
     { t: 'p', v: 'Dacă ai auzit până acum doar de terapia clasică, bazată pe discuții deschise, prima ședință de Terapie cognitiv-comportamentală (CBT) sau de Terapie Rațional-Emotivă și Comportamentală (REBT) poate părea puțin diferită.' },
     { t: 'p', v: 'Un spațiu sigur și empatic rămâne baza, dar munca noastră împreună este gândită să fie activă, structurată și orientată spre rezultate practice. Iată ce diferențiază această abordare:' },

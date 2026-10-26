@@ -1,5 +1,4 @@
 ---
-# Titlu si descriere: draft pentru aprobare (corpul este verbatim, furnizat de client).
 title: 'The "ABC Model" Client Script'
 date: 2026-10-26
 description: 'A plain-language walkthrough of the ABC model — the Activating Event, the Beliefs and the Consequences — the framework behind CBT and REBT.'
