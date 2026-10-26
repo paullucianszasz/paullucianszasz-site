@@ -32,7 +32,7 @@ const mapSrc = `https://maps.google.com/maps?q=${encodeURIComponent(t.footer.add
           <h2>{labels.hours}</h2>
           <p>{page.hours}</p>
           <h2>{labels.location}</h2>
-          <p>{t.footer.address}</p>
+          <p>{t.footer.address}{t.footer.note ? ` (${t.footer.note})` : ''}</p>
           <div class="contact-map">
             <iframe loading="lazy" src={mapSrc} title={mapTitle} aria-label={mapTitle} referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>

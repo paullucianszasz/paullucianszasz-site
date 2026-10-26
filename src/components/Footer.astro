@@ -14,7 +14,7 @@ const social = (t.footer.social || []).filter((s) => s.url);
       </nav>
     </div>
     <div class="footer-bottom">
-      <div class="addr">{t.footer.address}</div>
+      <div class="addr">{t.footer.address}{t.footer.note ? ` (${t.footer.note})` : ''}</div>
       <div class="contacts">
         <a href={t.cta.href}>{t.footer.phone}</a>
         <a class="wa-pill" href={t.whatsapp.href} aria-label={`WhatsApp — ${t.footer.phone}`} target="_blank" rel="noopener">

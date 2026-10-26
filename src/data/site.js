@@ -9,7 +9,8 @@ export const office = {
   streetRo: 'Andrei Șaguna nr. 8',  // forma folosita in propozitii (RO)
   streetEn: 'Andrei Șaguna no. 8',  // forma folosita in propozitii (EN)
   locality: 'Cluj-Napoca',
-  postalCode: '400103'
+  postalCode: '400103',
+  note: { ro: 'punct de lucru', en: 'work location' }  // afisat langa adresa; nu in JSON-LD si nu in cautarea de pe hartă
 };
 
 // Retelele sunt aceleasi in ambele limbi; o intrare fara url nu se afiseaza.
@@ -99,6 +100,7 @@ export const site = {
     ],
     footer: {
       address: `${office.street}, ${office.locality}`,
+      note: office.note.ro,
       phone: '+40 723 333 609',
       emails: ['paullucianszaszpsihoterapeut@gmail.com'],
       social
@@ -183,6 +185,7 @@ export const site = {
     ],
     footer: {
       address: `${office.street}, ${office.locality}`,
+      note: office.note.en,
       phone: '+40 723 333 609',
       emails: ['paullucianszaszpsihoterapeut@gmail.com'],
       social
