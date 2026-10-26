@@ -6,7 +6,7 @@ const byId = (id) => site.en.faq.find((f) => f.id === id);
 
 export const contactEn = {
   title: 'Contact',
-  hours: 'Monday – Friday, between 16:00 and 20:00', // days confirmed; hours as supplied
+  hours: 'Monday – Friday, between 16:00 and 20:00 (in the office or online)', // days confirmed; hours as supplied
   booking: [
     'Bookings are made by phone, WhatsApp or email. I do not use an online scheduling platform, so the first contact is enough: we look at the available hours together and set the first session.'
   ],
