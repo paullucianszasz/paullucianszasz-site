@@ -56,6 +56,16 @@ export const contactEn = {
     'Right to lodge a complaint with the supervisory authority (ANSPDCP)'
   ],
   formNote: 'By sending this form you confirm that you have read the privacy information below.',
+  form: {
+    name: 'Name',
+    phone: 'Phone number',
+    email: 'Email',
+    subject: 'Subject',
+    message: 'How can I help you?',
+    submit: 'Send message',
+    // mirror al textului din romana — pentru aprobare
+    consent: 'I confirm that I give my explicit consent for the processing of the data I enter in this form (including any health information), solely in order to answer my request, as described in the information below.'
+  },
   labels: {
     phone: 'Phone Number',
     waBefore: '*also available on',

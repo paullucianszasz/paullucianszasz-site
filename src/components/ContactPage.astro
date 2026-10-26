@@ -8,6 +8,7 @@ const { t, page } = Astro.props;
 const formAction = 'https://formspree.io/f/XXXXXXXXXX';
 const active = 'Contact';
 const labels = page.labels;
+const form = page.form;
 const mapTitle = t.footer.address;
 const mapSrc = `https://maps.google.com/maps?q=${encodeURIComponent(t.footer.address)}&t=m&z=10&output=embed&iwloc=near`;
 ---
@@ -41,28 +42,32 @@ const mapSrc = `https://maps.google.com/maps?q=${encodeURIComponent(t.footer.add
         <div class="contact-col">
           <form class="contact-form form-style-7" action={formAction} method="post">
             <p class="field icon-name">
-              <input size="40" type="text" name="name" placeholder="Name" aria-required="true" required />
+              <input size="40" type="text" name="name" placeholder={form.name} aria-required="true" required />
               <span class="line"></span>
             </p>
             <p class="field icon-phone">
-              <input size="40" type="tel" name="phone" placeholder="Phone number" aria-required="true" required />
+              <input size="40" type="tel" name="phone" placeholder={form.phone} aria-required="true" required />
               <span class="line"></span>
             </p>
             <p class="field icon-email">
-              <input size="40" type="email" name="email" placeholder="Email" aria-required="true" required />
+              <input size="40" type="email" name="email" placeholder={form.email} aria-required="true" required />
               <span class="line"></span>
             </p>
             <p class="field icon-subject">
-              <input size="40" type="text" name="subject" placeholder="Subject" aria-required="true" required />
+              <input size="40" type="text" name="subject" placeholder={form.subject} aria-required="true" required />
               <span class="line"></span>
             </p>
             <p class="field icon-textarea">
-              <textarea cols="40" rows="10" name="message" placeholder="How can i help you?" aria-required="true" required></textarea>
+              <textarea cols="40" rows="10" name="message" placeholder={form.message} aria-required="true" required></textarea>
               <span class="line"></span>
+            </p>
+            <p class="consent">
+              <input type="checkbox" id="form-consent" name="consent" value="confirmed" required />
+              <label for="form-consent">{form.consent}</label>
             </p>
             <p>
               <span class="field-btn">
-                <input class="wpcf7-submit" type="submit" value="Send message" />
+                <input class="wpcf7-submit" type="submit" value={form.submit} />
                 <span class="submit-style-in"></span>
               </span>
             </p>

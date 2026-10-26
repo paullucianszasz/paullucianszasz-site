@@ -57,6 +57,16 @@ export const contactRo = {
     'Dreptul de a depune o plângere la ANSPDCP'
   ],
   formNote: 'Trimițând formularul, confirmați că ați citit informațiile despre confidențialitate de mai jos.',
+  form: {
+    name: 'Nume',
+    phone: 'Număr de telefon',
+    email: 'Email',
+    subject: 'Subiect',
+    message: 'Cu ce vă pot ajuta?',
+    submit: 'Trimite mesajul',
+    // draft pentru aprobare
+    consent: 'Confirm că îmi acordați consimțământul explicit pentru prelucrarea datelor pe care le introduceți în acest formular (inclusiv eventualele informații despre sănătate), exclusiv în scopul răspunsului la solicitarea dumneavoastră, conform informațiilor de mai jos.'
+  },
   labels: {
     phone: 'Număr de telefon',
     waBefore: '*disponibil și pe',
