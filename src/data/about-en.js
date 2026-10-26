@@ -1,5 +1,5 @@
 // About me (EN) — ordinea: The person behind the role / Professional journey / Credentials & accreditation / Volunteering
-// Oglinda varianta RO scurtata; textul EN este draft pentru aprobare.
+// Oglinda varianta RO scurtata; textul EN este aprobat.
 import {
   cvPhoto, educationEn, trainingEn, qualificationsEn, reviewingEn, volunteeringEn, publications, scholarUrl, accreditation
 } from './cv.js';
