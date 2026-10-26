@@ -1,0 +1,6 @@
+# Redirectionari reale (301). Cloudflare Pages citeste acest fisier din radacina site-ului (dist/),
+# de aceea este in public/. Hostingul il serveste inaintea fisierelor statice.
+www.paullucianszasz.ro        https://paullucianszasz.ro            301
+/services/psihoterapie/        /psihoterapie/                       301
+/en/services/psychotherapy/    /en/psychotherapy/                   301
+/en/homepage-english/           /en/                                301
