@@ -1,27 +1,31 @@
-// Psihoterapie (EN) — oglinda lui therapy-ro.js, aceleasi sectiuni din outline.
-// Draft din outline, pentru aprobare.
+// Psihoterapie (EN) — textul furnizat de client, aplicat verbatim.
 export const therapyEn = {
   title: 'Psychotherapy',
   blocks: [
-    { t: 'h3', v: 'Services and how we work' },
-    { t: 'p', v: 'You do not need to know the technical differences between CBT and REBT. Here is what each one does for you.' },
-    { t: 'h4', v: 'Cognitive Behavioral Therapy (CBT)' },
-    { t: 'p', v: 'CBT works with the connection between thoughts, feelings and behaviors. The focus is on building practical skills and relieving symptoms, so what you learn in sessions carries into everyday life.' },
-    { t: 'h4', v: 'Rational Emotive Behavior Therapy (REBT)' },
-    { t: 'p', v: 'REBT identifies the rigid "musts", "shoulds" and other irrational beliefs that feed distress. It helps you build an accepting, flexible and rational attitude toward yourself and others.' },
-    { t: 'h4', v: 'Formats offered' },
+    { t: 'h3', v: 'What We Can Work On Together' },
+    { t: 'p', v: 'Therapy is not a one-size-fits-all process, nor is it about fixing what is "broken" in you. It is a collaborative space where we gently explore the patterns holding you back and build practical tools to help you feel grounded, resilient, and at peace.' },
+    { t: 'p', v: 'In my practice, I integrate Cognitive Behavioral Therapy (CBT) and Rational Emotive Behavior Therapy (REBT)—two active, evidence-based approaches that focus on helping you understand the deep connection between your thoughts, emotions, and actions.' },
+    { t: 'h4', v: 'Cognitive Behavioral Therapy (CBT): Understanding Your Mind' },
+    { t: 'p', v: 'When we are going through difficult times, our thoughts can become overwhelming, distorted, or overly self-critical. CBT offers a supportive lens to examine these thought patterns without judgment.' },
+    { t: 'p', v: 'Together, we will:' },
     { t: 'ul', v: [
-      'Individual therapy (adults / adolescents)',
-      'Online sessions (Zoom or a secure video platform)',
-      'In-person sessions (office location)'
+      'Unpack overwhelming feelings: Break down complex stress, anxiety, or sadness into manageable pieces so they feel less daunting.',
+      'Identify unhelpful thought loops: Recognize the subtle ways your mind might be jumping to the worst-case scenario or holding you back.',
+      'Build practical daily tools: Learn actionable strategies to respond to life\'s challenges with clarity and steady confidence.'
     ] },
-    { t: 'h3', v: 'What to expect, step by step' },
-    { t: 'p', v: 'Starting therapy can feel intimidating. Here is how the process unfolds.' },
-    { t: 'h4', v: 'Initial assessment (session 1)' },
-    { t: 'p', v: 'We talk about what brings you here now and about your history, and we set concrete goals together.' },
-    { t: 'h4', v: 'Active working phase' },
-    { t: 'p', v: 'We identify cognitive distortions, practice disputing irrational beliefs (REBT), and you complete practice tasks between sessions ("homework").' },
-    { t: 'h4', v: 'Consolidation and closure' },
-    { t: 'p', v: 'We evaluate progress, work on relapse prevention, and end therapy once the goals are reached.' }
+    { t: 'h4', v: 'Rational Emotive Behavior Therapy (REBT): Reclaiming Emotional Freedom' },
+    { t: 'p', v: 'Life often places heavy demands on us, leading to rigid internal expectations—the unspoken "I must not fail" or "Things should be different." REBT focuses on helping you let go of these exhausting demands and cultivate self-compassion.' },
+    { t: 'p', v: 'Together, we will work on:' },
+    { t: 'ul', v: [
+      'Releasing self-criticism: Shift away from rigid "shoulds" and "musts" toward self-acceptance and emotional flexibility.',
+      'Transforming emotional distress: Learn how to transform paralyzing anxiety or deep frustration into healthy, manageable emotions that allow you to move forward.',
+      'Fostering unconditional self-acceptance: Discover how to value yourself fully, even in moments of struggle or uncertainty.'
+    ] },
+    { t: 'h3', v: 'How We Can Connect' },
+    { t: 'p', v: 'Every journey starts differently, and I aim to make therapy accessible in whichever format feels most comfortable for you:' },
+    { t: 'ul', v: [
+      'In-Person Sessions: A quiet, private, and welcoming office environment where you can step away from daily distractions.',
+      'Online Therapy: High-quality, confidential video sessions from the comfort and convenience of your own home.'
+    ] }
   ]
 };

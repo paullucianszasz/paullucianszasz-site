@@ -1,27 +1,32 @@
-// Psihoterapie (RO) — sectiunile C (servicii si moduri de lucru) si D (ce te așteaptă), din outline-ul furnizat.
-// Draft din outline, pentru aprobare; ton informal, catre cititor.
+// Psihoterapie (RO) — oglinda textului EN furnizat de client.
+// Draft pentru aprobare; ton informal, catre cititor.
 export const therapyRo = {
   title: 'Psihoterapie',
   blocks: [
-    { t: 'h3', v: 'Servicii și moduri de lucru' },
-    { t: 'p', v: 'Nu e nevoie să știi diferențele tehnice dintre CBT și REBT. Le descriu mai jos în funcție de ceea ce fac pentru tine.' },
-    { t: 'h4', v: 'Terapia cognitiv-comportamentală (CBT)' },
-    { t: 'p', v: 'CBT lucrează cu legătura dintre gânduri, emoții și comportamente. Accentul cade pe construirea de abilități practice și pe reducerea simptomelor, astfel încât ce învești în ședințe să se reflecte în viața de zi cu zi.' },
-    { t: 'h4', v: 'Terapia Rațional-Emotivă și Comportamentală (REBT)' },
-    { t: 'p', v: 'REBT identifică „trebuie”, „ar trebui” și celelalte credințe rigide care alimentează distresul. Te ajută să dezvolți o atitudine acceptantă, flexibilă și rațională față de tine și față de cei din jur.' },
-    { t: 'h4', v: 'Formate disponibile' },
+    { t: 'h3', v: 'Ce putem lucra împreună' },
+    { t: 'p', v: 'Terapia nu este un proces unic pentru toți și nu înseamnă să repari ceea ce ar fi „defect” în tine. Este un spațiu colaborativ, în care explorăm cu blândețe tiparele care te blochează și construim instrumente practice care te ajută să te simți stabil, rezilient și împăcat.' },
+    { t: 'p', v: 'În practica mea integrez Terapia cognitiv-comportamentală (CBT) și Terapia Rațional-Emotivă și Comportamentală (REBT) — două abordări active, bazate pe dovezi, care te ajută să înțelegi legătura profundă dintre gânduri, emoții și acțiuni.' },
+    { t: 'h4', v: 'Terapia cognitiv-comportamentală (CBT): înțelegarea minții tale' },
+    { t: 'p', v: 'Când trecem prin perioade dificile, gândurile pot deveni copleșitoare, distorsionate sau excesiv de autocritice. CBT oferă o privire suportivă cu care poți examina aceste tipare de gândire, fără judecată.' },
+    { t: 'p', v: 'Împreună:' },
     { t: 'ul', v: [
-      'Ședințe individuale (adulți / adolescenți)',
-      'Ședințe online (Zoom sau o platformă video securizată)',
-      'Ședințe față în față, la cabinet'
+      'Despăcăm emoțiile copleșitoare: descompunem stresul, anxietatea sau tristețea complexe în bucăți gestionabile, ca să pară mai puțin amenințătoare.',
+      'Identificăm tiparele de gândire care nu te ajută: recunoaștem modurile subtile în care mintea ta poate să sară la cel mai rău scenariu sau să te blocheze.',
+      'Construim instrumente practice pentru zi de zi: înveți strategii concrete cu care poți răspunde provocărilor vieții cu claritate și încredere stabilă.'
     ] },
-    { t: 'h3', v: 'Ce te așteaptă, pas cu pas' },
-    { t: 'p', v: 'Începerea terapiei poate părea intimidantă. Iată cum decurge procesul.' },
-    { t: 'h4', v: 'Evaluarea inițială (ședința 1)' },
-    { t: 'p', v: 'Vorbim despre ceea ce te aduce acum și despre istoricul tău și stabilim împreună scopuri concrete.' },
-    { t: 'h4', v: 'Faza de lucru' },
-    { t: 'p', v: 'Identificăm distorsionările cognitive, exersăm disputarea credințelor irationale (REBT) și completezi exerciții între ședințe („temele”).' },
-    { t: 'h4', v: 'Consolidare și încheiere' },
-    { t: 'p', v: 'Evaluăm progresul, lucrăm la prevenirea recăderii și încheiem terapia atunci când scopurile sunt atinse.' }
+    { t: 'h4', v: 'Terapia Rațional-Emotivă și Comportamentală (REBT): reclaimarea libertății emoționale' },
+    { t: 'p', v: 'Viața ne pune adesea în fața unor cerințe grele, care duc la așteptări interne rigide — acel „trebuie să nu eșuez” sau „lucrurile ar trebui să fie altfel”. REBT te ajută să renunți la aceste cerințe epuizante și să cultivi autocompasiunea.' },
+    { t: 'p', v: 'Împreună, lucrăm la:' },
+    { t: 'ul', v: [
+      'Eliberarea de autocritică: trecerea de la „ar trebui” și „trebuie” rigide spre autoacceptare și flexibilitate emoțională.',
+      'Transformarea distresului emoțional: înveți cum transformi anxietatea paralizantă sau frustrarea profundă în emoții sănătoase, gestionabile, care te lasă să mergi mai departe.',
+      'Autoacceptarea necondiționată: descoperi cum te poți prețui pe deplin, chiar în momentele de dificultate sau incertitudine.'
+    ] },
+    { t: 'h3', v: 'Cum ne putem conecta' },
+    { t: 'p', v: 'Fiecare drum începe diferit, iar eu vreau ca terapia să fie accesibilă în formatul în care te simți cel mai bine:' },
+    { t: 'ul', v: [
+      'Ședințe în cabinet: un mediu liniștit, privat și primitor, în care te poți îndepărta de zgomotele zilei.',
+      'Terapie online: ședințe video confidențiale, de calitate, din confortul și liniștea casei tale.'
+    ] }
   ]
 };
