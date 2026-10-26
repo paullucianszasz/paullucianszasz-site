@@ -1,4 +1,13 @@
 // Texte generale + nav + FAQ + pagini (RO/EN) — din site-ul furnizat
+
+// Retelele sunt aceleasi in ambele limbi; cele fara url nu se afiseaza (handle de completat).
+const social = [
+  { name: 'Instagram', url: 'https://www.instagram.com/paullucianszaszpsiholog/' },
+  { name: 'Facebook', url: 'https://www.facebook.com/paullucianszasz' },
+  { name: 'LinkedIn', url: '' },
+  { name: 'YouTube', url: 'https://www.youtube.com/@paullucianszasz' }
+];
+
 export const site = {
   ro: {
     lang: 'ro',
@@ -76,7 +85,8 @@ export const site = {
     footer: {
       address: 'Andrei Saguna, Nr. 8, Cluj-Napoca',
       phone: '+40 723 333 609',
-      emails: ['paullucianszaszpsihoterapeut@gmail.com']
+      emails: ['paullucianszaszpsihoterapeut@gmail.com'],
+      social
     }
   },
 
@@ -156,7 +166,8 @@ export const site = {
     footer: {
       address: 'Andrei Saguna, Nr. 8, Cluj-Napoca',
       phone: '+40 723 333 609',
-      emails: ['paullucianszaszpsihoterapeut@gmail.com']
+      emails: ['paullucianszaszpsihoterapeut@gmail.com'],
+      social
     }
   }
 };

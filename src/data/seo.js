@@ -5,7 +5,12 @@
 const ogImage = '/assets/og-image.png';
 
 // JSON-LD: schema.org nu are tipul "Psychologist", asa ca Person este tipul corect.
-// Fara openingHours, coordonate, postal code, priceRange sau sameAs — acele date lipsesc.
+// Fara openingHours, coordonate, postal code, priceRange — acele date lipsesc.
+// sameAs vine din retelele afisate in footer (src/data/site.js), doar cele cu url completat.
+import { site } from './site.js';
+const social = site.ro.footer.social.filter((s) => s.url).map((s) => s.url);
+const sameAs = social.length ? { sameAs: social } : {};
+
 const personRo = {
   name: 'Dr. Paul Lucian Szasz',
   jobTitle: 'Psiholog cu drept de liberă practică în Psihoterapii cognitive și comportamentale',
@@ -33,7 +38,8 @@ const personRo = {
     'Gestionarea furiei',
     'Stres și epuizare (burnout)',
     'Perfecționism'
-  ]
+  ],
+  ...sameAs
 };
 
 const personEn = {
@@ -58,7 +64,8 @@ const personEn = {
     'Anger management',
     'Stress and burnout',
     'Perfectionism'
-  ]
+  ],
+  ...sameAs
 };
 
 export const seo = {

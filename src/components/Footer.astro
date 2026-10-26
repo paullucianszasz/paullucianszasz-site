@@ -1,7 +1,9 @@
 ---
 import WhatsAppIcon from './WhatsAppIcon.astro';
+import SocialIcon from './SocialIcon.astro';
 
 const { t, active = '' } = Astro.props;
+const social = (t.footer.social || []).filter((s) => s.url);
 ---
 <footer class="site-footer">
   <div class="container">
@@ -22,5 +24,15 @@ const { t, active = '' } = Astro.props;
         <div>{t.footer.emails.map((e) => <a href={`mailto:${e}`}>{e}</a>)}</div>
       </div>
     </div>
+    {social.length > 0 && (
+      <div class="footer-social">
+        {social.map((s) => (
+          <a href={s.url} aria-label={`${s.name} — Dr. Paul Lucian Szasz`} target="_blank" rel="noopener me">
+            <SocialIcon name={s.name} />
+            <span>{s.name}</span>
+          </a>
+        ))}
+      </div>
+    )}
   </div>
 </footer>

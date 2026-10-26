@@ -545,6 +545,19 @@ h1, h2, h4, .faq-item .q, .hero .eyebrow {
 .footer-bottom .addr { color: var(--white); font-weight: 700; }
 .footer-bottom .contacts a { color: var(--footer-muted); }
 
+/* Retele: icon + nume, acealasi ton muted ca contactele din footer */
+.footer-social { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 22px; }
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--footer-muted);
+  font-size: 15px;
+  transition: color 0.25s;
+}
+.footer-social a:hover { color: var(--white); }
+.footer-social svg { width: 16px; height: 16px; fill: currentColor; flex: 0 0 auto; }
+
 /* Scroll to top */
 .scroll-top {
   position: fixed;
