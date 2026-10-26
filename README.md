@@ -23,7 +23,7 @@ npm run build    # genereaza dist/ — fisiere statice, se pot hosta direct
 
 ## De verificat inainte de publicare
 
-- `src/components/ContactPage.astro` — inlocuieste `https://formspree.io/f/XXXXXXXXXX` cu ID-ul Formspree real.
+- `src/components/ContactPage.astro` — formularul nu foloseste niciun serviciu extern: la trimis deschide programul de email al vizitatorului cu datele compuse (`mailto:`). Nu e nimic de inlocuit aici.
 - `src/data/site.js` — adresa, telefonul si emailul sunt cele actuale (Andrei Saguna Nr. 8, Cluj-Napoca / +40 723 333 609 / paullucianszaszpsihoterapeut@gmail.com); confirma-le inainte de publicare.
 - `public/assets/` — logo-urile (PNG) si poza de profil (`me-2.jpg`) sunt cele actuale; inlocueste-le doar daca ai variante noi.
 

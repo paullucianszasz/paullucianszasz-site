@@ -4,8 +4,6 @@ import Faq from './Faq.astro';
 import WhatsAppIcon from './WhatsAppIcon.astro';
 
 const { t, page } = Astro.props;
-// Inlocuieste FORMSPREE_ID cu ID-ul formularului Formspree dupa ce il creezi.
-const formAction = 'https://formspree.io/f/XXXXXXXXXX';
 const active = 'Contact';
 const labels = page.labels;
 const form = page.form;
@@ -40,25 +38,25 @@ const mapSrc = `https://maps.google.com/maps?q=${encodeURIComponent(t.footer.add
           </div>
         </div>
         <div class="contact-col">
-          <form class="contact-form form-style-7" action={formAction} method="post">
+          <form class="contact-form form-style-7" data-mailto={t.footer.emails[0]}>
             <p class="field icon-name">
-              <input size="40" type="text" name="name" placeholder={form.name} aria-required="true" required />
+              <input size="40" type="text" name="name" data-label={form.body.name} placeholder={form.name} aria-required="true" required />
               <span class="line"></span>
             </p>
             <p class="field icon-phone">
-              <input size="40" type="tel" name="phone" placeholder={form.phone} aria-required="true" required />
+              <input size="40" type="tel" name="phone" data-label={form.body.phone} placeholder={form.phone} aria-required="true" required />
               <span class="line"></span>
             </p>
             <p class="field icon-email">
-              <input size="40" type="email" name="email" placeholder={form.email} aria-required="true" required />
+              <input size="40" type="email" name="email" data-label={form.body.email} placeholder={form.email} aria-required="true" required />
               <span class="line"></span>
             </p>
             <p class="field icon-subject">
-              <input size="40" type="text" name="subject" placeholder={form.subject} aria-required="true" required />
+              <input size="40" type="text" name="subject" data-label={form.body.subject} placeholder={form.subject} aria-required="true" required />
               <span class="line"></span>
             </p>
             <p class="field icon-textarea">
-              <textarea cols="40" rows="10" name="message" placeholder={form.message} aria-required="true" required></textarea>
+              <textarea cols="40" rows="10" name="message" data-label={form.body.message} placeholder={form.message} aria-required="true" required></textarea>
               <span class="line"></span>
             </p>
             <p class="consent">
@@ -72,6 +70,7 @@ const mapSrc = `https://maps.google.com/maps?q=${encodeURIComponent(t.footer.add
               </span>
             </p>
             <p class="form-note"><a href="#privacy">{page.formNote}</a></p>
+            <p class="form-note">{form.mailtoNote} <a href={`mailto:${t.footer.emails[0]}`}>{t.footer.emails[0]}</a></p>
           </form>
         </div>
       </div>
@@ -96,3 +95,17 @@ const mapSrc = `https://maps.google.com/maps?q=${encodeURIComponent(t.footer.add
     </div>
   </section>
 </Base>
+
+<script>
+  // Formularul nu trimite nica in afara site-ului: deschide programul de email al vizitatorului.
+  const contactForm = document.querySelector('form.contact-form[data-mailto]');
+  if (contactForm) {
+    contactForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const rows = [...contactForm.querySelectorAll('[data-label]')].map((el) => `${el.dataset.label}: ${el.value.trim()}`);
+      const subject = contactForm.querySelector('[name="subject"]').value.trim();
+      const href = `mailto:${contactForm.dataset.mailto}?subject=${encodeURIComponent(subject || 'Contact')}&body=${encodeURIComponent(rows.join('\n'))}`;
+      window.location.href = href;
+    });
+  }
+</script>

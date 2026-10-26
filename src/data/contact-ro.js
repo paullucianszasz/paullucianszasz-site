@@ -41,8 +41,8 @@ export const contactRo = {
   privacyHeading: 'Confidențialitate și protecția datelor',
   privacy: [
     'Datele pe care le trimiteți prin acest formular — nume, telefon, email, subiect și mesaj — sunt folosite exclusiv pentru a vă răspunde și pentru a stabili o programare.',
-    'Mesajul poate conține informații despre sănătate, care sunt date personale de categorie specială în sensul GDPR (art. 9). Le procesez doar pentru scopul menționat, pe baza consimțământului explicit pe care îl acordați prin faptul că trimiteți voluntar aceste informații.',
-    'Nu folosesc aceste date în scopuri de marketing, nu le vând și nu le partajez, cu excepția situațiilor prevăzute de lege. Submisiile formularului sunt procesate prin serviciul Formspree, care acționează ca procesator de date.',
+    'Mesajul poate conține informații despre sănătate, care sunt date personale de categorie specială în sensul GDPR (art. 9). Le procesez doar pentru scopul menționat, pe baza consimțământului explicit pe care îl acordați prin bifarea caseta de la formular.',
+    'Nu folosesc aceste date în scopuri de marketing, nu le vând și nu le partajez, cu excepția situațiilor prevăzute de lege. Formularul nu stochează nimic pe site: datele pe care le completați ajung la adresa de email menționată mai sus, prin programul dumneavoastră de email.',
     'Solicitările de contact sunt păstrate doar pentru perioada necesară răspunsului și, dacă începeți un proces terapeutic, pentru perioada cerută de legislația privind documentele clinice. Site-ul nu folosește cookie-uri de urmărire sau instrumente de analiză.',
     'Operatorul de date este Dr. Paul Lucian Szasz, psiholog, Cluj-Napoca. Drepturile legate de datele personale le puteți exercita prin email.'
   ],
@@ -65,7 +65,9 @@ export const contactRo = {
     message: 'Cu ce vă pot ajuta?',
     submit: 'Trimite mesajul',
     // draft pentru aprobare
-    consent: 'Confirm că îmi acordați consimțământul explicit pentru prelucrarea datelor pe care le introduceți în acest formular (inclusiv eventualele informații despre sănătate), exclusiv în scopul răspunsului la solicitarea dumneavoastră, conform informațiilor de mai jos.'
+    consent: 'Confirm că îmi acordați consimțământul explicit pentru prelucrarea datelor pe care le introduceți în acest formular (inclusiv eventualele informații despre sănătate), exclusiv în scopul răspunsului la solicitarea dumneavoastră, conform informațiilor de mai jos.',
+    body: { name: 'Nume', phone: 'Telefon', email: 'Email', subject: 'Subiect', message: 'Mesaj' },
+    mailtoNote: 'Dacă programul dumneavoastră de email nu se deschide, ne puteți scrie direct la:'
   },
   labels: {
     phone: 'Număr de telefon',

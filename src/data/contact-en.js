@@ -40,8 +40,8 @@ export const contactEn = {
   privacyHeading: 'Confidentiality and data protection',
   privacy: [
     'The data you send through this form — name, phone, email, subject and message — is used only to answer you and to arrange an appointment.',
-    'Your message may contain information about your health, which is special category personal data under the GDPR (Article 9). I process it only for the purpose above, on the basis of the explicit consent you give by sending this information voluntarily.',
-    'I do not use this data for marketing, I do not sell it and I do not share it, except where the law requires it. Form submissions are processed through Formspree, which acts as a data processor.',
+    'Your message may contain information about your health, which is special category personal data under the GDPR (Article 9). I process it only for the purpose above, on the basis of the explicit consent you give by ticking the box on the form.',
+    'I do not use this data for marketing, I do not sell it and I do not share it, except where the law requires it. The form does not store anything on the site: the data you enter reaches the email address above through your own email program.',
     'Contact requests are kept only for as long as needed to answer you and, if a therapy process begins, for the period required by the law on clinical records. The site does not use tracking cookies or analytics tools.',
     'The data controller is Dr. Paul Lucian Szasz, psychologist, Cluj-Napoca. You can exercise your rights by email.'
   ],
@@ -64,7 +64,9 @@ export const contactEn = {
     message: 'How can I help you?',
     submit: 'Send message',
     // mirror al textului din romana — pentru aprobare
-    consent: 'I confirm that I give my explicit consent for the processing of the data I enter in this form (including any health information), solely in order to answer my request, as described in the information below.'
+    consent: 'I confirm that I give my explicit consent for the processing of the data I enter in this form (including any health information), solely in order to answer my request, as described in the information below.',
+    body: { name: 'Name', phone: 'Phone', email: 'Email', subject: 'Subject', message: 'Message' },
+    mailtoNote: 'If your email program does not open, you can write to us directly at:'
   },
   labels: {
     phone: 'Phone Number',
