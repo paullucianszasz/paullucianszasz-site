@@ -7,17 +7,17 @@ const ogImage = '/assets/og-image.png';
 // JSON-LD: Person (schema.org nu are tipul "Psychologist", asa ca Person este tipul corect) + LocalBusiness pentru cabinet.
 // Coordonele geo lipsesc; le adaugam cand confirmi locatia din Google Maps.
 // sameAs vine din retelele afisate in footer (src/data/site.js), doar cele cu url completat.
-import { site } from './site.js';
+import { site, office } from './site.js';
 const social = site.ro.footer.social.filter((s) => s.url).map((s) => s.url);
 const sameAs = social.length ? { sameAs: social } : {};
 
-// Adresa exacta din footer (NAP), aceeasi cu cea din Google Business Profile.
-// Coordonele geo lipsesc: le adaugam cand confirmi locația din Google Maps.
+// Adresa exacta din footer (NAP), aceeasi cu cea din Google Business Profile; vine din office (site.js).
+// Coordonele geo lipsesc: le adaugam cand confirmi locatia din Google Maps.
 const address = {
   '@type': 'PostalAddress',
-  streetAddress: 'Andrei Șaguna, Nr. 8',
-  addressLocality: 'Cluj-Napoca',
-  postalCode: '400186',
+  streetAddress: office.street,
+  addressLocality: office.locality,
+  postalCode: office.postalCode,
   addressCountry: 'RO'
 };
 
@@ -120,7 +120,7 @@ export const seo = {
       },
       '/contacts/': {
         title: 'Contact | Psihoterapeut CBT Cluj-Napoca — Paul Lucian Szasz',
-        desc: 'Programări la +40 723 333 609, WhatsApp sau email. Cabinet Andrei Șaguna nr. 8, Cluj-Napoca. Ședințe față în față sau online.',
+        desc: `Programări la +40 723 333 609, WhatsApp sau email. Cabinet ${office.streetRo}, ${office.locality}. Ședințe față în față sau online.`,
         canonical: '/contacts/',
         alt: '/en/contact/'
       }
@@ -167,7 +167,7 @@ export const seo = {
       },
       '/en/contact/': {
         title: 'Contact | CBT Psychotherapist Cluj-Napoca — Paul Lucian Szasz',
-        desc: 'Book by phone on +40 723 333 609, WhatsApp or email. Office at Andrei Șaguna no. 8, Cluj-Napoca. Sessions in person or online.',
+        desc: `Book by phone on +40 723 333 609, WhatsApp or email. Office at ${office.streetEn}, ${office.locality}. Sessions in person or online.`,
         canonical: '/en/contact/',
         alt: '/contacts/'
       }

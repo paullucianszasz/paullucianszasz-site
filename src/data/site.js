@@ -1,5 +1,15 @@
 // Texte generale + nav + FAQ + pagini (RO/EN) — din site-ul furnizat
 
+// Adresa cabinetului (NAP). Cand se muta la inceputul anului, se schimba aici, intr-un singur loc:
+// footer (ambele limbi), propozitia din Home, descrierile Contact, JSON-LD si pinul din Google Maps.
+export const office = {
+  street: 'Andrei Șaguna, Nr. 8',   // forma afisata in footer si in JSON-LD
+  streetRo: 'Andrei Șaguna nr. 8',  // forma folosita in propozitii (RO)
+  streetEn: 'Andrei Șaguna no. 8',  // forma folosita in propozitii (EN)
+  locality: 'Cluj-Napoca',
+  postalCode: '400103'
+};
+
 // Retelele sunt aceleasi in ambele limbi; o intrare fara url nu se afiseaza.
 const social = [
   { name: 'Instagram', url: 'https://www.instagram.com/paullucianszaszpsiholog/' },
@@ -43,7 +53,7 @@ export const site = {
       photoAlt: 'Dr. Paul Lucian Szasz, portret alb-negru'
     },
     homeCta: { label: 'Programați o consultație inițială' },
-    localLine: 'Cabinet în Cluj-Napoca, pe Andrei Șaguna nr. 8, sau ședințe online — în funcție de ceea ce ți se potrivește.',
+    localLine: `Cabinet în ${office.locality}, pe ${office.streetRo}, sau ședințe online — în funcție de ceea ce ți se potrivește.`,
     valueProp: {
       heading: 'Cine sunt și cum te pot însoți',
       text: [
@@ -86,7 +96,7 @@ export const site = {
       ] }
     ],
     footer: {
-      address: 'Andrei Șaguna, Nr. 8, Cluj-Napoca',
+      address: `${office.street}, ${office.locality}`,
       phone: '+40 723 333 609',
       emails: ['paullucianszaszpsihoterapeut@gmail.com'],
       social
@@ -127,7 +137,7 @@ export const site = {
       photoAlt: 'Dr. Paul Lucian Szasz, black and white portrait'
     },
     homeCta: { label: 'Schedule an Initial Consultation' },
-    localLine: 'Sessions in my Cluj-Napoca office on Andrei Șaguna no. 8, or online — whichever suits you better.',
+    localLine: `Sessions in my ${office.locality} office on ${office.streetEn}, or online — whichever suits you better.`,
     valueProp: {
       heading: 'Who I am and how I can walk alongside you',
       text: [
@@ -170,7 +180,7 @@ export const site = {
       ] }
     ],
     footer: {
-      address: 'Andrei Șaguna, Nr. 8, Cluj-Napoca',
+      address: `${office.street}, ${office.locality}`,
       phone: '+40 723 333 609',
       emails: ['paullucianszaszpsihoterapeut@gmail.com'],
       social
