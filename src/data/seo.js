@@ -15,7 +15,7 @@ const sameAs = social.length ? { sameAs: social } : {};
 // Coordonele geo lipsesc: le adaugam cand confirmi locația din Google Maps.
 const address = {
   '@type': 'PostalAddress',
-  streetAddress: 'Str. Scortarilor, Nr. 3',
+  streetAddress: 'Andrei Șaguna, Nr. 8',
   addressLocality: 'Cluj-Napoca',
   postalCode: '400186',
   addressCountry: 'RO'
@@ -120,7 +120,7 @@ export const seo = {
       },
       '/contacts/': {
         title: 'Contact | Psihoterapeut CBT Cluj-Napoca — Paul Lucian Szasz',
-        desc: 'Programări la +40 723 333 609, WhatsApp sau email. Cabinet pe Str. Scortarilor nr. 3, Cluj-Napoca. Ședințe față în față sau online.',
+        desc: 'Programări la +40 723 333 609, WhatsApp sau email. Cabinet Andrei Șaguna nr. 8, Cluj-Napoca. Ședințe față în față sau online.',
         canonical: '/contacts/',
         alt: '/en/contact/'
       }
@@ -167,7 +167,7 @@ export const seo = {
       },
       '/en/contact/': {
         title: 'Contact | CBT Psychotherapist Cluj-Napoca — Paul Lucian Szasz',
-        desc: 'Book by phone on +40 723 333 609, WhatsApp or email. Office on Scortarilor no. 3, Cluj-Napoca. Sessions in person or online.',
+        desc: 'Book by phone on +40 723 333 609, WhatsApp or email. Office at Andrei Șaguna no. 8, Cluj-Napoca. Sessions in person or online.',
         canonical: '/en/contact/',
         alt: '/contacts/'
       }
