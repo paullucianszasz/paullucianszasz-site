@@ -56,7 +56,7 @@ export const site = {
       photoAlt: 'Dr. Paul Lucian Szasz, portret alb-negru'
     },
     homeCta: { label: 'Programați o consultație inițială' },
-    localLine: `Cabinet în ${office.locality}, pe ${office.streetRo}, sau ședințe online — în funcție de ceea ce ți se potrivește.`,
+    localLine: `Cabinet în ${office.locality}, pe ${office.streetRo} (${office.note.ro}), sau ședințe online — în funcție de ceea ce ți se potrivește.`,
     valueProp: {
       heading: 'Cine sunt și cum te pot însoți',
       text: [
@@ -141,7 +141,7 @@ export const site = {
       photoAlt: 'Dr. Paul Lucian Szasz, black and white portrait'
     },
     homeCta: { label: 'Schedule an Initial Consultation' },
-    localLine: `Sessions in my ${office.locality} office on ${office.streetEn}, or online — whichever suits you better.`,
+    localLine: `Sessions in my ${office.locality} office on ${office.streetEn} (${office.note.en}), or online — whichever suits you better.`,
     valueProp: {
       heading: 'Who I am and how I can walk alongside you',
       text: [

@@ -52,7 +52,7 @@
 - Citări cu același telefon (NAP): CPR, APCCR, directoare. Până la mutare folosim telefonul, orașul și site-ul, fără adresă de cabinet, ca să nu rescriem totul de două ori.
 - `geo` (coordonatele) lipsește din JSON-LD — se adaugă când confirmi locația din Google Maps.
 - Adresa afișată acum este `Andrei Șaguna nr. 8, Cluj-Napoca 400103` (unde vin clienții), dintr-un singur loc: `office` în `src/data/site.js` (footer în ambele limbi, propozitia din Home, descrierile Contact, JSON-LD, pinul din hartă). La mutare se schimbă aici și, în aceeași zi, se creează listarea cu adresa nouă.
-- Mențiunea `(punct de lucru)` / `(work location)` apare doar în footer și pe Contact, nu în JSON-LD și nu în căutarea de pe hartă (care rămâne curată, ca pinul să fie corect).
+- Mențiunea `(punct de lucru)` / `(work location)` apare în footer, pe Contact și in propozitia de pe Home, nu in JSON-LD si nu in cautarea de pe harta (care ramane curata, ca pinul sa fie corect).
 - La Str. Andrei Șaguna nr. 8 spațiul este închiriat (The Inner Bridge Psychology); listarea de acolo aparține altcuiva și nu se revendică. Google tratează spațiile shared/hourly ca birou virtual, de aceea listarea se face doar la adresa proprie.
 - La adresa proprie se pune un num afișat (plăcuță sau inscripție la intrare) înainte de verificare; fără inscripție, verificarea video poate eșua. Cardul poștal cu PIN este ruta normală pentru o listare storefront.
 
