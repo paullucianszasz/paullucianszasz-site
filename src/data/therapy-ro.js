@@ -1,5 +1,4 @@
-// Psihoterapie (RO) — oglinda textului EN furnizat de client.
-// Draft pentru aprobare; ton informal, catre cititor.
+// Psihoterapie (RO) — oglinda textului EN furnizat de client. Aprobată ca atare; ton informal, catre cititor.
 export const therapyRo = {
   title: 'Psihoterapie',
   blocks: [
