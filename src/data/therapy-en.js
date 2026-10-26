@@ -1,4 +1,4 @@
-// Psihoterapie (EN) — oglenda copiei RO; frazele din textul clientului sunt pastrate unde se potrivesc.
+// Psihoterapie (EN) — oglenda copiei RO; frazele din textul clientului sunt pastrate unde se potrivesc. Fara italic (confirmat).
 // Durata de 50 de minute este adaugata la inceputul sectiunii "How a Session Works" (aprobata).
 export const therapyEn = {
   title: 'Psychotherapy',

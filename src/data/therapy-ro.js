@@ -1,5 +1,5 @@
-// Psihoterapie (RO) — copia furnizata, aplicata ca atare; ton informal, catre cititor.
-// Alegeri: italicul din paragraful REBT iese (pagina nu foloseste italic), a doua linie din lista REBT
+// Psihoterapie (RO) — copia furnizata, aplicata ca atare; ton informal, catre cititor. Aprobată ca atare.
+// Alegeri: fara italic (confirmat; pagina nu foloseste italic), a doua linie din lista REBT
 // evita repetitia "transformarea", randul de inaintea tabelului pastreaza fraza aprobata, durata de 50 de minute
 // este adaugata la inceputul sectiunii "Cum functioneaza o sedinta" (aprobata), iar prima coloana a tabelului este aldinata prin CSS (nu prin marcaj).
 export const therapyRo = {
