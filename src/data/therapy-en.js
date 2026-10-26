@@ -2,6 +2,8 @@
 export const therapyEn = {
   title: 'Psychotherapy',
   blocks: [
+    { t: 'h3', v: 'Evidence-Based Tools for Mental Clarity & Resilience' },
+    { t: 'p', v: 'When stress, anxiety, or self-doubt take over, it often feels like external events are in complete control of your peace of mind. But the key to emotional freedom lies in how we process and challenge the narrative inside our heads.' },
     { t: 'p', v: '"Think of therapy as learning a new set of skills. We aren\'t just going to talk about problems; we are going to look at the thoughts and beliefs driving your emotional reactions, and actively practice strategies so you eventually become your own therapist."' },
     { t: 'ul', lead: true, v: [
       'Cognitive Behavioral Therapy (CBT): Focuses on the connection between thoughts, feelings, and behaviors. Emphasize practical skill-building and symptom relief.',
