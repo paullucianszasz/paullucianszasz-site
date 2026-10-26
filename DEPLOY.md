@@ -47,13 +47,13 @@
 
 ## Rămâne de făcut (nu ține de cod)
 
-- Google Business Profile: nume exact `Cabinet individual de psihologie Paul Lucian Szasz`, adresă `Str. Scortarilor nr. 3, Cluj-Napoca 400186`, telefon `+40 723 333 609`, program Luni – Vineri 16:00 – 20:00, categorie Psihoterapeut. Model: storefront (clienții vin la adresă), pentru pin pe hartă.
+- Google Business Profile: **amânat până ai spațiu propriu** (Str. Scortarilor nr. 3, 400186). Atunci: nume exact `Cabinet individual de psihologie Paul Lucian Szasz`, adresă nouă, telefon `+40 723 333 609`, program Luni – Vineri 16:00 – 20:00, categorie Psihoterapeut, model storefront (pin pe hartă). Până atunci nu se creează nicio listare la Str. Andrei Șaguna nr. 8.
 - Search Console: verificăm `https://paullucianszasz.ro/` (după ce zona este Active, cel mai simplu: înregistrare TXT în Cloudflare DNS, valoarea dată de Google), Target audience → Romania, trimitem `sitemap-index.xml`.
-- Citări cu aceeași adresă/telefon (NAP): CPR, APCCR, directoare.
+- Citări cu același telefon (NAP): CPR, APCCR, directoare. Până la mutare folosim telefonul, orașul și site-ul, fără adresă de cabinet, ca să nu rescriem totul de două ori.
 - `geo` (coordonatele) lipsește din JSON-LD — se adaugă când confirmi locația din Google Maps.
-- Adresa NAP folosită peste tot este `Str. Scortarilor nr. 3, Cluj-Napoca 400186`, dintr-un singur loc: `office` în `src/data/site.js` (footer în ambele limbi, propozitia din Home, descrierile Contact, JSON-LD, pinul din hartă). Google Business Profile trebuie să aibă exact aceeași adresă.
-- La Str. Andrei Șaguna nr. 8 spațiul este închiriat (The Inner Bridge Psychology); listarea de acolo aparține altcuiva și nu se revendică. Dacă adresa rămâne menționată pe site, doar ca text pe Contact, nu în JSON-LD (NAP trebuie să rămână o singură adresă).
-- Listarea nouă se verifică cel mai sigur cu un num afișat la adresă (plăcuță/inscripție). Fără inscripție, verificarea prin video poate eșua; se acceptă de obicei cardul poștal cu PIN pentru listările de tip storefront.
+- Adresa afișată acum este `Andrei Șaguna nr. 8, Cluj-Napoca 400103` (unde vin clienții), dintr-un singur loc: `office` în `src/data/site.js` (footer în ambele limbi, propozitia din Home, descrierile Contact, JSON-LD, pinul din hartă). La mutare se schimbă aici și, în aceeași zi, se creează listarea cu adresa nouă.
+- La Str. Andrei Șaguna nr. 8 spațiul este închiriat (The Inner Bridge Psychology); listarea de acolo aparține altcuiva și nu se revendică. Google tratează spațiile shared/hourly ca birou virtual, de aceea listarea se face doar la adresa proprie.
+- La adresa proprie se pune un num afișat (plăcuță sau inscripție la intrare) înainte de verificare; fără inscripție, verificarea video poate eșua. Cardul poștal cu PIN este ruta normală pentru o listare storefront.
 
 ## După primul build pe domeniu
 

@@ -28,7 +28,7 @@ npm run build    # genereaza dist/ — fisiere statice, se pot hosta direct
 
 - Domeniu: `astro.config.mjs` — `site` este `https://paullucianszasz.ro/`; canonical, hreflang, `og:url`, JSON-LD, sitemap si `public/robots.txt` folosesc acest domeniu. La hosting, redirectioneaza `www.paullucianszasz.ro` (301) spre `paullucianszasz.ro`, ca sa ramana un singur domeniu canonical. Redirecturile din `astro.config.mjs` sunt pagini meta-refresh, nu 301 reale — hostingul poate face 301 pentru vechile cai.
 - `src/components/ContactPage.astro` — formularul nu foloseste niciun serviciu extern: la trimis deschide programul de email al vizitatorului cu datele compuse (`mailto:`). Nu e nimic de inlocuit aici.
-- `src/data/site.js` — adresa, telefonul si emailul sunt cele actuale (Str. Scortarilor Nr. 3, Cluj-Napoca 400186 / +40 723 333 609 / paullucianszaszpsihoterapeut@gmail.com). Adresa este in `office` (un singur loc): footer in ambele limbi, propozitia din Home, descrierile Contact, JSON-LD in `src/data/seo.js` si pinul din Google Maps. Aceeasi adresa se foloseste in Google Business Profile.
+- `src/data/site.js` — adresa, telefonul si emailul sunt cele actuale (Andrei Șaguna Nr. 8, Cluj-Napoca 400103 / +40 723 333 609 / paullucianszaszpsihoterapeut@gmail.com). Adresa este in `office` (un singur loc): footer in ambele limbi, propozitia din Home, descrierile Contact, JSON-LD in `src/data/seo.js` si pinul din Google Maps. La mutare se schimba aici si, in aceeasi zi, adresa din Google Business Profile.
 - `public/assets/` — logo-urile (PNG) si poza de profil (`me-2.jpg`) sunt cele actuale; inlocueste-le doar daca ai variante noi.
 
 ## Publicare articole (Blog)
