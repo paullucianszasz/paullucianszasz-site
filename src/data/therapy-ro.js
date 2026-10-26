@@ -16,7 +16,7 @@ export const therapyRo = {
     { t: 'h3', v: 'Ce putem lucra împreună' },
     { t: 'p', v: 'Terapia nu este un proces unic pentru toți și nu înseamnă să repari ceea ce ar fi „defect” în tine. Este un spațiu colaborativ, în care explorăm cu blândețe tiparele care te blochează și construim instrumente practice care te ajută să te simți stabil, rezilient și împăcat.' },
     { t: 'p', v: 'În practica mea integrez Terapia cognitiv-comportamentală (CBT) și Terapia Rațional-Emotivă și Comportamentală (REBT) — două abordări active, bazate pe dovezi, care te ajută să înțelegi legătura profundă dintre gânduri, emoții și acțiuni.' },
-    { t: 'h4', v: 'Terapia cognitiv-comportamentală (CBT): înțelegarea minții tale' },
+    { t: 'h4', v: 'Terapia cognitiv-comportamentală (CBT): Înțelegarea minții tale' },
     { t: 'p', v: 'Când trecem prin perioade dificile, gândurile pot deveni copleșitoare, distorsionate sau excesiv de autocritice. CBT oferă o privire suportivă cu care poți examina aceste tipare de gândire, fără judecată.' },
     { t: 'p', v: 'Împreună:' },
     { t: 'ul', lead: true, v: [
@@ -24,7 +24,7 @@ export const therapyRo = {
       'Identificăm tiparele de gândire care nu te ajută: recunoaștem modurile subtile în care mintea ta poate să sară la cel mai rău scenariu sau să te blocheze.',
       'Construim instrumente practice pentru zi de zi: înveți strategii concrete cu care poți răspunde provocărilor vieții cu claritate și încredere stabilă.'
     ] },
-    { t: 'h4', v: 'Terapia Rațional-Emotivă și Comportamentală (REBT): redobândirea libertății emoționale' },
+    { t: 'h4', v: 'Terapia Rațional-Emotivă și Comportamentală (REBT): Redobândirea libertății emoționale' },
     { t: 'p', v: 'Viața ne pune adesea în fața unor cerințe grele, care duc la așteptări interne rigide — acel „trebuie să nu eșuez” sau „lucrurile ar trebui să fie altfel”. REBT te ajută să renunți la aceste cerințe epuizante și să cultivi autocompasiunea.' },
     { t: 'p', v: 'Împreună, lucrăm la:' },
     { t: 'ul', lead: true, v: [
