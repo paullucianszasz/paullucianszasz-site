@@ -401,6 +401,8 @@ h1, h2, h4, .faq-item .q, .hero .eyebrow {
   color: var(--dark);
   margin: 25px 0 10px;
 }
+/* Etichetele de sub sectiune (numele modalitatilor si ale etapelor) */
+.page h4 { font-size: 17px; color: var(--dark); margin: 18px 0 8px; }
 .page ul, .page ol { padding-left: 22.5px; margin: 0 0 20px; }
 .page ul li, .page ol > li { margin-bottom: 8px; }
 .page ol > li > ul { margin-top: 10px; list-style-type: circle; }

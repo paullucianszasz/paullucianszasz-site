@@ -17,7 +17,7 @@ export const site = {
     nav: [
       { label: 'Home', href: '/' },
       { label: 'Despre mine', href: '/despre-mine/' },
-      { label: 'Psihoterapie', href: '/services/psihoterapie/' },
+      { label: 'Psihoterapie', href: '/psihoterapie/' },
       { label: 'Contact', href: '/contacts/' }
     ],
     footerNav: [
@@ -98,7 +98,7 @@ export const site = {
     nav: [
       { label: 'Home', href: '/en/homepage-english/' },
       { label: 'About me', href: '/en/about-me/' },
-      { label: 'Psychotherapy', href: '/en/services/psychotherapy/' },
+      { label: 'Psychotherapy', href: '/en/psychotherapy/' },
       { label: 'Contact', href: '/en/contact/' }
     ],
     footerNav: [
