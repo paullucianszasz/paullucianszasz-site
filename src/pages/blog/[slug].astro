@@ -1,0 +1,18 @@
+---
+import { site } from '../../data/site.js';
+import ArticlePage from '../../components/ArticlePage.astro';
+import { getCollection } from 'astro:content';
+
+// entry.id = numele fisierului markdown, fara extensie; acela slug folosit in URL.
+export async function getStaticPaths() {
+  const ro = await getCollection('articlesRo');
+  const en = await getCollection('articlesEn');
+  return ro.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry, mirror: en.find((e) => e.id === entry.data.mirror) || null }
+  }));
+}
+
+const { entry, mirror } = Astro.props;
+---
+<ArticlePage t={site.ro} entry={entry} mirror={mirror} />

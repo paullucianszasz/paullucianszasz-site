@@ -5,23 +5,25 @@ import LotusFlower from '../components/LotusFlower.astro';
 import '../styles/global.css';
 import { seo } from '../data/seo.js';
 
-const { t, active = '', title = '' } = Astro.props;
+const { t, active = '', title = '', meta = null } = Astro.props;
 const s = seo[t.lang];
 const pathname = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${Astro.url.pathname}/`;
 const darkHeader = ['/', '/en/', '/en/homepage-english/'].includes(pathname);
 const brand = t.lang === 'ro' ? 'Paul Lucian Szasz - Psihoterapeut' : 'Paul Lucian Szasz - Psychotherapist';
 
-// Titlu si descriere pe ruta, din src/data/seo.js; fallback pentru pagini noi.
+// Titlu si descriere pe ruta, din src/data/seo.js; meta (per articol, din frontmatter) are intai.
 const page = s.pages[pathname];
-const pageTitle = page ? page.title : (title ? `${title} - ${brand}` : `Dr. ${brand}`);
-const description = page ? page.desc : s.defaultDesc;
+const pair = meta || page;
+const pageTitle = meta?.title ?? (page ? page.title : (title ? `${title} - ${brand}` : `Dr. ${brand}`));
+const description = meta?.desc ?? (page ? page.desc : s.defaultDesc);
 
 const abs = (path) => new URL(path, Astro.site).toString();
-const canonical = abs(page ? page.canonical : pathname);
+const canonical = abs(meta?.canonical || (page ? page.canonical : pathname));
 const ogImage = abs(s.ogImage);
 
-// JSON-LD: Person (schema.org nu are "Psychologist"), doar datele cunoscute.
+// JSON-LD: Person (schema.org nu are "Psychologist"), doar datele cunoscute; pentru articole se adauga BlogPosting.
 const jsonLd = { '@context': 'https://schema.org', '@type': 'Person', ...s.person };
+const articleLd = meta?.ld ? { '@context': 'https://schema.org', ...meta.ld } : null;
 ---
 <!doctype html>
 <html lang={t.lang}>
@@ -31,28 +33,30 @@ const jsonLd = { '@context': 'https://schema.org', '@type': 'Person', ...s.perso
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
-    {page && (
+    {pair && (
       <>
-        <link rel="alternate" hreflang={t.lang} href={abs(page.canonical)} />
-        {page.alt && <link rel="alternate" hreflang={t.lang === 'ro' ? 'en' : 'ro'} href={abs(page.alt)} />}
+        <link rel="alternate" hreflang={t.lang} href={abs(pair.canonical)} />
+        {pair.alt && <link rel="alternate" hreflang={t.lang === 'ro' ? 'en' : 'ro'} href={abs(pair.alt)} />}
         <link rel="alternate" hreflang="x-default" href={abs('/')} />
       </>
     )}
 
     <!-- Share / link preview -->
-    <meta property="og:type" content="profile" />
+    <meta property="og:type" content={meta ? 'article' : 'profile'} />
     <meta property="og:site_name" content={s.siteName} />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={ogImage} />
     <meta property="og:locale" content={t.lang === 'ro' ? 'ro_RO' : 'en_US'} />
+    {meta?.date && <meta property="article:published_time" content={meta.date} />}
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={pageTitle} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
 
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)}></script>
+    {articleLd && <script type="application/ld+json" set:html={JSON.stringify(articleLd)}></script>}
     <link rel="icon" href="/assets/favicon.png" />
     <link rel="apple-touch-icon" href="/assets/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />

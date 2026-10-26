@@ -13,16 +13,18 @@ export const site = {
     lang: 'ro',
     otherLang: { label: 'EN', href: '/en/homepage-english/' },
     home: '/',
-    pages: { about: '/despre-mine/', contact: '/contacts/' },
+    pages: { about: '/despre-mine/', contact: '/contacts/', blog: '/blog/' },
     nav: [
       { label: 'Home', href: '/' },
       { label: 'Despre mine', href: '/despre-mine/' },
       { label: 'Psihoterapie', href: '/psihoterapie/' },
+      { label: 'Blog', href: '/blog/' },
       { label: 'Contact', href: '/contacts/' }
     ],
     footerNav: [
       { label: 'Home', href: '/' },
       { label: 'Despre mine', href: '/despre-mine/' },
+      { label: 'Blog', href: '/blog/' },
       { label: 'Contact', href: '/contacts/' }
     ],
     hero: {
@@ -60,7 +62,7 @@ export const site = {
         'Perfecționism'
       ]
     },
-    labels: { services: 'Servicii oferite', types: 'Tipuri de servicii', readMore: 'Citește mai mult', faq: 'F.A.Q.' },
+    labels: { services: 'Servicii oferite', types: 'Tipuri de servicii', readMore: 'Citește mai mult', faq: 'F.A.Q.', blog: 'Blog', noArticles: 'Încă nu am publicat articole.', otherLanguage: 'Acest articol în engleză', backToBlog: 'Înapoi la Blog' },
     cta: { label: 'Programează-te', href: 'tel:+40723333609' },
     whatsapp: { label: 'WhatsApp', href: 'https://wa.me/40723333609?text=Bun%C4%83%2C%20a%C8%99%20dori%20s%C4%83%20programez%20o%20%C8%99edin%C8%9B%C4%83.' },
     faq: [
@@ -94,16 +96,18 @@ export const site = {
     lang: 'en',
     otherLang: { label: 'RO', href: '/' },
     home: '/en/homepage-english/',
-    pages: { about: '/en/about-me/', contact: '/en/contact/' },
+    pages: { about: '/en/about-me/', contact: '/en/contact/', blog: '/en/blog/' },
     nav: [
       { label: 'Home', href: '/en/homepage-english/' },
       { label: 'About me', href: '/en/about-me/' },
       { label: 'Psychotherapy', href: '/en/psychotherapy/' },
+      { label: 'Blog', href: '/en/blog/' },
       { label: 'Contact', href: '/en/contact/' }
     ],
     footerNav: [
       { label: 'Home', href: '/en/homepage-english/' },
       { label: 'About me', href: '/en/about-me/' },
+      { label: 'Blog', href: '/en/blog/' },
       { label: 'Contact', href: '/en/contact/' }
     ],
     hero: {
@@ -141,7 +145,7 @@ export const site = {
         'Perfectionism'
       ]
     },
-    labels: { services: 'Services Offered', types: 'Types of Services', readMore: 'Read More', faq: 'F.A.Q.' },
+    labels: { services: 'Services Offered', types: 'Types of Services', readMore: 'Read More', faq: 'F.A.Q.', blog: 'Blog', noArticles: 'No articles published yet.', otherLanguage: 'This article in Romanian', backToBlog: 'Back to the Blog' },
     cta: { label: 'Book an appointment', href: 'tel:+40723333609' },
     whatsapp: { label: 'WhatsApp', href: 'https://wa.me/40723333609?text=Hello%2C%20I%20would%20like%20to%20book%20a%20session.' },
     faq: [

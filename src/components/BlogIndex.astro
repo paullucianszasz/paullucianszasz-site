@@ -1,0 +1,39 @@
+---
+import Base from '../layouts/Base.astro';
+
+const { t, blog, articles } = Astro.props;
+const fmt = new Intl.DateTimeFormat(t.lang === 'ro' ? 'ro-RO' : 'en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+
+// Excerpt: din frontmatter, altfel primul paragraf din corp, fara marcaj markdown.
+const clean = (s) => s
+  .replace(/!\[[^\]]*\]\([^)]*\)/g, '')
+  .replace(/\[([^\]]*)\]\([^)]*\)/g, '$1')
+  .replace(/^[#>*]\s*/gm, '')
+  .replace(/[*_`]/g, '')
+  .trim();
+const excerpt = (a) => a.data.excerpt || clean(a.body).split('\n\n')[0];
+const href = (slug) => `${t.pages.blog}${slug}/`;
+const sorted = [...articles].sort((a, b) => b.data.date - a.data.date);
+---
+<Base t={t} active={t.labels.blog}>
+  <section class="page blog-index">
+    <div class="container">
+      <h1>{blog.title}</h1>
+      {blog.intro && <p class="blog-intro">{blog.intro}</p>}
+      {sorted.length === 0 ? (
+        <p class="blog-empty">{t.labels.noArticles}</p>
+      ) : (
+        <ul class="blog-list">
+          {sorted.map((a) => (
+            <li class="blog-item">
+              <p class="blog-date">{fmt.format(a.data.date)}</p>
+              <h2><a href={href(a.id)}>{a.data.title}</a></h2>
+              {excerpt(a) && <p class="blog-excerpt">{excerpt(a)}</p>}
+              <p class="read-more"><a href={href(a.id)}>{t.labels.readMore}</a></p>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  </section>
+</Base>

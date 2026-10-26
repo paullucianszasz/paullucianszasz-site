@@ -1,0 +1,9 @@
+---
+import { site } from '../../../data/site.js';
+import BlogIndex from '../../../components/BlogIndex.astro';
+import { blogEn } from '../../../data/blog-en.js';
+import { getCollection } from 'astro:content';
+
+const articles = await getCollection('articlesEn');
+---
+<BlogIndex t={site.en} blog={blogEn} articles={articles} />

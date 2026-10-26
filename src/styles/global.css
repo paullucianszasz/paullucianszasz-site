@@ -428,6 +428,29 @@ h1, h2, h4, .faq-item .q, .hero .eyebrow {
 .about-photo { flex: 0 0 19%; }
 .about-photo img { width: 100%; border-radius: 6px; }
 
+/* Blog: lista de articole si pagina articolului */
+.blog-intro { max-width: 700px; margin: 0 0 26px; }
+.blog-list { list-style: none; padding: 0; margin: 0; }
+.blog-item { padding-bottom: 20px; border-bottom: 0.8px solid #e8e1d7; }
+.blog-item + .blog-item { padding-top: 20px; }
+.blog-item p { margin: 0; }
+.blog-item .blog-date { font-size: 14px; color: var(--text-light); margin-bottom: 6px; }
+.blog-item h2 { font-size: 21px; margin: 0 0 8px; }
+.blog-item h2 a { color: var(--dark); }
+.blog-item h2 a:hover { color: var(--link); }
+.blog-item .read-more { margin-top: 10px; font-size: 15px; }
+.blog-item .read-more a { color: var(--link); font-weight: 600; }
+.blog-item .read-more a:hover { color: var(--link-hover); text-decoration: underline; }
+.article .article-date { font-size: 14px; color: var(--text-light); margin: 0 0 22px; }
+.article-body h2 { font-size: 22px; color: var(--dark); margin: 26px 0 10px; }
+.article-body img { max-width: 100%; border-radius: 6px; margin: 20px 0; }
+.article-body blockquote { margin: 20px 0; padding-left: 16px; border-left: 3px solid var(--panel-bd); color: var(--dark); font-family: var(--serif); }
+.article-mirror, .article-back { margin-top: 24px; font-size: 15px; }
+.article-mirror a, .article-back a { color: var(--link); font-weight: 600; }
+.article-cta { margin-top: 14px; }
+.article .home-cta { background: var(--link); color: var(--white); }
+.article .home-cta:hover { background: var(--link-hover); }
+
 /* Contact */
 .contact-page { padding: 100px 0 70px; }
 .contact-page h1 { text-align: left; margin: 0; }

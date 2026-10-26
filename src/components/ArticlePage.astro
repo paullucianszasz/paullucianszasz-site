@@ -1,0 +1,42 @@
+---
+import Base from '../layouts/Base.astro';
+import { render } from 'astro:content';
+
+const { t, entry, mirror } = Astro.props;
+const { Content } = await render(entry); // Astro 5: render(entry) intoarce componenta Content, nu un string html
+const fmt = new Intl.DateTimeFormat(t.lang === 'ro' ? 'ro-RO' : 'en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+
+// SEO per articol: titlu din frontmatter (prin Base), descriere din frontmatter,
+// canonical = pagina articolului, alt = articolul oglinda, doar daca frontmatter are mirror.
+const here = `${t.pages.blog}${entry.id}/`;
+const other = t.lang === 'ro' ? '/en/blog/' : '/blog/';
+const mirrorUrl = mirror ? `${other}${mirror.id}/` : null;
+const meta = {
+  desc: entry.data.description,
+  canonical: here,
+  alt: mirrorUrl,
+  date: entry.data.date.toISOString().slice(0, 10),
+  ld: {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: entry.data.title,
+    description: entry.data.description,
+    datePublished: entry.data.date.toISOString().slice(0, 10),
+    url: new URL(here, Astro.site).toString(),
+    author: { '@type': 'Person', name: 'Dr. Paul Lucian Szasz' },
+    inLanguage: t.lang
+  }
+};
+---
+<Base t={t} active={t.labels.blog} title={entry.data.title} meta={meta}>
+  <article class="page article">
+    <div class="container">
+      <h1>{entry.data.title}</h1>
+      <p class="article-date">{fmt.format(entry.data.date)}</p>
+      <div class="article-body"><Content /></div>
+      {mirrorUrl && <p class="article-mirror">{t.labels.otherLanguage}: <a href={mirrorUrl}>{mirror.data.title}</a></p>}
+      <p class="article-back"><a href={t.pages.blog}>{t.labels.backToBlog}</a></p>
+      <p class="article-cta"><a class="home-cta" href={t.cta.href}>{t.cta.label}</a></p>
+    </div>
+  </article>
+</Base>
