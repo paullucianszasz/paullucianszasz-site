@@ -8,7 +8,7 @@ export const therapyEn = {
     { t: 'h4', v: 'Cognitive Behavioral Therapy (CBT): Understanding Your Mind' },
     { t: 'p', v: 'When we are going through difficult times, our thoughts can become overwhelming, distorted, or overly self-critical. CBT offers a supportive lens to examine these thought patterns without judgment.' },
     { t: 'p', v: 'Together, we will:' },
-    { t: 'ul', v: [
+    { t: 'ul', lead: true, v: [
       'Unpack overwhelming feelings: Break down complex stress, anxiety, or sadness into manageable pieces so they feel less daunting.',
       'Identify unhelpful thought loops: Recognize the subtle ways your mind might be jumping to the worst-case scenario or holding you back.',
       'Build practical daily tools: Learn actionable strategies to respond to life\'s challenges with clarity and steady confidence.'
@@ -16,14 +16,14 @@ export const therapyEn = {
     { t: 'h4', v: 'Rational Emotive Behavior Therapy (REBT): Reclaiming Emotional Freedom' },
     { t: 'p', v: 'Life often places heavy demands on us, leading to rigid internal expectations—the unspoken "I must not fail" or "Things should be different." REBT focuses on helping you let go of these exhausting demands and cultivate self-compassion.' },
     { t: 'p', v: 'Together, we will work on:' },
-    { t: 'ul', v: [
+    { t: 'ul', lead: true, v: [
       'Releasing self-criticism: Shift away from rigid "shoulds" and "musts" toward self-acceptance and emotional flexibility.',
       'Transforming emotional distress: Learn how to transform paralyzing anxiety or deep frustration into healthy, manageable emotions that allow you to move forward.',
       'Fostering unconditional self-acceptance: Discover how to value yourself fully, even in moments of struggle or uncertainty.'
     ] },
     { t: 'h3', v: 'How We Can Connect' },
     { t: 'p', v: 'Every journey starts differently, and I aim to make therapy accessible in whichever format feels most comfortable for you:' },
-    { t: 'ul', v: [
+    { t: 'ul', lead: true, v: [
       'In-Person Sessions: A quiet, private, and welcoming office environment where you can step away from daily distractions.',
       'Online Therapy: High-quality, confidential video sessions from the comfort and convenience of your own home.'
     ] }

@@ -2,6 +2,12 @@
 import Base from '../layouts/Base.astro';
 
 const { t, service } = Astro.props;
+
+// Pentru listele unde fiecare linie este "lead: explicatie", lead-ul se afiseaza aldinat (bloc cu lead: true).
+const splitLead = (li, boldLead) => {
+  const i = boldLead ? li.indexOf(': ') : -1;
+  return i > 0 ? { lead: li.slice(0, i), rest: li.slice(i) } : { lead: '', rest: li };
+};
 ---
 <Base t={t} title={service.title} active={t.lang === 'ro' ? 'Psihoterapie' : 'Psychotherapy'}>
   <section class="page">
@@ -11,7 +17,14 @@ const { t, service } = Astro.props;
         b.t === 'p' ? <p>{b.v}</p> :
         b.t === 'h3' ? <h3>{b.v}</h3> :
         b.t === 'h4' ? <h4>{b.v}</h4> :
-        b.t === 'ul' ? <ul>{b.v.map((li) => <li>{li}</li>)}</ul> :
+        b.t === 'ul' ? (
+          <ul>
+            {b.v.map((li) => {
+              const p = splitLead(li, b.lead);
+              return <li>{p.lead && <strong>{p.lead}</strong>}{p.rest}</li>;
+            })}
+          </ul>
+        ) :
         b.t === 'ol' ? <ol>{b.v.map((li) => (
           typeof li === 'string' ? <li>{li}</li> :
           <li>{li.text}{li.sub && <ul>{li.sub.map((s) => <li>{s}</li>)}</ul>}</li>
