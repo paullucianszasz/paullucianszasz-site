@@ -35,7 +35,7 @@ Articolele sunt fisiere markdown, cate unul per articol:
 - `src/content/blog/ro/` — articul in romana, afisat pe `/blog/<numele-fisier>/`
 - `src/content/blog/en/` — oglinda in engleza, afisata pe `/en/blog/<numele-fisier>/`
 
-Numele fisierului este slugul din URL (fara diacritice, cu cratime). Frontmatter:
+Numele fisierului este slugul din URL (fara diacritice, cu cratime). Numele trebuie sa fie unic in ambele limbi, pentru ca idurile din cele doua colectii se verifica impreuna: fisierul RO si oglinda EN au nume diferite, de ex. `modelul-abc-in-sedinta.md` / `the-abc-model-client-script.md`. Frontmatter:
 
 ```markdown
 ---
@@ -48,8 +48,6 @@ mirror: 'how-disputing-works-in-rebt'
 
 Textul articolului, in paragrafe. `##` pentru subtitluri, `-` pentru liste, `>` pentru citate.
 ```
-
-`mirror` = slugul articolului oglinda din cealalta limba; fara el, pagina nu afiseaza linkul catre cealalta limba si nu primeste perechea hreflang. Titlul, descrierea, canonical, hreflang si JSON-LD (BlogPosting) sunt luate din frontmatter, iar articolele intra automat in sitemap.
 
 `mirror` = slugul articolului oglinda din cealalta limba; fara el, pagina nu afiseaza linkul catre cealalta limba si nu primeste perechea hreflang. Titlul, descrierea, canonical, hreflang si JSON-LD (BlogPosting) sunt luate din frontmatter, iar articolele intra automat in sitemap.
 
