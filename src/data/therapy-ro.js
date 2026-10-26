@@ -2,6 +2,8 @@
 export const therapyRo = {
   title: 'Psihoterapie',
   blocks: [
+    // Draft pentru aprobare (oglanda textului EN furnizat de client).
+    { t: 'p', v: '„Gândește-te la terapie ca la învățarea unui set nou de abilități. Nu vom doar discuta despre probleme; vom privi gândurile și credințele care îți alimentează reacțiile emoționale și vom exersa activ strategii, astfel încât, în timp, să devii propriul tău terapeut.”' },
     { t: 'ul', lead: true, v: [
       'Terapia cognitiv-comportamentală (CBT): pune accent pe legătura dintre gânduri, emoții și comportamente. Insistă pe construirea de abilități practice și pe reducerea simptomelor.',
       'Terapia Rațional-Emotivă și Comportamentală (REBT): identifică „trebuie”, „ar trebui” și celelalte credințe iraționale rigide și te ajută să dezvolți o atitudine acceptantă, flexibilă și rațională.'

@@ -2,6 +2,7 @@
 export const therapyEn = {
   title: 'Psychotherapy',
   blocks: [
+    { t: 'p', v: '"Think of therapy as learning a new set of skills. We aren\'t just going to talk about problems; we are going to look at the thoughts and beliefs driving your emotional reactions, and actively practice strategies so you eventually become your own therapist."' },
     { t: 'ul', lead: true, v: [
       'Cognitive Behavioral Therapy (CBT): Focuses on the connection between thoughts, feelings, and behaviors. Emphasize practical skill-building and symptom relief.',
       'Rational Emotive Behavior Therapy (REBT): Focuses on identifying rigid "musts," "shoulds," and irrational beliefs, helping clients develop an accepting, flexible, and rational mindset.'
