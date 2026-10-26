@@ -59,6 +59,7 @@ export const site = {
         'Gestionarea furiei',
         'Stres și epuizare (burnout)',
         'Difficultăți în relații',
+        'Terapie de cuplu',
         'Perfecționism'
       ]
     },
@@ -142,6 +143,7 @@ export const site = {
         'Anger Management',
         'Stress & Burnout',
         'Relationship Struggles',
+        'Couples Therapy',
         'Perfectionism'
       ]
     },
