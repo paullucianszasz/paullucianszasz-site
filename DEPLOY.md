@@ -1,4 +1,10 @@
-# Deploy (Cloudflare Pages) — de facut cand mergem la hosting
+# Deploy (Cloudflare Pages)
+
+## Status
+
+- Repo GitHub: conectat la Cloudflare Pages (build `npm run build`, output `dist`, Node 22 din `.nvmrc`).
+- Cloudflare: zona `paullucianszasz.ro` creată (Free, Full setup), nameservers `harvey.ns.cloudflare.com` / `val.ns.cloudflare.com`; la RoTLD schimbarea este de făcut — zona rămâne Pending până atunci.
+- Domeniu înregistrat la RoTLD (12 €/an); Cloudflare nu poate găzdui un domeniu `.ro` la registrar, deci rămâne la RoTLD și doar DNS-ul este la Cloudflare. La data verificării, domeniul nu rezolvă deloc (NXDOMAIN): nu există zonă activă și nu există inregistrari de păstrat.
 
 ## Ce este gata acum
 
@@ -21,11 +27,14 @@
 
 ## DNS la RoTLD
 
-- RoTLD → **Domain Administration** → domeniul + domain password → **Nameservers**.
-- Cloudflare → Domains → zone (Full setup) → copiem exact cele două nameservers atribuite zonei.
-- **Dezactivăm DNSSEC la RoTLD înainte** de schimbarea nameservers; după ce zona devine Active, DNSSEC se reactivează în Cloudflare.
-- Propagare: până la 24 h. Cloudflare trimite email când cele două părți se potrivesc.
-- MX / SPF / DKIM / DMARC și înregistrările de mail trebuie readăugate în Cloudflare, altfel emailul se strică.
+- Cloudflare → Domains → zone (Free plan, Full setup) → nameservers atribuite zonei:
+  - `harvey.ns.cloudflare.com`
+  - `val.ns.cloudflare.com`
+- RoTLD → **Domain Administration** → domeniul + domain password → **Nameservers** → cele două de mai sus, campurile 3 si 4 ramân goale.
+- DNSSEC: pentru `paullucianszasz.ro` nu este nimic publicat (domeniul returna NXDOMAIN), deci nu este de dezactivat. Daca panoul RoTLD arata DNSSEC pornit, il dezactivam inainte de a salva nameservers, dupa ce zona devine Active il reactivam in Cloudflare.
+- Nu se adauga inregistrari DNS la RoTLD dupa schimbare (RoTLD nu mai serveste DNS) si nu se adauga A/CNAME manual in Cloudflare pentru site: inregistrarea se creeaza automat cand adaugam Custom domain la proiectul Pages.
+- MX / SPF / DKIM / DMARC nu sunt necesare: adresa de email afisata pe site este un cont Gmail, nu mailbox pe domeniu.
+- Propagare: pana la 24 h. Cloudflare trimite email cand zona devine Active.
 
 ## Publicare articole după ce hostingul citește repo-ul
 
@@ -37,7 +46,7 @@
 ## Rămâne de făcut (nu ține de cod)
 
 - Google Business Profile: nume exact `Cabinet individual de psihologie Paul Lucian Szasz`, adresă, telefon, program Luni – Vineri 16:00 – 20:00.
-- Search Console: verificăm `https://paullucianszasz.ro/`, Target audience → Romania, trimitem `sitemap-index.xml`.
+- Search Console: verificăm `https://paullucianszasz.ro/` (după ce zona este Active, cel mai simplu: înregistrare TXT în Cloudflare DNS, valoarea dată de Google), Target audience → Romania, trimitem `sitemap-index.xml`.
 - Citări cu aceeași adresă/telefon (NAP): CPR, APCCR, directoare.
 - `geo` (coordonatele) lipsește din JSON-LD — se adaugă când confirmi locația din Google Maps.
 - La mutarea cabinetului (începutul anului): schimbi `office` în `src/data/site.js` și, în aceeași zi, adresa din Google Business Profile și pinul de pe hartă. Codul postal actual, 400103, este pentru Str. Șaguna Andrei; pentru Str. Scortarilor este 400186.
