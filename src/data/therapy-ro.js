@@ -10,7 +10,7 @@ export const therapyRo = {
     { t: 'p', v: 'Când trecem prin perioade dificile, gândurile pot deveni copleșitoare, distorsionate sau excesiv de autocritice. CBT oferă o privire suportivă cu care poți examina aceste tipare de gândire, fără judecată.' },
     { t: 'p', v: 'Împreună:' },
     { t: 'ul', lead: true, v: [
-      'Despăcăm emoțiile copleșitoare: descompunem stresul, anxietatea sau tristețea complexe în bucăți gestionabile, ca să pară mai puțin amenințătoare.',
+      'Rezolvăm emoțiile copleșitoare: descompunem stresul, anxietatea sau tristețea complexe în bucăți gestionabile, ca să pară mai puțin amenințătoare.',
       'Identificăm tiparele de gândire care nu te ajută: recunoaștem modurile subtile în care mintea ta poate să sară la cel mai rău scenariu sau să te blocheze.',
       'Construim instrumente practice pentru zi de zi: înveți strategii concrete cu care poți răspunde provocărilor vieții cu claritate și încredere stabilă.'
     ] },
