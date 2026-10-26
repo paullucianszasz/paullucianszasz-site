@@ -1,12 +1,12 @@
 // Contact (EN) — oglinda lui contact-ro.js; telefon, email si adresa vin din src/data/site.js (footer).
-// Hours as supplied (16:00 – 20:00); days assumed Monday – Friday, to confirm. Cancellation policy mirrors the supplied RO text.
+// Hours as supplied (16:00 – 20:00); days confirmed Monday – Friday. Cancellation policy mirrors the supplied RO text.
 // Entries chosen by id come from the supplied FAQ in site.js, unchanged; the rest is new content.
 import { site } from './site.js';
 const byId = (id) => site.en.faq.find((f) => f.id === id);
 
 export const contactEn = {
   title: 'Contact',
-  hours: 'Monday – Friday, between 16:00 and 20:00', // days: to confirm; hours as supplied
+  hours: 'Monday – Friday, between 16:00 and 20:00', // days confirmed; hours as supplied
   booking: [
     'Bookings are made by phone, WhatsApp or email. I do not use an online scheduling platform, so the first contact is enough: we look at the available hours together and set the first session.'
   ],

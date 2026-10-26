@@ -1,5 +1,5 @@
 // Contact (RO) — telefon, email si adresa vin din src/data/site.js (footer), neschimbate.
-// Programul: orele furnizate (16:00 – 20:00); zilele sunt asumate Luni – Vineri, de confirmat.
+// Programul: zile confirmate (Luni – Vineri), orele furnizate (16:00 – 20:00).
 // Wording aprobat ca atare (ramas din draft); politica de anulare este textul furnizat, neschimbat.
 // Intrarile alese dupa id vin din FAQ-ul furnizat in site.js, neschimbat; restul este continut nou.
 import { site } from './site.js';
@@ -7,7 +7,7 @@ const byId = (id) => site.ro.faq.find((f) => f.id === id);
 
 export const contactRo = {
   title: 'Contact',
-  hours: 'Luni – Vineri, între 16:00 și 20:00', // zile: de confirmat; orele sunt cele furnizate
+  hours: 'Luni – Vineri, între 16:00 și 20:00', // zile confirmate; orele sunt cele furnizate
   booking: [
     'Programarea se face telefonic, prin WhatsApp sau prin email. Nu folosesc o platformă de programare online, așa că primul contact este suficient: verificăm împreună orele disponibile și stabilim prima ședință.'
   ],
