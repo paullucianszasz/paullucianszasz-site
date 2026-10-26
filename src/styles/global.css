@@ -49,6 +49,23 @@ body {
 a { color: inherit; text-decoration: none; }
 p { margin: 0 0 15px; }
 
+/* Lotus ca apa de fundal, pe toate paginile: marca fixes in spatele continutului.
+   Continutul ramane deasupra (main z-index 1), iar conturul e la ~14% din accent,
+   deci nu schimba contrastul textului; la print se ascunde. */
+.lotus-mark { position: fixed; inset: 0; z-index: 0; pointer-events: none; }
+.lotus-mark .lotus {
+  position: absolute;
+  left: 50%;
+  top: 44%;
+  width: min(44vw, 460px);
+  transform: translate(-50%, -50%);
+  opacity: 0.14;
+}
+.lotus-mark .lotus path { fill: var(--white); stroke: var(--accent); stroke-opacity: 0.16; stroke-width: 1.6; stroke-linecap: round; }
+.lotus-mark .lotus .cup { fill: none; stroke-width: 1.2; }
+main { position: relative; z-index: 1; }
+@media print { .lotus-mark { display: none; } }
+
 /* Titluri: serif lin, in sentence case. Uppercase ramane doar pentru etichetele mici
    (nav, pill-uri, .section-label), care sunt labelformat, nu titlu. */
 h1, h2, h4, .faq-item .q, .hero .eyebrow {

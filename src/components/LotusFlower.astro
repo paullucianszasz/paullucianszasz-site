@@ -1,0 +1,18 @@
+---
+// Lotus ca marca de apa (folosit in Base.astro pe toate paginile).
+// 7 petale simetrice + calice; contur subtire, fara umplere, ca sa nu reduca contrastul textului.
+const petals = [
+  'M60,82Q73,62.2 60,38Q47,62.2 60,82Z',
+  'M60,82Q79.24,73.86 80.14,49.77Q58.89,61.14 60,82Z',
+  'M60,82Q61.11,61.14 39.86,49.77Q40.76,73.86 60,82Z',
+  'M60,82Q78.28,84.74 89.14,66.51Q67.95,65.32 60,82Z',
+  'M60,82Q52.05,65.32 30.86,66.51Q41.72,84.74 60,82Z',
+  'M60,82Q72.46,90.57 86.98,81.06Q71.83,72.58 60,82Z',
+  'M60,82Q48.17,72.58 33.02,81.06Q47.54,90.57 60,82Z'
+];
+const cup = 'M44,84Q60,94 76,84';
+---
+<svg class="lotus" viewBox="28 35 64 57" aria-hidden="true" focusable="false">
+  {petals.map((p) => <path d={p} />)}
+  <path class="cup" d={cup} />
+</svg>
