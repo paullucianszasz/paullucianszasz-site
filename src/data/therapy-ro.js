@@ -41,6 +41,33 @@ export const therapyRo = {
     { t: 'ul', lead: true, v: [
       'Ședințe în cabinet: un mediu liniștit, privat și primitor, în care te poți îndepărta de zgomotele zilei.',
       'Terapie online: ședințe video confidențiale, de calitate, din confortul și liniștea casei tale.'
-    ] }
+    ] },
+    // Draft pentru aprobare (oglenda textului EN furnizat de client).
+    { t: 'h3', v: 'Ce poți aștepta: abordarea CBT și REBT' },
+    { t: 'p', v: 'Dacă ai auzit până acum doar de terapia clasică, bazată pe discuții deschise, prima ședință de Terapie cognitiv-comportamentală (CBT) sau de Terapie Rațional-Emotivă și Comportamentală (REBT) poate părea puțin diferită.' },
+    { t: 'p', v: 'Un spațiu sigur și empatic rămâne baza, dar munca noastră împreună este gândită să fie activă, structurată și orientată spre rezultate practice. Iată ce diferențiază această abordare:' },
+    { t: 'h4', v: '1. O colaborare adevărată (un parteneriat activ)' },
+    { t: 'p', v: 'În unele forme de terapie, terapeutul este în primul rând un ascultător tăcut. În CBT și REBT lucrăm împreună, ca o echipă interactivă.' },
+    { t: 'p', v: 'Ce înseamnă asta pentru tine: eu aduc expertiza în instrumente psihologice, cadre și tipare, iar tu aduci cunoașterea propriei tale experiențe trăite. Împreună lucrăm concret la ce te ține blocat și construim strategii aplicabile care te ajută să mergi mai departe.' },
+    { t: 'h4', v: '2. Ne concentrăm pe „podul” dintre gânduri și emoții' },
+    { t: 'p', v: 'Alocăm timp pentru a privi cu atenție cum îți influențează gândurile și convingerile de bază reacțiile emoționale.' },
+    { t: 'p', v: 'Ce înseamnă asta pentru tine: în loc să descărcăm doar stresul de zi cu zi, examinăm capcanele de gândire automate și regulile rigide — acele „trebuie” și „ar trebui” ascunse — care fac situațiile dificile să pară copleșitoare. Evaluând aceste convingeri, testăm dacă te ajută cu adevărat sau te blochează.' },
+    { t: 'h4', v: '3. Practica dincolo de cabinet (aplicarea în viața reală)' },
+    { t: 'p', v: 'Schimbarea reală se întâmplă în viața de zi cu zi, nu doar în cabinet.' },
+    { t: 'p', v: 'Ce înseamnă asta pentru tine: în cele mai multe ședințe convenim exerciții mici și practice, reflecții sau experimente comportamentale de încercat în săptămâna respectivă. Astfel poți testa instrumente noi în situații reale și îți construiești o autonomie reală.' },
+    { t: 'h3', v: 'Terapia în linii mari: terapia clasică prin discuții vs. CBT și REBT' },
+    { t: 'p', v: 'Ca să ai o imagine mai clară a cum va fi munca noastră, iată cum se compară o abordare țintită, bazată pe dovezi, cu terapia clasică, deschisă:' },
+    { t: 'h4', v: 'Obiectivul principal' },
+    { t: 'p', v: 'Terapia clasică: explorare de sine și exprimare emoțională, fără o țintă prestabilită.' },
+    { t: 'p', v: 'CBT și REBT: rezolvare funcțională de probleme, restructurare cognitivă și construire de abilități.' },
+    { t: 'h4', v: 'Structura ședinței' },
+    { t: 'p', v: 'Terapia clasică: discuție condusă de client, foarte fluidă.' },
+    { t: 'p', v: 'CBT și REBT: agendă structurată, verificare periodică și recapitularea instrumentelor practice.' },
+    { t: 'h4', v: 'Unde ne concentrăm timpul' },
+    { t: 'p', v: 'Terapia clasică: explorări profunde ale istoriei personale și ale cauzelor din trecut.' },
+    { t: 'p', v: 'CBT și REBT: accent pe factorii care mențin problema în prezent (acum, aici) și pe construirea rezilienței pentru viitor.' },
+    { t: 'h4', v: 'Rezultatul final' },
+    { t: 'p', v: 'Terapia clasică: cunoaștere de sine și înțelegere profundă.' },
+    { t: 'p', v: 'CBT și REBT: schimbare filosofică durabilă, reglare emoțională și abilități practice de autosuportare, ca să poți, în timp, să devii propriul tău terapeut.' }
   ]
 };

@@ -1,5 +1,4 @@
 ---
-# Draft pentru aprobare (oglenda articolului EN); corpul EN este verbatim, furnizat de client.
 title: 'Modelul ABC: așa cum îl explic în ședință'
 date: 2026-10-26
 description: 'O explicație simplă a modelului ABC — evenimentul activant, convingerile și consecințele — fundamentul CBT și REBT.'
