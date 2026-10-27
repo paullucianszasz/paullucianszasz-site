@@ -15,7 +15,7 @@
 - Repo pe GitHub: `https://github.com/paullucianszasz/paullucianszasz-site` — remote adăugat și primul push făcut (`main`).
   Accountul GitHub (`paullucianszasz@gmail.com`) este acelasi cu cel de Cloudflare; commit author = `Paul Lucian Szasz / paullucianszasz@gmail.com`.
   Repo este public in acest moment; poate deveni privat, Cloudflare poate construi din el oricum (trebuie doar acordat accesul la repo cand conectam Pages).
-- Build static: `npm run build` → `dist/` (14 pagini, `sitemap-index.xml`, `sitemap-0.xml`, `robots.txt`).
+- Build static: `npm run build` → `dist/` (16 pagini, `sitemap-index.xml`, `sitemap-0.xml`, `robots.txt`).
 - `dist/` nu este în repo (`.gitignore`); hostingul îl generează.
 - Node 22 (`.nvmrc`), build command `npm run build`, output directory `dist`.
 - Domeniu: `paullucianszasz.ro`, înregistrat la RoTLD (12 €/an). Cloudflare Registrar nu suportă `.ro`, deci domeniul rămâne la RoTLD și doar DNS-ul se indică spre Cloudflare.
@@ -50,7 +50,7 @@
 ## Rămâne de făcut (nu ține de cod)
 
 - Google Business Profile: **amânat până ai spațiu propriu** (Str. Scortarilor nr. 3, 400186). Atunci: nume exact `Cabinet individual de psihologie Paul Lucian Szasz`, adresă nouă, telefon `+40 723 333 609`, program Luni – Vineri 16:00 – 20:00, categorie Psihoterapeut, model storefront (pin pe hartă). Până atunci nu se creează nicio listare la Str. Andrei Șaguna nr. 8.
-- Soft 404 (de rezolvat): un URL inexistent (`/nica-pagina/`) returneaza Home cu status 200, ceea ce inseamna ca la proiectul Pages este activa optiunea **Single page application** (fallback). Se debifeaza in Settings → Build & deployments si se adaugă o pagină reală de eroare (`src/pages/404.astro` in repo); Google trateaza soft 404 ca semnal negativ.
+- **404**: pagina există acum în repo (`src/pages/404.astro` + `src/pages/en/404.astro`, textele în `src/data/notfound-ro.js` / `notfound-en.js`), `robots noindex`, fără canonical și fără JSON-LD, cu linkuri către paginile principale. Cloudflare Pages servește `dist/404.html` pentru orice cale inexistentă. Rămâne de debifat **Single page application** (Settings → Build & deployments), altfel Cloudflare răspunde în continuare cu Home + status 200 (soft 404). Build: 16 pagini, sitemap fără 404.
 - Search Console: verificăm `https://paullucianszasz.ro/` — se poate face acum, zona fiind Active (TXT în Cloudflare DNS, valoarea dată de Google), Target audience → Romania, trimitem `sitemap-index.xml`.
 - `www`: după activare, cel mai bine devine redirecție 301 spre `https://paullucianszasz.ro/$1` (Cloudflare → Rules → Redirect Rules, wildcard `www.paullucianszasz.ro/*`). Canonical din site declară deja apexul, deci redirecția doar face legătura explicită pentru Google.
 - Citări cu același telefon (NAP): CPR, APCCR, directoare. Până la mutare folosim telefonul, orașul și site-ul, fără adresă de cabinet, ca să nu rescriem totul de două ori.

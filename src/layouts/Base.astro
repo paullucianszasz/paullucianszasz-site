@@ -5,7 +5,7 @@ import LotusFlower from '../components/LotusFlower.astro';
 import '../styles/global.css';
 import { seo } from '../data/seo.js';
 
-const { t, active = '', title = '', meta = null } = Astro.props;
+const { t, active = '', title = '', meta = null, noindex = false } = Astro.props;
 const s = seo[t.lang];
 const pathname = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${Astro.url.pathname}/`;
 const darkHeader = ['/', '/en/'].includes(pathname);
@@ -39,12 +39,19 @@ const articleLd = meta?.ld ? { '@context': 'https://schema.org', ...meta.ld } : 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
-    <link rel="canonical" href={canonical} />
-    {pair && (
+    {/* Pagina de eroare: fara canonical si fara hreflang (nu este o pagina de indexat) */}
+    {noindex ? (
+      <meta name="robots" content="noindex" />
+    ) : (
       <>
-        <link rel="alternate" hreflang={hreflang} href={abs(pair.canonical)} />
-        {pair.alt && <link rel="alternate" hreflang={hreflangOther} href={abs(pair.alt)} />}
-        <link rel="alternate" hreflang="x-default" href={abs('/')} />
+        <link rel="canonical" href={canonical} />
+        {pair && (
+          <>
+            <link rel="alternate" hreflang={hreflang} href={abs(pair.canonical)} />
+            {pair.alt && <link rel="alternate" hreflang={hreflangOther} href={abs(pair.alt)} />}
+            <link rel="alternate" hreflang="x-default" href={abs('/')} />
+          </>
+        )}
       </>
     )}
 
@@ -62,9 +69,13 @@ const articleLd = meta?.ld ? { '@context': 'https://schema.org', ...meta.ld } : 
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
 
-    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)}></script>
-    <script type="application/ld+json" set:html={JSON.stringify(businessLd)}></script>
-    {articleLd && <script type="application/ld+json" set:html={JSON.stringify(articleLd)}></script>}
+    {!noindex && (
+      <>
+        <script type="application/ld+json" set:html={JSON.stringify(jsonLd)}></script>
+        <script type="application/ld+json" set:html={JSON.stringify(businessLd)}></script>
+        {articleLd && <script type="application/ld+json" set:html={JSON.stringify(articleLd)}></script>}
+      </>
+    )}
     <link rel="icon" href="/assets/favicon.png" />
     <link rel="apple-touch-icon" href="/assets/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />

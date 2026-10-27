@@ -425,6 +425,10 @@ h1, h2, h4, .faq-item .q, .hero .eyebrow {
   font-size: 16px;
   line-height: 1.55;
 }
+/* Pagina 404: linkurile principale, afisate intr-un rand */
+.page .notfound-help { margin: 0 0 12px; }
+.page .notfound-links { display: flex; flex-wrap: wrap; gap: 10px 18px; margin: 0 0 20px; }
+.page .notfound-links a { color: var(--link); }
 /* Comparatia terapai clasice cu CBT si REBT */
 .page .table-wrap { overflow-x: auto; margin: 0 0 20px; }
 .page table { width: 100%; border-collapse: collapse; font-size: 15px; line-height: 1.5; }

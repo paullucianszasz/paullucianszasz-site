@@ -1,0 +1,17 @@
+---
+import Base from '../layouts/Base.astro';
+
+const { t, notfound } = Astro.props;
+---
+<Base t={t} title={notfound.title} noindex={true}>
+  <section class="page notfound-page">
+    <div class="container">
+      <h1>{notfound.title}</h1>
+      <p>{notfound.text}</p>
+      <p class="notfound-help">{notfound.help}</p>
+      <p class="notfound-links">
+        {t.nav.map((i) => <a href={i.href}>{i.label}</a>)}
+      </p>
+    </div>
+  </section>
+</Base>
