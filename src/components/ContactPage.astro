@@ -14,6 +14,7 @@ const mapSrc = `https://maps.google.com/maps?q=${encodeURIComponent(t.footer.add
   <section class="page contact-page">
     <div class="container">
       <h1>{page.title}</h1>
+      {page.notice && <p class="notice">{page.notice}</p>}
       <div class="contact-grid">
         <div class="contact-col">
           <h2>{labels.phone}</h2>

@@ -506,6 +506,30 @@ h1, h2, h4, .faq-item .q, .hero .eyebrow {
 .contact-block p + p { margin-top: 10px; }
 .contact-page .form-note { margin-top: 14px; font-size: 14px; line-height: 1.5; color: var(--text-light); }
 .contact-page .form-note a { color: var(--link); }
+/* Anuntul de pe Contact (cabinet in curs de infiintare): panou care apare prin alunecare usoara in sus,
+   cu un tint care se stinge dupa cateva secunde — atractie linistita, fara clipit.
+   Fara animatie pentru vizitatorii cu "prefers-reduced-motion". */
+.contact-page .notice {
+  margin: 22px 0 26px;
+  padding: 14px 16px;
+  background: var(--panel);
+  border: 1px solid var(--panel-bd);
+  border-left: 3px solid var(--accent);
+  border-radius: 10px;
+  color: var(--dark);
+  font-size: 15px;
+  line-height: 1.6;
+  animation: notice-in 0.7s ease both, notice-tint 2.6s ease 0.7s 1 both;
+}
+@keyframes notice-in {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes notice-tint {
+  0%, 60% { background: #f0dfe3; } /* tint putin mai saturat decat --panel, apoi revine */
+  100% { background: var(--panel); }
+}
+@media (prefers-reduced-motion: reduce) { .contact-page .notice { animation: none; } }
 .contact-form .consent { display: flex; gap: 10px; align-items: flex-start; margin-top: 26px; font-size: 15px; line-height: 1.6; }
 .contact-form .consent input { flex: 0 0 auto; margin-top: 5px; accent-color: var(--accent); }
 .contact-form .consent label { color: var(--text); }

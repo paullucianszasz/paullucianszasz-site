@@ -7,6 +7,8 @@ const byId = (id) => site.ro.faq.find((f) => f.id === id);
 
 export const contactRo = {
   title: 'Contact',
+  // Text furnizat ca atare (doar diacritice adaugate). Cabinetul este in curs de infiintare, pana sosesc actele.
+  notice: 'Cabinet în curs de înființare. Între timp, vă puteți programa pe o listă de așteptare.',
   hours: 'Luni – Vineri, între 16:00 și 20:00 — la cabinet, Str. Andrei Șaguna nr. 8, sau online', // zile confirmate; orele sunt cele furnizate
   booking: [
     'Programarea se face telefonic, prin WhatsApp sau prin email. Nu folosesc o platformă de programare online, așa că primul contact este suficient: verificăm împreună orele disponibile și stabilim prima ședință.'

@@ -6,6 +6,8 @@ const byId = (id) => site.en.faq.find((f) => f.id === id);
 
 export const contactEn = {
   title: 'Contact',
+  // Mirror of the supplied RO notice (practice still being set up while the paperwork arrives).
+  notice: 'The practice is still being set up. In the meantime, you can join a waiting list.',
   hours: 'Monday – Friday, between 16:00 and 20:00 — at the office, Str. Andrei Șaguna no. 8, or online', // days confirmed; hours as supplied
   booking: [
     'Bookings are made by phone, WhatsApp or email. I do not use an online scheduling platform, so the first contact is enough: we look at the available hours together and set the first session.'
