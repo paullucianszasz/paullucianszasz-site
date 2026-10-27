@@ -37,6 +37,8 @@ const articleLd = meta?.ld ? { '@context': 'https://schema.org', ...meta.ld } : 
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {/* Barul browserului de pe telefon ia culoarea antetului: --bar pe paginile cu antet inchis, --bg pe restul */}
+    <meta name="theme-color" content={darkHeader ? '#3b282e' : '#f6f1ea'} />
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
     {/* Pagina de eroare: fara canonical si fara hreflang (nu este o pagina de indexat) */}

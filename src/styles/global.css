@@ -32,6 +32,10 @@ html, body {
   padding: 0;
 }
 
+/* Ancorile interne (linkul catre confidențialitate) se derulează lin; la preferinta "reduced motion" ramane instant. */
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
@@ -695,3 +699,39 @@ h1, h2, h4, .faq-item .q, .hero .eyebrow {
   font-size: 15px;
 }
 .scroll-top:hover { background: rgba(var(--bar-rgb), 0.85); }
+
+/* ---------------- Mobil (sub 640px) ----------------
+   Se adauga la regulile de mai sus (breakpointul 640 este deja folosit pentru antet si hero).
+   Ce se schimba: coloanele paginii Contact se așeza una sub alta, text mai lizibil,
+   campuri la 16px (iOS face zoom automat la focus sub 16px), zone de apasat de 44px, marca de fundal mai mica. */
+@media (max-width: 640px) {
+  body { font-size: 16px; }
+  .container { padding: 0 16px; }
+  .page { padding: 34px 0 50px; }
+  .contact-page { padding: 40px 0 50px; }
+  .page h1 { font-size: 28px; line-height: 1.35; }
+  .contact-col h2, .article-body h2 { font-size: 21px; line-height: 1.35; }
+
+  .contact-grid { flex-direction: column; gap: 26px; }
+  .contact-col { flex: 1 1 auto; }
+  .contact-map iframe { max-width: none; height: 240px; }
+
+  .field { width: 100%; margin-bottom: 26px; }
+  .field input, .field textarea { font-size: 16px; }
+  .field textarea { height: 6.5em; }
+  .field-btn { display: block; margin-top: 26px; }
+  .field-btn input { width: 100%; padding: 15px 35px 15px 64px; }
+
+  .footer-top, .footer-bottom { flex-direction: column; align-items: flex-start; gap: 14px; }
+  .footer-nav { flex-wrap: wrap; gap: 10px 16px; }
+  .scroll-top { right: 14px; bottom: 14px; width: 44px; height: 44px; }
+
+  .lotus-mark .lotus { width: min(72vw, 300px); top: 40%; opacity: 0.12; }
+}
+
+/* Zone de apasat pentru dispozitive fara mouse: telefon si tableta */
+@media (hover: none) {
+  .header-nav > li > .nav-link, .lang-switch { padding: 10px 4px; }
+  .header-cta, .home-cta, .wa-pill, .field-btn input { min-height: 44px; }
+  .contact-form .consent input { width: 20px; height: 20px; }
+}
