@@ -7,11 +7,7 @@
 - RoTLD: datele validate cu actul de identitate (26–27 Oct 2026); nameservers salvate și **publicate** — zona răspunde deja cu `harvey.ns.cloudflare.com` / `val.ns.cloudflare.com`.
 - Cloudflare servește zona (SOA afișat de serverele Cloudflare). Inregistrari CNAME create: `@` → `paullucianszasz-site.pages.dev` si `www` → `paullucianszasz-site.pages.dev` (Proxied).
 - **`https://paullucianszasz.ro/` este activ** si serveste site-ul (verificat: Home, Blog, `sitemap-index.xml`, `robots.txt` și redirecturile 301 din `public/_redirects`).
-- `https://www.paullucianszasz.ro/` raspunde cu **522** (verificat la 15 teste, 27 Oct). Cloudflare il serveste (TLS ok), dar nu are link catre Pages. Solutia care functioneaza oricum: **Rules → Redirect Rules** (edge, inainte de orice origin), cu wildcard care include hostnameul:
-  - wildcard: `https://www.paullucianszasz.ro/*`
-  - target: `https://paullucianszasz.ro/${1}` (formulatia `${1}`, nu `$1`)
-  - status: 301, **Deploy** (nu Draft). Regula curenta nu se declanseaza, probabil pentru ca wildcardul contine doar calea, fara hostname.
-  - Dupa ce redirectionarea functioneaza, `www` poate fi sters din Custom domains la Pages (nu mai e nevoie sa fie Active).
+- **`www` functioneaza** (de la 27 Oct, dupa deploy): `https://www.paullucianszasz.ro/*` → **301** catre `https://paullucianszasz.ro/${1}` (verificat: `/`, `/blog/`, `/despre-mine/`, `/en/`). Regula: Rules → Redirect Rules, wildcard `https://www.paullucianszasz.ro/*`, target `https://paullucianszasz.ro/${1}`, 301, Deploy. `www` nu mai trebuie sa fie Active la Pages.
 - Domeniu înregistrat la RoTLD (12 €/an); Cloudflare nu poate găzdui un domeniu `.ro` la registrar, deci rămâne la RoTLD și doar DNS-ul este la Cloudflare.
 
 ## Ce este gata acum
