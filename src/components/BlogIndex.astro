@@ -15,7 +15,7 @@ const excerpt = (a) => a.data.excerpt || clean(a.body).split('\n\n')[0];
 const href = (slug) => `${t.pages.blog}${slug}/`;
 const sorted = [...articles].sort((a, b) => b.data.date - a.data.date);
 ---
-<Base t={t} active={t.labels.blog}>
+<Base t={t} active={t.labels.blog} feed={`${t.pages.blog}rss.xml`}>
   <section class="page blog-index">
     <div class="container">
       <h1>{blog.title}</h1>

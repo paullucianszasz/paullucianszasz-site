@@ -5,7 +5,7 @@ import LotusFlower from '../components/LotusFlower.astro';
 import '../styles/global.css';
 import { seo } from '../data/seo.js';
 
-const { t, active = '', title = '', meta = null, noindex = false } = Astro.props;
+const { t, active = '', title = '', meta = null, noindex = false, feed = '' } = Astro.props;
 const s = seo[t.lang];
 const pathname = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${Astro.url.pathname}/`;
 const darkHeader = ['/', '/en/'].includes(pathname);
@@ -56,6 +56,7 @@ const articleLd = meta?.ld ? { '@context': 'https://schema.org', ...meta.ld } : 
     )}
 
     <!-- Share / link preview -->
+    {feed && <link rel="alternate" type="application/rss+xml" title={t.labels.rssFeed} href={abs(feed)} />}
     <meta property="og:type" content={meta ? 'article' : 'profile'} />
     <meta property="og:site_name" content={s.siteName} />
     <meta property="og:title" content={pageTitle} />

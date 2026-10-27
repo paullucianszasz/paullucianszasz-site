@@ -76,7 +76,7 @@ export const site = {
         'Perfecționism'
       ]
     },
-    labels: { services: 'Servicii oferite', types: 'Tipuri de servicii', readMore: 'Citește mai mult', faq: 'F.A.Q.', blog: 'Blog', noArticles: 'Încă nu am publicat articole.', otherLanguage: 'Acest articol în engleză', backToBlog: 'Înapoi la Blog' },
+    labels: { services: 'Servicii oferite', types: 'Tipuri de servicii', readMore: 'Citește mai mult', faq: 'F.A.Q.', blog: 'Blog', noArticles: 'Încă nu am publicat articole.', otherLanguage: 'Acest articol în engleză', backToBlog: 'Înapoi la Blog', rssFeed: 'Feed RSS' },
     cta: { label: 'Programează-te', href: 'tel:+40723333609' },
     whatsapp: { label: 'WhatsApp', href: 'https://wa.me/40723333609?text=Bun%C4%83%2C%20a%C8%99%20dori%20s%C4%83%20programez%20o%20%C8%99edin%C8%9B%C4%83.' },
     faq: [
@@ -161,7 +161,7 @@ export const site = {
         'Perfectionism'
       ]
     },
-    labels: { services: 'Services Offered', types: 'Types of Services', readMore: 'Read More', faq: 'F.A.Q.', blog: 'Blog', noArticles: 'No articles published yet.', otherLanguage: 'This article in Romanian', backToBlog: 'Back to the Blog' },
+    labels: { services: 'Services Offered', types: 'Types of Services', readMore: 'Read More', faq: 'F.A.Q.', blog: 'Blog', noArticles: 'No articles published yet.', otherLanguage: 'This article in Romanian', backToBlog: 'Back to the Blog', rssFeed: 'RSS feed' },
     cta: { label: 'Book an appointment', href: 'tel:+40723333609' },
     whatsapp: { label: 'WhatsApp', href: 'https://wa.me/40723333609?text=Hello%2C%20I%20would%20like%20to%20book%20a%20session.' },
     faq: [
