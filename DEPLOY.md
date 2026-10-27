@@ -6,7 +6,12 @@
 - Cloudflare: zona `paullucianszasz.ro` creată (Free, Full setup), nameservers `harvey.ns.cloudflare.com` / `val.ns.cloudflare.com`.
 - RoTLD: datele validate cu actul de identitate (26–27 Oct 2026); nameservers salvate și **publicate** — zona răspunde deja cu `harvey.ns.cloudflare.com` / `val.ns.cloudflare.com`.
 - Cloudflare servește zona (SOA afișat de serverele Cloudflare). Inregistrari CNAME create: `@` → `paullucianszasz-site.pages.dev` si `www` → `paullucianszasz-site.pages.dev` (Proxied).
-- **`https://paullucianszasz.ro/` este activ** si serveste site-ul (verificat: Home + `sitemap-index.xml` raspund). `https://www.paullucianszasz.ro/` este inca inactiv (522) — trebuie activat la Custom domains.
+- **`https://paullucianszasz.ro/` este activ** si serveste site-ul (verificat: Home, Blog, `sitemap-index.xml`, `robots.txt` și redirecturile 301 din `public/_redirects`).
+- `https://www.paullucianszasz.ro/` raspunde cu **522** (verificat la 15 teste, 27 Oct). Cloudflare il serveste (TLS ok), dar nu are link catre Pages. Solutia care functioneaza oricum: **Rules → Redirect Rules** (edge, inainte de orice origin), cu wildcard care include hostnameul:
+  - wildcard: `https://www.paullucianszasz.ro/*`
+  - target: `https://paullucianszasz.ro/${1}` (formulatia `${1}`, nu `$1`)
+  - status: 301, **Deploy** (nu Draft). Regula curenta nu se declanseaza, probabil pentru ca wildcardul contine doar calea, fara hostname.
+  - Dupa ce redirectionarea functioneaza, `www` poate fi sters din Custom domains la Pages (nu mai e nevoie sa fie Active).
 - Domeniu înregistrat la RoTLD (12 €/an); Cloudflare nu poate găzdui un domeniu `.ro` la registrar, deci rămâne la RoTLD și doar DNS-ul este la Cloudflare.
 
 ## Ce este gata acum
@@ -49,6 +54,7 @@
 ## Rămâne de făcut (nu ține de cod)
 
 - Google Business Profile: **amânat până ai spațiu propriu** (Str. Scortarilor nr. 3, 400186). Atunci: nume exact `Cabinet individual de psihologie Paul Lucian Szasz`, adresă nouă, telefon `+40 723 333 609`, program Luni – Vineri 16:00 – 20:00, categorie Psihoterapeut, model storefront (pin pe hartă). Până atunci nu se creează nicio listare la Str. Andrei Șaguna nr. 8.
+- Soft 404 (de rezolvat): un URL inexistent (`/nica-pagina/`) returneaza Home cu status 200, ceea ce inseamna ca la proiectul Pages este activa optiunea **Single page application** (fallback). Se debifeaza in Settings → Build & deployments si se adaugă o pagină reală de eroare (`src/pages/404.astro` in repo); Google trateaza soft 404 ca semnal negativ.
 - Search Console: verificăm `https://paullucianszasz.ro/` — se poate face acum, zona fiind Active (TXT în Cloudflare DNS, valoarea dată de Google), Target audience → Romania, trimitem `sitemap-index.xml`.
 - `www`: după activare, cel mai bine devine redirecție 301 spre `https://paullucianszasz.ro/$1` (Cloudflare → Rules → Redirect Rules, wildcard `www.paullucianszasz.ro/*`). Canonical din site declară deja apexul, deci redirecția doar face legătura explicită pentru Google.
 - Citări cu același telefon (NAP): CPR, APCCR, directoare. Până la mutare folosim telefonul, orașul și site-ul, fără adresă de cabinet, ca să nu rescriem totul de două ori.
