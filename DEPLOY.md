@@ -4,16 +4,16 @@
 
 - Repo GitHub: conectat la Cloudflare Pages (build `npm run build`, output `dist`, Node 22 din `.nvmrc`).
 - Cloudflare: zona `paullucianszasz.ro` creată (Free, Full setup), nameservers `harvey.ns.cloudflare.com` / `val.ns.cloudflare.com`.
-- RoTLD: nameservers salvate pe 26 Oct 2026. RoTLD cere validarea datelor de înregistrare cu actul de identitate (meniul **Validare date** / „Validați acum", încărcare securizată în panou); procesare manuală, câteva zile.
-- Domeniul nu rezolvă încă (NXDOMAIN la zonă). Un domeniu .ro nevalidat poate fi suspendat și atunci nameservers nu se publică; verificat din când în când până apare răspunsul DNS.
-- Domeniu înregistrat la RoTLD (12 €/an); Cloudflare nu poate găzdui un domeniu `.ro` la registrar, deci rămâne la RoTLD și doar DNS-ul este la Cloudflare. La data verificării, domeniul nu rezolvă deloc (NXDOMAIN): nu există zonă activă și nu există inregistrari de păstrat.
+- RoTLD: datele validate cu actul de identitate (26–27 Oct 2026); nameservers salvate și **publicate** — zona răspunde deja cu `harvey.ns.cloudflare.com` / `val.ns.cloudflare.com`.
+- Cloudflare servește zona (SOA afișat de serverele Cloudflare). Nu există înregistrare A/CNAME pentru apex: ea se creează automat când adăugăm Custom domain la proiectul Pages.
+- Domeniu înregistrat la RoTLD (12 €/an); Cloudflare nu poate găzdui un domeniu `.ro` la registrar, deci rămâne la RoTLD și doar DNS-ul este la Cloudflare.
 
 ## Ce este gata acum
 
 - Repo pe GitHub: `https://github.com/paullucianszasz/paullucianszasz-site` — remote adăugat și primul push făcut (`main`).
   Accountul GitHub (`paullucianszasz@gmail.com`) este acelasi cu cel de Cloudflare; commit author = `Paul Lucian Szasz / paullucianszasz@gmail.com`.
   Repo este public in acest moment; poate deveni privat, Cloudflare poate construi din el oricum (trebuie doar acordat accesul la repo cand conectam Pages).
-- Build static: `npm run build` → `dist/` (15 pagini, `sitemap-index.xml`, `sitemap-0.xml`, `robots.txt`).
+- Build static: `npm run build` → `dist/` (14 pagini, `sitemap-index.xml`, `sitemap-0.xml`, `robots.txt`).
 - `dist/` nu este în repo (`.gitignore`); hostingul îl generează.
 - Node 22 (`.nvmrc`), build command `npm run build`, output directory `dist`.
 - Domeniu: `paullucianszasz.ro`, înregistrat la RoTLD (12 €/an). Cloudflare Registrar nu suportă `.ro`, deci domeniul rămâne la RoTLD și doar DNS-ul se indică spre Cloudflare.
@@ -48,7 +48,7 @@
 ## Rămâne de făcut (nu ține de cod)
 
 - Google Business Profile: **amânat până ai spațiu propriu** (Str. Scortarilor nr. 3, 400186). Atunci: nume exact `Cabinet individual de psihologie Paul Lucian Szasz`, adresă nouă, telefon `+40 723 333 609`, program Luni – Vineri 16:00 – 20:00, categorie Psihoterapeut, model storefront (pin pe hartă). Până atunci nu se creează nicio listare la Str. Andrei Șaguna nr. 8.
-- Search Console: verificăm `https://paullucianszasz.ro/` (după ce zona este Active, cel mai simplu: înregistrare TXT în Cloudflare DNS, valoarea dată de Google), Target audience → Romania, trimitem `sitemap-index.xml`.
+- Search Console: verificăm `https://paullucianszasz.ro/` — se poate face acum, zona fiind Active (TXT în Cloudflare DNS, valoarea dată de Google), Target audience → Romania, trimitem `sitemap-index.xml`.
 - Citări cu același telefon (NAP): CPR, APCCR, directoare. Până la mutare folosim telefonul, orașul și site-ul, fără adresă de cabinet, ca să nu rescriem totul de două ori.
 - `geo` (coordonatele) lipsește din JSON-LD — se adaugă când confirmi locația din Google Maps.
 - Adresa afișată acum este `Andrei Șaguna nr. 8, Cluj-Napoca 400103` (unde vin clienții), dintr-un singur loc: `office` în `src/data/site.js` (footer în ambele limbi, propozitia din Home, descrierile Contact, JSON-LD, pinul din hartă). La mutare se schimbă aici și, în aceeași zi, se creează listarea cu adresa nouă.
