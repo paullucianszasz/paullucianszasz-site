@@ -1,6 +1,6 @@
 ---
 title: 'Modelul ABC: așa cum îl explic în ședință'
-date: 2026-10-26
+date: 2026-10-25
 description: 'O explicație simplă a modelului ABC — evenimentul activant, convingerile și consecințele — fundamentul CBT și REBT.'
 excerpt: '„Ca să înțelegi cum vom lucra împreună, îmi place să îți prezint un cadru simplu, numit modelul ABC. Explică de ce două persoane pot trăi exact același eveniment și pleacă cu sentimente complet diferite.”'
 mirror: 'the-abc-model-client-script'

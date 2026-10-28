@@ -1,6 +1,6 @@
 ---
 title: 'The "ABC Model" Client Script'
-date: 2026-10-26
+date: 2026-10-25
 description: 'A plain-language walkthrough of the ABC model — the Activating Event, the Beliefs and the Consequences — the framework behind CBT and REBT.'
 excerpt: "\"To help us understand how we'll be working together, I like to share a simple framework called the ABC model. It explains why two people can experience the exact same event, but walk away feeling completely different.\""
 mirror: 'modelul-abc-in-sedinta'

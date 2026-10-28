@@ -1,6 +1,6 @@
 ---
 title: 'Cum funcționează terapia: modelul ABC'
-date: 2026-10-26
+date: 2026-10-25
 description: 'Modelul ABC explică cum se formează reacțiile emoționale: evenimentul activant, convingerile care îl interpretează și consecințele care urmează.'
 mirror: 'understanding-how-therapy-works-the-abc-model'
 ---
