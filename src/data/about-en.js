@@ -12,6 +12,10 @@ const degrees = educationEn.filter((i) => !i.hidden);
 export const aboutEn = {
   title: 'About me',
   photo: cvPhoto,
+  illustration: {
+    src: '/assets/hero-illustration.jpg',
+    alt: 'Illustration: a figure in a balanced pose, light radiating from the chest, a geometric grid on the left, waves of light on the right.'
+  },
   sections: [
     {
       heading: 'The person behind the role',

@@ -458,6 +458,9 @@ h1, h2, h4, .faq-item .q, .hero .eyebrow {
 .about-grid { display: flex; gap: 40px; }
 .about-photo { flex: 0 0 19%; }
 .about-photo img { width: 100%; border-radius: 6px; }
+/* Ilustrația de sub intro (fără text afișat): în coloana de conținut, marja de aparență calmă, fără cropper. */
+.about-figure { margin: 22px 0 0; }
+.about-figure img { width: 100%; max-width: 640px; border-radius: 6px; display: block; }
 
 /* Blog: lista de articole si pagina articolului */
 .blog-intro { max-width: 700px; margin: 0 0 26px; }
