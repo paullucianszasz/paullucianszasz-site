@@ -1,13 +1,13 @@
 // Psihoterapie (RO) — copia furnizata, aplicata ca atare; ton informal, catre cititor. Aprobată ca atare.
 // Ilustrația este primul bloc (banda de sub titlu), afișată centrată, max 900 px, fara text afisat;
-// fisierul este WebP real, 1600x873, fara text in imagine; width/height vin din bloc.
+// fisierul este WebP real, 1600x830 (benzile negre taiate), fara text in imagine; width/height vin din bloc.
 // Alegeri: fara italic (confirmat; pagina nu foloseste italic), a doua linie din lista REBT
 // evita repetitia "transformarea", randul de inaintea tabelului pastreaza fraza aprobata, durata de 50 de minute
 // este adaugata la inceputul sectiunii "Cum functioneaza o sedinta" (aprobata), iar prima coloana a tabelului este aldinata prin CSS (nu prin marcaj).
 export const therapyRo = {
   title: 'Psihoterapie',
   blocks: [
-    { t: 'img', src: '/assets/hero-illustration.webp', w: 1600, h: 873, alt: 'Ilustrație: figură în poziția luptătorului, palmele împreunate, lumină în formă de inimă în spate, rețea geometrică în stânga, valuri de lumină în dreapta.' },
+    { t: 'img', src: '/assets/hero-illustration.webp', w: 1600, h: 830, alt: 'Ilustrație: figură în poziția luptătorului, palmele împreunate, lumină în formă de inimă în spate, rețea geometrică în stânga, valuri de lumină în dreapta.' },
     { t: 'h3', v: 'Instrumente validate științific pentru claritate mentală și reziliență' },
     { t: 'p', v: 'Când stresul, anxietatea sau autoîndoiala preiau controlul, simți adesea că evenimentele din exterior îți decid în totalitate liniștea interioară. Însă cheia libertății emoționale stă în modul în care procesăm și provocăm povestea pe care ne-o spunem în minte.' },
     { t: 'quote', v: '„Gândește-te la terapie ca la învățarea unui set nou de abilități. Nu doar vom discuta despre probleme; vom privi gândurile și credințele care îți alimentează reacțiile emoționale și vom exersa activ strategii, astfel încât, în timp, să devii propriul tău terapeut.”' },
