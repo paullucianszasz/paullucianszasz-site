@@ -22,6 +22,7 @@ const listRuns = (s, boldLead) => {
       {service.blocks.map((b) => (
         b.t === 'p' ? <p>{runs(b.v).map((r) => (r.b ? <strong>{r.v}</strong> : r.v))}</p> :
         b.t === 'quote' ? <blockquote>{runs(b.v).map((r) => (r.b ? <strong>{r.v}</strong> : r.v))}</blockquote> :
+        b.t === 'img' ? <figure class="page-figure"><img src={b.src} alt={b.alt} width="1200" height="655" loading="lazy" /></figure> :
         b.t === 'h3' ? <h3>{b.v}</h3> :
         b.t === 'h4' ? <h4>{b.v}</h4> :
         b.t === 'ul' ? (

@@ -14,10 +14,6 @@ const degrees = education.filter((i) => !i.hidden);
 export const aboutRo = {
   title: 'Despre mine',
   photo: cvPhoto,
-  illustration: {
-    src: '/assets/hero-illustration.jpg',
-    alt: 'Ilustrație: figură în poziție de echilibru, lumină radiind din zona pieptului, rețea geometrică în stânga, valuri de lumină în dreapta.'
-  },
   sections: [
     {
       heading: 'Omul din spatele rolului',

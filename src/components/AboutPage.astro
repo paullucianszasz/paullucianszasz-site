@@ -13,11 +13,6 @@ const { t, about } = Astro.props;
         </div>
         <div class="about-content">
           {(about.paragraphs || []).map((p) => <p>{p}</p>)}
-          {about.illustration && (
-            <figure class="about-figure">
-              <img src={about.illustration.src} alt={about.illustration.alt} width="1200" height="655" loading="lazy" />
-            </figure>
-          )}
           <div class="timeline">
             {about.sections.map((sec) => (
               <div>

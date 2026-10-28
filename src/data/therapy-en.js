@@ -5,6 +5,7 @@ export const therapyEn = {
   blocks: [
     { t: 'h3', v: 'Evidence-Based Tools for Mental Clarity & Resilience' },
     { t: 'p', v: 'When stress, anxiety, or self-doubt take over, it often feels like external events are in complete control of your peace of mind. But the key to emotional freedom lies in how we process and challenge the narrative inside our heads.' },
+    { t: 'img', src: '/assets/hero-illustration.jpg', alt: 'Illustration: a figure in a balanced pose, light radiating from the chest, a geometric grid on the left, waves of light on the right.' },
     { t: 'quote', v: '"Think of therapy as learning a new set of skills. We aren\'t just going to talk about problems; we are going to look at the thoughts and beliefs driving your emotional reactions, and actively practice strategies so you eventually become your own therapist."' },
     { t: 'h3', v: 'What We Can Work On Together' },
     { t: 'p', v: 'Therapy is not a one-size-fits-all process, nor is it about fixing what is "broken" in you. It is a collaborative space where we gently explore the patterns holding you back and build practical tools to help you feel grounded, resilient, and at peace.' },
