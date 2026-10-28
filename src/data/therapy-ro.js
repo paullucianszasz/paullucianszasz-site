@@ -1,5 +1,5 @@
 // Psihoterapie (RO) — copia furnizata, aplicata ca atare; ton informal, catre cititor. Aprobată ca atare.
-// Ilustrația este primul bloc (banda de sub titlu), afișată la latime completa, fara text afisat;
+// Ilustrația este primul bloc (banda de sub titlu), afișată centrată, max 900 px, fara text afisat;
 // fisierul este WebP real, 1600x873, fara text in imagine; width/height vin din bloc.
 // Alegeri: fara italic (confirmat; pagina nu foloseste italic), a doua linie din lista REBT
 // evita repetitia "transformarea", randul de inaintea tabelului pastreaza fraza aprobata, durata de 50 de minute
