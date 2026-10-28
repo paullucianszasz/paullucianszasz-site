@@ -458,8 +458,8 @@ h1, h2, h4, .faq-item .q, .hero .eyebrow {
 .about-grid { display: flex; gap: 40px; }
 .about-photo { flex: 0 0 19%; }
 .about-photo img { width: 100%; border-radius: 6px; }
-/* Banda de ilustratie (fara text afisat): latime completa, fara crop; width/height in HTML previn saltul la incarcare. */
-.page-figure { margin: 24px 0; }
+/* Banda de ilustratie (fara text afisat): primul bloc de pe Psihoterapie, latime completa, fara crop; width/height in HTML previn saltul la incarcare. */
+.page-figure { margin: 22px 0 26px; }
 .page-figure img { width: 100%; border-radius: 6px; display: block; }
 
 /* Blog: lista de articole si pagina articolului */

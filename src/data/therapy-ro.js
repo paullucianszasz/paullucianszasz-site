@@ -5,9 +5,9 @@
 export const therapyRo = {
   title: 'Psihoterapie',
   blocks: [
+    { t: 'img', src: '/assets/hero-illustration.jpg', alt: 'Ilustrație: figură în poziție de echilibru, lumină radiind din zona pieptului, rețea geometrică în stânga, valuri de lumină în dreapta.' },
     { t: 'h3', v: 'Instrumente validate științific pentru claritate mentală și reziliență' },
     { t: 'p', v: 'Când stresul, anxietatea sau autoîndoiala preiau controlul, simți adesea că evenimentele din exterior îți decid în totalitate liniștea interioară. Însă cheia libertății emoționale stă în modul în care procesăm și provocăm povestea pe care ne-o spunem în minte.' },
-    { t: 'img', src: '/assets/hero-illustration.jpg', alt: 'Ilustrație: figură în poziție de echilibru, lumină radiind din zona pieptului, rețea geometrică în stânga, valuri de lumină în dreapta.' },
     { t: 'quote', v: '„Gândește-te la terapie ca la învățarea unui set nou de abilități. Nu doar vom discuta despre probleme; vom privi gândurile și credințele care îți alimentează reacțiile emoționale și vom exersa activ strategii, astfel încât, în timp, să devii propriul tău terapeut.”' },
     { t: 'h3', v: 'Ce putem lucra împreună' },
     { t: 'p', v: 'Terapia nu este un proces universal valabil și nu înseamnă să „repari” ceva ce ar fi defect în tine. Este un spațiu colaborativ în care explorăm cu blândețe tiparele care te blochează și construim instrumente practice care te ajută să te simți stabil, rezilient și împăcat.' },
