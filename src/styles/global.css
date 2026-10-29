@@ -478,8 +478,14 @@ h1, h2, h4, .faq-item .q, .hero .eyebrow {
 .blog-item .read-more a:hover { color: var(--link-hover); text-decoration: underline; }
 .article .article-date { font-size: 14px; color: var(--text-light); margin: 0 0 22px; }
 .article-body h2 { font-size: 22px; color: var(--dark); margin: 26px 0 10px; }
+/* Al doilea nivel de subtitlu in articole (### in markdown). */
+.article-body h3 { font-family: var(--serif); font-weight: 400; font-size: 19px; color: var(--dark); margin: 24px 0 8px; }
 .article-body img { max-width: 100%; border-radius: 6px; margin: 20px 0; }
 .article-body blockquote { margin: 20px 0; padding-left: 16px; border-left: 3px solid var(--panel-bd); color: var(--dark); font-family: var(--serif); }
+.article-body blockquote p:last-child { margin-bottom: 0; }
+/* Tabelele din markdown: aceeasi stilizare ca pe Psihoterapie, plus margin si prima coloant (strong). */
+.article-body table { margin: 20px 0; }
+.article-body table td strong { color: var(--dark); }
 .article-body pre {
   margin: 20px 0;
   padding: 16px 18px;
