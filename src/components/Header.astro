@@ -1,7 +1,7 @@
 ---
 import WhatsAppIcon from './WhatsAppIcon.astro';
 
-const { t, active = '', dark = false } = Astro.props;
+const { t, active = '', dark = false, langHref = '' } = Astro.props;
 const hasSub = (item) => Array.isArray(item.children) && item.children.length > 0;
 const subId = (label) => `nav-${label.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
 const navLabel = t.lang === 'ro' ? 'Navigare' : 'Navigation';
@@ -59,7 +59,7 @@ const logo = dark ? '/assets/logo-sc-prim-white.png' : '/assets/logo-sc-prim-bla
         </li>
       </ul>
     </nav>
-    <a class="lang-switch" href={t.otherLang.href}>
+    <a class="lang-switch" href={langHref || t.otherLang.href}>
       <img src={t.lang === 'ro' ? '/assets/flag-en.png' : '/assets/flag-ro.png'} alt={t.otherLang.label} /> {t.otherLang.label}
     </a>
   </div>

@@ -54,14 +54,16 @@ Textul articolului, in paragrafe. `##` pentru subtitluri, `-` pentru liste, `>` 
 
 `mirror` = slugul articolului oglinda din cealalta limba; fara el, pagina nu afiseaza linkul catre cealalta limba si nu primeste perechea hreflang. Titlul, descrierea, canonical, hreflang si JSON-LD (BlogPosting) sunt luate din frontmatter, iar articolele intra automat in sitemap.
 
+Butonul EN/RO din antet deschide pagina oglinda, nu Home: pentru paginile statice mapping este in `src/data/seo.js` (`alt` pentru fiecare ruta), pentru articole este `mirror` din frontmatter. Fara oglinda, butonul ramane pagina de start in cealalta limba.
+
 ### Publicare dupa ce site-ul este online (hosting static din repo)
 
 Hostingul (Netlify, Cloudflare Pages sau Vercel) cloneaza repo-ul, ruleaza `npm install` si `npm run build` la fiecare push. `dist/` nu este in repo (este in `.gitignore`) pentru ca hostingul il genereaza.
 
 1. Deschide repo-ul pe GitHub, butonul „Add file" → „Create new file", in `src/content/blog/ro/`, nume: `numele-articolului.md`.
 2. Lipeste frontmatter-ul de mai sus si textul. Salvezi (commit pe `main`).
-3. Oglinda in `src/content/blog/en/`, cu acelasi nume de fisier si `mirror:` completat. Commit.
-4. Hostingul face build-ul (un minut sau doua); articolul apare pe `/blog/<numele-fisier>/` si `/en/blog/<numele-fisier>/`, in lista de pe pagina Blog.
+3. Oglinda in `src/content/blog/en/`, cu `mirror:` completat. Numele de fisier poate fi diferit (slugul trebuie sa fie unic in ambele limbi), iar `mirror:` este slugul celeilalte limbi. Commit.
+4. Hostingul face build-ul (un minut sau doua); articolul apare pe `/blog/<numele-fisier-RO>/` si `/en/blog/<numele-fisier-EN>/`, in lista de pe pagina Blog.
 
 Nu rulezi nimic local, nu urci nimic manual. Se poate face din browser, de pe orice dispozitiv.
 

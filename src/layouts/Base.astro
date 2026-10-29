@@ -17,6 +17,10 @@ const pair = meta || page;
 const pageTitle = meta?.title ?? (page ? page.title : (title ? `${title} - ${brand}` : `Dr. ${brand}`));
 const description = meta?.desc ?? (page ? page.desc : s.defaultDesc);
 
+// Switch de limba din antet: pagina oglinda, nu Home. pair.alt acopera paginile statice (seo.js)
+// si articolele (meta.alt, din frontmatter); fara mirror ramane pagina de start in cealalta limba.
+const langHref = pair?.alt || t.otherLang.href;
+
 const abs = (path) => new URL(path, Astro.site).toString();
 const canonical = abs(meta?.canonical || (page ? page.canonical : pathname));
 const ogImage = abs(s.ogImage);
@@ -87,7 +91,7 @@ const articleLd = meta?.ld ? { '@context': 'https://schema.org', ...meta.ld } : 
   </head>
   <body>
     <div class="lotus-mark" aria-hidden="true"><LotusFlower /></div>
-    <Header t={t} active={active} dark={darkHeader} />
+    <Header t={t} active={active} dark={darkHeader} langHref={langHref} />
     <main>
       <slot />
     </main>
