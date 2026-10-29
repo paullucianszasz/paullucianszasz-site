@@ -40,7 +40,7 @@ Dragostea de sine nu înseamnă doar baie cu spume sau răsfăț—deși și ace
 
 ## 3 practici zilnice pentru bunătatea față de sine
 
-- **Oprește-te cu „paua de compasiune"**
+- **Oprește-te cu „pauza de compasiune"**
 
   Când apare stresul, pune mâna pe inimă sau pe braț. Respiră adânc și spune în tăcere: „Aceasta este un moment de dificultate. Dificultatea face parte din viață. Fie să fiu blând cu mine însumi în acest moment."
 
