@@ -4,6 +4,8 @@
 // Alegeri: fara italic (confirmat; pagina nu foloseste italic), a doua linie din lista REBT
 // evita repetitia "transformarea", randul de inaintea tabelului pastreaza fraza aprobata, durata de 50 de minute
 // este adaugata la inceputul sectiunii "Cum functioneaza o sedinta" (aprobata), iar prima coloana a tabelului este aldinata prin CSS (nu prin marcaj).
+// Linkul catre articolul psiholog-sau-psihoterapeut: propozitie formulata de asistent, aprobata de user la 12 nov. 2026, ca paragraf separat
+// dupa fraza despre CBT + REBT ( pozitie cat mai sus in continut, ca sa conteze si ca link intern si ca click).
 export const therapyRo = {
   title: 'Psihoterapie',
   blocks: [
@@ -14,6 +16,7 @@ export const therapyRo = {
     { t: 'h3', v: 'Ce putem lucra împreună' },
     { t: 'p', v: 'Terapia nu este un proces universal valabil și nu înseamnă să „repari” ceva ce ar fi defect în tine. Este un spațiu colaborativ în care explorăm cu blândețe tiparele care te blochează și construim instrumente practice care te ajută să te simți stabil, rezilient și împăcat.' },
     { t: 'p', v: 'În practica mea integrez **Terapia Cognitiv-Comportamentală (CBT)** și **Terapia Rațional-Emotivă și Comportamentală (REBT)** — două abordări active, bazate pe dovezi științifice.' },
+    { t: 'p', v: 'Nu ești sigur de ce tip de ajutor cauți? Am scris un ghid scurt despre [diferența dintre psiholog și psihoterapeut](/blog/psiholog-sau-psihoterapeut/), în România: ce titluri sunt protejate prin lege și ce merită să întrebi înainte de prima ședință.' },
     { t: 'h4', v: '1. Terapia Cognitiv-Comportamentală (CBT): Înțelegerea minții tale' },
     { t: 'p', v: 'Când trecem prin perioade dificile, gândurile pot deveni copleșitoare, distorsionate sau excesiv de autocritice. CBT oferă un cadru suportiv în care poți examina aceste tipare fără judecată.' },
     { t: 'p', v: 'Împreună:' },

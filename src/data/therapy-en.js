@@ -1,6 +1,7 @@
 // Psihoterapie (EN) — oglenda copiei RO; frazele din textul clientului sunt pastrate unde se potrivesc. Fara italic (confirmat).
 // Ilustrația: primul bloc (banda de sub titlu), WebP 1600x830, fara text in imagine; alt este singurul text, in EN.
 // Durata de 50 de minute este adaugata la inceputul sectiunii "How a Session Works" (aprobata).
+// Linkul catre articolul psychologist-or-psychotherapist: oglinda propozitiei din RO, aceeasi pozitie (aprobata de user la 12 nov. 2026).
 export const therapyEn = {
   title: 'Psychotherapy',
   blocks: [
@@ -11,6 +12,7 @@ export const therapyEn = {
     { t: 'h3', v: 'What We Can Work On Together' },
     { t: 'p', v: 'Therapy is not a one-size-fits-all process, nor is it about fixing what is "broken" in you. It is a collaborative space where we gently explore the patterns holding you back and build practical tools to help you feel grounded, resilient, and at peace.' },
     { t: 'p', v: 'In my practice, I integrate **Cognitive Behavioral Therapy (CBT)** and **Rational Emotive Behavior Therapy (REBT)** — two active, evidence-based approaches.' },
+    { t: 'p', v: 'Not sure what kind of help you are looking for? I wrote a short guide to [the difference between a psychologist and a psychotherapist](/en/blog/psychologist-or-psychotherapist/) in Romania: which titles are protected by law and what to ask before the first session.' },
     { t: 'h4', v: '1. Cognitive Behavioral Therapy (CBT): Understanding Your Mind' },
     { t: 'p', v: 'When we are going through difficult times, our thoughts can become overwhelming, distorted, or overly self-critical. CBT offers a supportive lens to examine these thought patterns without judgment.' },
     { t: 'p', v: 'Together, we will:' },
