@@ -95,8 +95,8 @@ export const seo = {
     business: business('https://paullucianszasz.ro/contacts/'),
     pages: {
       '/': {
-        title: 'Psihoterapeut CBT și REBT în Cluj-Napoca | Paul Lucian Szasz',
-        desc: 'Psihoterapeut CBT și REBT în Cluj-Napoca. Ședințe în cabinet sau online, pentru anxietate, depresie, furie și stres. Acreditare în registrul public al CPR.',
+        title: 'Psiholog și psihoterapeut CBT Cluj-Napoca | Paul Lucian Szasz',
+        desc: 'Psiholog și psihoterapeut CBT în Cluj-Napoca. Ședințe de 50 minute, la cabinet sau online: anxietate, depresie, furie, stres. Programează o consultație.',
         canonical: '/',
         alt: '/en/'
       },
@@ -136,7 +136,7 @@ export const seo = {
     pages: {
       '/en/': {
         title: 'CBT & REBT Psychotherapist in Cluj-Napoca | Paul Lucian Szasz',
-        desc: 'CBT and REBT psychotherapist in Cluj-Napoca. Sessions in the office or online, for anxiety, depression, anger and stress. Book an initial consultation.',
+        desc: 'Psychologist and CBT psychotherapist in Cluj-Napoca. 50-minute sessions in the office or online, for anxiety, depression, anger and stress.',
         canonical: '/en/',
         alt: '/'
       },
