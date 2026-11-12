@@ -95,7 +95,7 @@ export const seo = {
     business: business('https://paullucianszasz.ro/contacts/'),
     pages: {
       '/': {
-        title: 'Psiholog și psihoterapeut CBT Cluj-Napoca | Paul Lucian Szasz',
+        title: 'Psiholog și psihoterapeut CBT în Cluj-Napoca | Paul Lucian Szasz',
         desc: 'Psiholog și psihoterapeut CBT în Cluj-Napoca. Ședințe de 50 minute, la cabinet sau online: anxietate, depresie, furie, stres. Programează o consultație.',
         canonical: '/',
         alt: '/en/'
