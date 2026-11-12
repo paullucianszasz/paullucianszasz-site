@@ -4,6 +4,7 @@
 // footer (ambele limbi), propozitia din Home, descrierile Contact, JSON-LD si pinul din Google Maps.
 // Aceeasi adresa este si in Google Business Profile.
 // La mutarea de la inceputul anului (Str. Scortarilor nr. 3, 400186): schimbam aici si, in aceeasi zi, adresa din Google Business Profile si pinul de pe harta.
+// Confirmata 12 Nov 2026: pagina de Contact a The Inner Bridge scrie "Locație: Andrei Șaguna nr. 8, Cluj-Napoca"; codul postal 400103 acopera toata strada (nr. 6, 10, 12, 17, 22, 34-36 - toate 400103).
 export const office = {
   street: 'Andrei Șaguna, Nr. 8',   // forma afisata in footer si in JSON-LD
   streetRo: 'Andrei Șaguna nr. 8',  // forma folosita in propozitii (RO)
