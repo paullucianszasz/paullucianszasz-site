@@ -35,7 +35,7 @@ export const therapyRo = {
     { t: 'p', v: 'Dacă ai experimentat până acum doar terapia clasică bazată pe discuții libere, prima ședință de CBT sau REBT poate părea puțin diferită. Un spațiu sigur și empatic rămâne baza, dar munca noastră este **activă, structurată și orientată spre rezultate**.' },
     { t: 'ol', lead: true, v: [
       '**Un parteneriat activ (colaborare adevărată)** — nu voi fi doar un ascultător tăcut. Eu aduc expertiza în instrumente psihologice și structură, iar tu aduci cunoașterea propriei tale experiențe. Lucrăm ca o echipă.',
-      '**Puntea dintre gânduri și emoții** — examinăm capcanele de gândire automate și regulile ascunse care fac situațiile dificile să pară copleșitoare, testând dacă te mai ajută cu adevărat.',
+      '**Puntea dintre gânduri și emoții** — examinăm capcanele de gândire automate și regulile ascunse care fac situațiile dificile să pară copleșitoare, testând dacă te mai ajută cu adevărat. Dacă vrei să vezi cum arată asta în practică, am descris pas cu pas [modelul ABC](/blog/cum-functioneaza-terapia-modelul-abc/) și [așa cum îl explic în ședință](/blog/modelul-abc-in-sedinta/).',
       '**Practica dincolo de cabinet (viața reală)** — schimbarea reală se întâmplă în viața de zi cu zi. La finalul fiecărei ședințe stabilim exerciții mici sau reflecții practice pentru săptămâna respectivă, construindu-ți autonomia.'
     ] },
     { t: 'h3', v: 'Terapia clasică vs. CBT și REBT' },

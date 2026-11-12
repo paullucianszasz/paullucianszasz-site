@@ -419,6 +419,9 @@ h1, h2, h4, .faq-item .q, .hero .eyebrow {
 .page ul li, .page ol > li { margin-bottom: 8px; }
 .page ul li strong, .page ol > li strong, .page p strong, .page table th { font-weight: 600; color: var(--dark); }
 .page ol > li > ul { margin-top: 10px; list-style-type: circle; }
+/* Linkurile din corpul paginilor si din articole: celelalte linkuri au stil propriu, aici nu. */
+.page p a, .page li a, .article-body a { color: var(--link); }
+.page p a:hover, .page li a:hover, .article-body a:hover { color: var(--link-hover); text-decoration: underline; }
 /* Citatul de inceput al paginii Psihoterapie */
 .page blockquote {
   margin: 20px 0;

@@ -4,6 +4,7 @@ import Base from '../layouts/Base.astro';
 const { t, service } = Astro.props;
 
 // Astreiskurile din copia furnizata devin bold; la listele cu lead: si primul segment este afisat aldinat (bloc cu lead: true).
+// Linkurile din copy ([text](/cale/)) devin <a>; de aia segmentele trec prin segs() inainte de redare.
 const runs = (s) => s.split(/\*\*([^*]+)\*\*/g).map((v, i) => ({ b: i % 2 === 1, v }));
 
 const listRuns = (s, boldLead) => {
@@ -14,22 +15,36 @@ const listRuns = (s, boldLead) => {
   }
   return r;
 };
+
+// Sparge segmentele rezultate in Runs pe linkuri [text](cale) si le scoate ca r.href.
+const segs = (rs) =>
+  rs.flatMap((r) => {
+    const out = [];
+    let last = 0;
+    for (const m of r.v.matchAll(/\[([^\]]+)\]\(([^)]+)\)/g)) {
+      if (m.index > last) out.push({ ...r, v: r.v.slice(last, m.index) });
+      out.push({ ...r, href: m[2], v: m[1] });
+      last = m.index + m[0].length;
+    }
+    if (last < r.v.length) out.push({ ...r, v: r.v.slice(last) });
+    return out;
+  });
 ---
 <Base t={t} title={service.title} active={t.lang === 'ro' ? 'Psihoterapie' : 'Psychotherapy'}>
   <section class="page">
     <div class="container">
       <h1>{service.title}</h1>
       {service.blocks.map((b, i) => (
-        b.t === 'p' ? <p>{runs(b.v).map((r) => (r.b ? <strong>{r.v}</strong> : r.v))}</p> :
-        b.t === 'quote' ? <blockquote>{runs(b.v).map((r) => (r.b ? <strong>{r.v}</strong> : r.v))}</blockquote> :
+        b.t === 'p' ? <p>{segs(runs(b.v)).map((r) => (r.href ? <a href={r.href}>{r.v}</a> : r.b ? <strong>{r.v}</strong> : r.v))}</p> :
+        b.t === 'quote' ? <blockquote>{segs(runs(b.v)).map((r) => (r.href ? <a href={r.href}>{r.v}</a> : r.b ? <strong>{r.v}</strong> : r.v))}</blockquote> :
         b.t === 'img' ? <figure class="page-figure"><img src={b.src} alt={b.alt} width={b.w} height={b.h} loading={i === 0 ? 'eager' : 'lazy'} /></figure> :
         b.t === 'h3' ? <h3>{b.v}</h3> :
         b.t === 'h4' ? <h4>{b.v}</h4> :
         b.t === 'ul' ? (
-          <ul>{b.v.map((li) => <li>{listRuns(li, b.lead).map((r) => (r.b ? <strong>{r.v}</strong> : r.v))}</li>)}</ul>
+          <ul>{b.v.map((li) => <li>{segs(listRuns(li, b.lead)).map((r) => (r.href ? <a href={r.href}>{r.v}</a> : r.b ? <strong>{r.v}</strong> : r.v))}</li>)}</ul>
         ) :
         b.t === 'ol' ? (
-          <ol>{b.v.map((li) => <li>{listRuns(li, b.lead).map((r) => (r.b ? <strong>{r.v}</strong> : r.v))}</li>)}</ol>
+          <ol>{b.v.map((li) => <li>{segs(listRuns(li, b.lead)).map((r) => (r.href ? <a href={r.href}>{r.v}</a> : r.b ? <strong>{r.v}</strong> : r.v))}</li>)}</ol>
         ) :
         b.t === 'table' ? (
           <div class="table-wrap">

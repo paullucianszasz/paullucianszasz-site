@@ -32,7 +32,7 @@ export const therapyEn = {
     { t: 'p', v: 'If you have only ever experienced traditional talk therapy, your first CBT or REBT session may feel a little different. A safe, empathetic space is always the foundation, but our work together is **active, structured, and focused on results**.' },
     { t: 'ol', lead: true, v: [
       '**A true collaboration (an active partnership)** — I am not only a silent listener. I bring the expertise in psychological tools and structure, while you bring the knowledge of your own experience. We work as a team.',
-      '**The bridge between thoughts and feelings** — we examine the automatic thinking traps and the hidden rules that make difficult situations feel overwhelming, and test whether they are still actually helping you.',
+      '**The bridge between thoughts and feelings** — we examine the automatic thinking traps and the hidden rules that make difficult situations feel overwhelming, and test whether they are still actually helping you. If you would like a preview of what that looks like, I have written out the [ABC model step by step](/en/blog/understanding-how-therapy-works-the-abc-model/) and [as I explain it in a session](/en/blog/the-abc-model-client-script/).',
       '**Practice beyond the office (real life)** — real change happens in your day-to-day life. At the end of each session we agree on small exercises or practical reflections for that week, building your independence.'
     ] },
     { t: 'h3', v: 'Traditional Talk Therapy vs. CBT & REBT' },
