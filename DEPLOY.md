@@ -83,4 +83,18 @@
 ## După primul build pe domeniu
 
 - Confirmi `site: 'https://paullucianszasz.ro/'` în `astro.config.mjs` (canonical, hreflang, `og:url`, JSON-LD, `robots.txt`).
-- hreflang: `ro-RO` / `en-RO` (decizie deschisă: coduri cu țară sau simple `ro` / `en`).
+- hreflang: simple `ro` / `en`, `x-default` → `/` (aplicat; `ro-RO` / `en-RO` au fost respinse).
+
+## Calendar editorial (confirmat de user 13 Nov 2026, fără accelerare)
+
+| # | Articol | Draft pentru aprobare | Publicare | Slug RO |
+|---|---|---|---|---|
+| 7 | Cele 90 de secunde (reglare emoțională, furie disproporționată) | 27–28 Nov 2026 | **miercurea 9 decembrie 2026** | `/blog/cele-90-de-seunde-cand-urca-emotia/` |
+| 8 | Teama de respingere în cuplu | 5–6 ian 2027 | **miercurea 13 ianuarie 2027** | `/blog/teama-de-respingere-in-cuplu/` |
+| 9 | Cât durează terapia și cum știm dacă merge | — | sfârșit de feb. 2027, brief din interogările reale | de stabilit la brief |
+
+- Slug EN propus pentru #7: `/en/blog/the-ninety-seconds-before-you-react/`; pentru #8: `/en/blog/fear-of-rejection-in-relationships/`. Rămân de confirmat la draft.
+- De ce 9 dec: pe **7–8 decembrie** se deschide Search Console → Performance → Pages → `/blog/emotii-intense-si-relatii-dificile/` → Interogări; titlul și prima propoziție ale lui #7 se calibrează pe formulările reale, nu pe cele ale asistentului.
+- De ce 13 ian: decembrie se evită (scade căutarea de terapie, recrawlizare mai rară); ianuarie e al doilea vârf anual după septembrie. Cinci săptămâni între #7 și #8, cât să nu concureze pe aceleași interogări.
+- Reguli păstrate și la #7/#8: termenul „tulburări de personalitate" maxim de două ori, formulare pasivă; link încrucișat către articolul 6 cu ancoră descriptivă (nu „citește și acest articol"); Psihoterapie primește al 5-lea link doar dacă aduce ceva ce n-are deja; `date:` = ziua de publicare (schimbat în același commit dacă push-ul întârzie); Request indexing pentru cele două URL-uri abia după ce textul e definitivat.
+- Articolul #6 (`emotii-intense-si-relatii-dificile`) rămâne candidat pe limbaj de simptom (`emoții intense`, `teamă de respingere`, `relații care se repetă`); #7 ia interogările de reglare emoțională / furie (`reacționez exagerat`, `explodez din nimic`, `cum îmi controlez furia`), care acoperă și chipul „Gestionarea furiei" de pe Home, fără pagină în spate.
