@@ -2,13 +2,13 @@
 title: 'Psiholog sau psihoterapeut: ce cauți, de fapt'
 date: 2026-11-12
 description: 'Psiholog, psihoterapeut, consilier sau psihiatru: ce face fiecare, ce titluri sunt protejate prin lege în România și ce să întrebi înainte de prima ședință.'
-excerpt: 'Cauți „psiholog Cluj" și în rezultate apar amestecat psihologi, psihoterapeuți, consilieri și coach-uri. Nu sunt același lucru.'
+excerpt: 'Cauți „psiholog Cluj” și în rezultate apar amestecat psihologi, psihoterapeuți, consilieri și coach-uri. Nu sunt același lucru.'
 mirror: 'psychologist-or-psychotherapist'
 ---
 
-Când cauți sprijin pentru anxietate, stres sau o perioadă care te-a scos din echilibru, prima căutare este aproape întotdeauna „psiholog Cluj". Iar în rezultate apar amestecat câteva cuvinte care nu înseamnă același lucru: psiholog, psihoterapeut, consilier, coach, psihiatru.
+Când cauți sprijin pentru anxietate, stres sau o perioadă care te-a scos din echilibru, prima căutare este aproape întotdeauna „psiholog Cluj”. Iar în rezultate apar amestecat câteva cuvinte care nu înseamnă același lucru: psiholog, psihoterapeut, consilier, coach, psihiatru.
 
-> „Psiholog sau psihoterapeut — chiar există o diferență?"
+> „Psiholog sau psihoterapeut — chiar există o diferență?”
 
 Da, iar diferența nu este doar de vocabular. Cuvintele descriu pregătirea, titlul pe care îl poți folosi legal și tipul de ajutor pe care îl primești în cabinet.
 
@@ -22,9 +22,9 @@ Da, iar diferența nu este doar de vocabular. Cuvintele descriu pregătirea, tit
 
 ## De ce confuzia este normală
 
-Cuvântul pe care îl tastezi descrie mai degrabă ce simți tu, nu profesia de care ai nevoie. Când ceva nu merge, cauți un „psiholog", pentru că acela este cuvântul cunoscut. Serviciul de care ai nevoie poate fi, în realitate, psihoterapie.
+Cuvântul pe care îl tastezi descrie mai degrabă ce simți tu, nu profesia de care ai nevoie. Când ceva nu merge, cauți un „psiholog”, pentru că acela este cuvântul cunoscut. Serviciul de care ai nevoie poate fi, în realitate, psihoterapie.
 
-Exact din acest motiv, căutările „psiholog Cluj" și „psihoterapeut Cluj" ajung foarte des la aceeași persoană. Eu sunt psiholog cu drept de liberă practică în Psihoterapii cognitive și comportamentale, acreditat în registrul public al CPR — deci ambele cuvinte se aplică aceluiași lucru.
+Exact din acest motiv, căutările „psiholog Cluj” și „psihoterapeut Cluj” ajung foarte des la aceeași persoană. Eu sunt psiholog cu drept de liberă practică în Psihoterapii cognitive și comportamentale, acreditat în registrul public al CPR — deci ambele cuvinte se aplică aceluiași lucru.
 
 ### Ce se potrivește cu ce cauți
 
