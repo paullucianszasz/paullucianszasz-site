@@ -1,7 +1,7 @@
 ---
 title: 'Intense emotions and patterns that repeat in relationships'
 date: 2026-11-13
-description: 'Sudden anger, fear of rejection, relationships that repeat, impulsive decisions followed by regret: what is actually happening and how it is worked on.'
+description: 'Sudden anger, fear of rejection, relationships that repeat: what these patterns look like and how they are worked on, including in personality disorders.'
 excerpt: 'You are not a "difficult" person. Many of the reactions that exhaust you are protective mechanisms learned long ago that now cost you energy.'
 mirror: 'emotii-intense-si-relatii-dificile'
 ---
@@ -20,6 +20,8 @@ Sometimes what we struggle with does not look like one specific problem, but lik
 - **Reactions in the moment, regret afterwards** — impulsive decisions made on a background of stress or pain, which later bring guilt and misunderstanding from the people around you.
 
 These reactions don't mean you are a "difficult" person. Most of the time they are protective mechanisms learned long ago, which today consume your energy and make the present heavier.
+
+When the patterns are enough to make daily life hard, a specialist may call them personality disorders. That is not what changes the way we work: the change starts with the chain below.
 
 ## What these patterns have in common
 
@@ -58,7 +60,7 @@ That is the best moment of the session, not a failure of it. We can stop and loo
 
 ## How structured it will actually be
 
-The framework I work in is **CBT and REBT**: the event, the interpretation, the emotion, the demands underneath the anger or underneath the panic. I name these out loud, because otherwise they stay invisible. The rest of the form — how much agenda, how many exercises, how fast — is not set in advance. It is chosen together, session by session.
+The framework I work in is **CBT and REBT**: the event, the interpretation, the emotion, the demands underneath the anger or underneath the panic. It applies just as much when the difficulties have, at some point, been named a personality disorder. I name these out loud, because otherwise they stay invisible. The rest of the form — how much agenda, how many exercises, how fast — is not set in advance. It is chosen together, session by session.
 
 With this kind of suffering, too much structure too quickly can become a problem in itself: one more experience in which you are asked to conform, in which what you feel is not taken seriously, in which the pace belongs to someone else. If you have been through a therapy where you were handed worksheets to fill in and you left feeling untouched, then you are right to look skeptically at any method.
 

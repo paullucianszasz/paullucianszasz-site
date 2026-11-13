@@ -1,7 +1,7 @@
 ---
 title: 'Emoții intense și tipare care se repetă în relații'
 date: 2026-11-13
-description: 'Furie bruscă, teamă de respingere, relații care se repetă, decizii impulsive urmate de regret: ce se întâmplă de fapt și cum se lucrează cu asta.'
+description: 'Furie bruscă, teamă de respingere, relații care se repetă: cum arată aceste tipare și cum se lucrează cu ele, inclusiv în tulburările de personalitate.'
 excerpt: 'Nu ești o persoană „dificilă”. Multe reacții care te epuizează sunt mecanisme de protecție învățate demult, care azi îți consumă energia.'
 mirror: 'intense-emotions-and-difficult-relationships'
 ---
@@ -20,6 +20,8 @@ Uneori, dificultățile cu care ne confruntăm nu arată ca o problemă punctual
 - **Reacții de moment urmate de regret** — decizii impulsive luate pe fond de stres sau suferință, care aduc ulterior vinovăție și neînțelegere din partea celor din jur.
 
 Aceste reacții nu înseamnă că ești o persoană „dificilă”. De cele mai multe ori, sunt mecanisme de protecție învățate demult, care astăzi îți consumă energia și îți îngreunează prezentul.
+
+Când tiparele sunt suficiente încât să îți facă viața de zi cu zi grea, un specialist le poate numi tulburări de personalitate. Nu asta schimbă modul de lucru: schimbarea începe de la lanțul de mai jos.
 
 ## Ce au în comun aceste tipare
 
@@ -58,7 +60,7 @@ Acela este cel mai bun moment al ședinței, nu un eșec al ei. Putem opri și p
 
 ## Cât de structurat va fi, de fapt
 
-Cadrul în care lucrez este **CBT și REBT**: evenimentul, interpretarea, emoția, pretențiile de sub furie sau de sub panică. Acestea le numesc cu voce tare, pentru că altfel rămân invizibile. Restul formei — cât de multă agendă, cât de multe exerciții, cât de repede — nu este stabilit dinainte, ci se alege împreună, ședință de ședință.
+Cadrul în care lucrez este **CBT și REBT**: evenimentul, interpretarea, emoția, pretențiile de sub furie sau de sub panică. Se aplică și atunci când dificultățile au primit, la un moment dat, numele de tulburare de personalitate. Acestea le numesc cu voce tare, pentru că altfel rămân invizibile. Restul formei — cât de multă agendă, cât de multe exerciții, cât de repede — nu este stabilit dinainte, ci se alege împreună, ședință de ședință.
 
 Pentru tipul acesta de suferință, prea multă structură prea repede poate deveni ea însăși o problemă: încă o experiență în care ți se cere să te conformezi, în care ce simți tu nu este luat în seamă, în care ritmul aparține celuilalt. Dacă ai trecut prin terapia în care ai primit fișe de completat și ai plecat simțindu-te neatins, atunci ai dreptate să te uiți sceptic la orice metodă.
 

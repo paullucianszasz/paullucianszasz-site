@@ -57,6 +57,9 @@ const personRo = {
     'Depresie',
     'Gestionarea furiei',
     'Stres și epuizare (burnout)',
+    'Dificultăți în relații',
+    'Tulburări de personalitate',
+    'Terapie de cuplu',
     'Perfecționism'
   ],
   ...sameAs
@@ -80,6 +83,9 @@ const personEn = {
     'Depression',
     'Anger management',
     'Stress and burnout',
+    'Relationship difficulties',
+    'Personality disorders',
+    'Couples therapy',
     'Perfectionism'
   ],
   ...sameAs
