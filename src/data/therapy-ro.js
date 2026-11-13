@@ -6,6 +6,8 @@
 // este adaugata la inceputul sectiunii "Cum functioneaza o sedinta" (aprobata), iar prima coloana a tabelului este aldinata prin CSS (nu prin marcaj).
 // Linkul catre articolul psiholog-sau-psihoterapeut: propozitie formulata de asistent, aprobata de user la 12 nov. 2026, ca paragraf separat
 // dupa fraza despre CBT + REBT ( pozitie cat mai sus in continut, ca sa conteze si ca link intern si ca click).
+// Linkul catre articolul emotii-intense-si-relatii-dificile: paragraf separat dupa lista din "Cum functioneaza o sedinta" (decis de user: pe aceasta
+// pagina, nu in lista "Domenii de expertiza" de pe Home, unde ramane doar termenul "Tulburari de personalitate", fara link). Ancora = titlul articolului.
 export const therapyRo = {
   title: 'Psihoterapie',
   blocks: [
@@ -41,6 +43,7 @@ export const therapyRo = {
       '**Puntea dintre gânduri și emoții** — examinăm capcanele de gândire automate și regulile ascunse care fac situațiile dificile să pară copleșitoare, testând dacă te mai ajută cu adevărat. Dacă vrei să vezi cum arată asta în practică, am descris pas cu pas [modelul ABC](/blog/cum-functioneaza-terapia-modelul-abc/) și [așa cum îl explic în ședință](/blog/modelul-abc-in-sedinta/).',
       '**Practica dincolo de cabinet (viața reală)** — schimbarea reală se întâmplă în viața de zi cu zi. La finalul fiecărei ședințe stabilim exerciții mici sau reflecții practice pentru săptămâna respectivă, construindu-ți autonomia.'
     ] },
+    { t: 'p', v: 'Când aceleași tipare se repetă de ani de zile în relațiile care contează, nu mai este vorba despre un episod punctual. Am scris despre [emoții intense și tipare care se repetă în relații](/blog/emotii-intense-si-relatii-dificile/).' },
     { t: 'h3', v: 'Terapia clasică vs. CBT și REBT' },
     { t: 'p', v: 'Ca să ai o imagine mai clară a cum va fi munca noastră, iată cum se compară o abordare țintită, bazată pe dovezi, cu terapia clasică, deschisă:' },
     { t: 'table', head: ['Criteriu', 'Terapia clasică (prin discuții)', 'CBT și REBT'], rows: [

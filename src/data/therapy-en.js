@@ -2,6 +2,8 @@
 // Ilustrația: primul bloc (banda de sub titlu), WebP 1600x830, fara text in imagine; alt este singurul text, in EN.
 // Durata de 50 de minute este adaugata la inceputul sectiunii "How a Session Works" (aprobata).
 // Linkul catre articolul psychologist-or-psychotherapist: oglinda propozitiei din RO, aceeasi pozitie (aprobata de user la 12 nov. 2026).
+// Linkul catre articolul intense-emotions-and-difficult-relationships: oglinda propozitiei RO, paragraf separat dupa lista din "How a Session Works"
+// (user a vrut linkul pe aceasta pagina, nu in "Areas of Expertise" de pe Home, unde apare doar termenul "Personality Disorders", fara link).
 export const therapyEn = {
   title: 'Psychotherapy',
   blocks: [
@@ -37,6 +39,7 @@ export const therapyEn = {
       '**The bridge between thoughts and feelings** — we examine the automatic thinking traps and the hidden rules that make difficult situations feel overwhelming, and test whether they are still actually helping you. If you would like a preview of what that looks like, I have written out the [ABC model step by step](/en/blog/understanding-how-therapy-works-the-abc-model/) and [as I explain it in a session](/en/blog/the-abc-model-client-script/).',
       '**Practice beyond the office (real life)** — real change happens in your day-to-day life. At the end of each session we agree on small exercises or practical reflections for that week, building your independence.'
     ] },
+    { t: 'p', v: 'When the same patterns repeat for years in the relationships that matter, it is no longer about one specific episode. I have written about [intense emotions and patterns that repeat in relationships](/en/blog/intense-emotions-and-difficult-relationships/).' },
     { t: 'h3', v: 'Traditional Talk Therapy vs. CBT & REBT' },
     { t: 'p', v: 'To give you a clearer picture of how our work will feel, here is how a targeted, evidence-based approach compares to traditional open-ended therapy:' },
     { t: 'table', head: ['Criterion', 'Traditional Talk Therapy', 'CBT & REBT'], rows: [
