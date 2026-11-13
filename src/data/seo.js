@@ -119,8 +119,8 @@ export const seo = {
         alt: '/en/about-me/'
       },
       '/contacts/': {
-        title: 'Contact | Psihoterapeut CBT Cluj-Napoca — Paul Lucian Szasz',
-        desc: `Programări la +40 723 333 609, WhatsApp sau email. Cabinet ${office.streetRo}, ${office.locality}. Ședințe față în față sau online.`,
+        title: 'Psihoterapeut CBT Cluj-Napoca — contact și programări',
+        desc: `Programări Luni – Vineri, 16:00 – 20:00, la +40 723 333 609, WhatsApp sau email. Cabinet pe ${office.streetRo}, ${office.locality}, sau ședințe online.`,
         canonical: '/contacts/',
         alt: '/en/contact/'
       }
@@ -159,8 +159,8 @@ export const seo = {
         alt: '/despre-mine/'
       },
       '/en/contact/': {
-        title: 'Contact | CBT Psychotherapist Cluj-Napoca — Paul Lucian Szasz',
-        desc: `Book by phone on +40 723 333 609, WhatsApp or email. Office at ${office.streetEn}, ${office.locality}. Sessions in person or online.`,
+        title: 'CBT Psychotherapist Cluj-Napoca — contact and bookings',
+        desc: `Bookings Monday – Friday, 16:00 – 20:00, on +40 723 333 609, WhatsApp or email. Office at ${office.streetEn}, ${office.locality}, or online sessions.`,
         canonical: '/en/contact/',
         alt: '/contacts/'
       }
