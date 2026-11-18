@@ -89,11 +89,15 @@
 
 | # | Articol | Draft pentru aprobare | Publicare | Slug RO |
 |---|---|---|---|---|
+| + | De ce nu îți funcționează tehnicile de reglare emoțională (credibilitate, 6 studii + teză) | aprobat 18 Nov 2026 | **18 noiembrie 2026 (push `54ff6e5`)** | `/blog/de-ce-nu-ti-merge-tehnicile-de-reglare-emotionala/` |
 | 7 | Cele 90 de secunde (reglare emoțională, furie disproporționată) | 27–28 Nov 2026 | **miercurea 9 decembrie 2026** | `/blog/cele-90-de-seunde-cand-urca-emotia/` |
 | 8 | Teama de respingere în cuplu | 5–6 ian 2027 | **miercurea 13 ianuarie 2027** | `/blog/teama-de-respingere-in-cuplu/` |
 | 9 | Cât durează terapia și cum știm dacă merge | — | sfârșit de feb. 2027, brief din interogările reale | de stabilit la brief |
 
-- Slug EN propus pentru #7: `/en/blog/the-ninety-seconds-before-you-react/`; pentru #8: `/en/blog/fear-of-rejection-in-relationships/`. Rămân de confirmat la draft.
+- Slug EN propus pentru #7: `/en/blog/the-ninety-seconds-before-you-react/`; pentru #8: `/en/blog/fear-of-rejection-in-relationships/`. Rămân de confirmat la draft. Slug EN al articolului de credibilitate, publicat: `/en/blog/why-calming-techniques-stop-working/`.
+- De ce 18 nov (nu 25 nov, nu după 9 dec): articolul de credibilitate nu concurează pe interogări de simptom, ci pe „de ce nu merge tehnica"; publicat acum, are trei săptămâni de interogări reale până pe 7–8 dec, deci titlul lui #7 se calibrează pe date de la două articole. Ferestre între articolele pe reglare emoțională: 18 nov → 9 dec → 13 ian.
+- Ce s-a verificat la articolul de credibilitate: 6 articole, toate cu autor principal Dr. Szasz, 777 citări la profilul `vQ0ArgQAAAAJ` (de aici „peste 770"); DOI-uri confirmate prin `doi.org/api/handles/` — `10.1016/j.brat.2010.11.011`, `10.1016/j.brat.2012.02.010`, `10.1007/s41811-018-0026-9`, `10.1080/16506073.2016.1203354`; cele două lucrări din *Journal of Cognitive and Behavioral Psychotherapies* (2009, 2011) n-au DOI și `jcbp.ro` nu rezolvă, deci rămân citate simplu, fără link. Nu au fost folosite afirmațiile neverificabile din brief (procentul de „90% folosesc 4–5 strategii", „acceptarea nu mai ajunge la intensitate mare") — ele sunt din teză, nu din rezumatele publice; dacă se vor formula ca rezultate ale tezei, doar cu textul dat de Dr. Szasz.
+- La #7 se adaugă link încrucișat către `/blog/de-ce-nu-ti-merge-tehnicile-de-reglare-emotionala/` (și invers), ancoră descriptivă, nu „citește și acest articol".
 - De ce 9 dec: pe **7–8 decembrie** se deschide Search Console → Performance → Pages → `/blog/emotii-intense-si-relatii-dificile/` → Interogări; titlul și prima propoziție ale lui #7 se calibrează pe formulările reale, nu pe cele ale asistentului.
 - De ce 13 ian: decembrie se evită (scade căutarea de terapie, recrawlizare mai rară); ianuarie e al doilea vârf anual după septembrie. Cinci săptămâni între #7 și #8, cât să nu concureze pe aceleași interogări.
 - Reguli păstrate și la #7/#8: termenul „tulburări de personalitate" maxim de două ori, formulare pasivă; link încrucișat către articolul 6 cu ancoră descriptivă (nu „citește și acest articol"); Psihoterapie primește al 5-lea link doar dacă aduce ceva ce n-are deja; `date:` = ziua de publicare (schimbat în același commit dacă push-ul întârzie); Request indexing pentru cele două URL-uri abia după ce textul e definitivat.
