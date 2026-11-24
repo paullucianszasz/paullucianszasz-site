@@ -1,7 +1,7 @@
 ---
-title: 'Psiholog sau psihoterapeut: ce cauți, de fapt'
+title: 'Psiholog sau psihoterapeut: care e diferența'
 date: 2026-11-12
-description: 'Psiholog, psihoterapeut, consilier sau psihiatru: ce face fiecare, ce titluri sunt protejate prin lege în România și ce să întrebi înainte de prima ședință.'
+description: 'Psiholog sau psihoterapeut: ce face fiecare, când are sens fiecare, ce titluri sunt protejate prin lege în România și ce întrebi la prima ședință.'
 excerpt: 'Cauți „psiholog Cluj” și în rezultate apar amestecat psihologi, psihoterapeuți, consilieri și coach-uri. Nu sunt același lucru.'
 mirror: 'psychologist-or-psychotherapist'
 ---
@@ -10,7 +10,7 @@ Când cauți sprijin pentru anxietate, stres sau o perioadă care te-a scos din 
 
 > „Psiholog sau psihoterapeut — chiar există o diferență?”
 
-Da, iar diferența nu este doar de vocabular. Cuvintele descriu pregătirea, titlul pe care îl poți folosi legal și tipul de ajutor pe care îl primești în cabinet.
+Da, iar diferența nu este doar de vocabular. Cuvintele descriu pregătirea, titlul pe care îl poți folosi legal și tipul de ajutor pe care îl primești în cabinet. Iar dacă întrebarea ta este cea concretă — la care dintre ei mergi? — răspunsul nu se decide după titlu, ci după ce ai nevoie.
 
 ## Ce înseamnă fiecare, în România
 
@@ -25,6 +25,14 @@ Da, iar diferența nu este doar de vocabular. Cuvintele descriu pregătirea, tit
 Cuvântul pe care îl tastezi descrie mai degrabă ce simți tu, nu profesia de care ai nevoie. Când ceva nu merge, cauți un „psiholog”, pentru că acela este cuvântul cunoscut. Serviciul de care ai nevoie poate fi, în realitate, psihoterapie.
 
 Exact din acest motiv, căutările „psiholog Cluj” și „psihoterapeut Cluj” ajung foarte des la aceeași persoană. Eu sunt psiholog cu drept de liberă practică în Psihoterapii cognitive și comportamentale, acreditat în registrul public al CPR — deci ambele cuvinte se aplică aceluiași lucru.
+
+## Psiholog sau psihoterapeut: când are sens fiecare
+
+- **Când ai nevoie de un psiholog** — ai nevoie de evaluare și testare: un profil psihologic clar, o evaluare neuropsihologică, un raport pentru școală sau pentru instanță. Sau ai nevoie de consiliere pentru un moment dificil: o pierdere, o decizie, o perioadă de stres care nu trece.
+- **Când ai nevoie de un psihoterapeut** — e ceva ce se repetă de luni de zile și te ține blocat: anxietate, panică, furie care explodează, relații care se desfășoară mereu la fel, un tipar pe care îl vezi dar nu îl oprești. Psihoterapia lucrează cu mecanismul care ține problema în viață, nu doar cu evenimentul care a declanșat-o.
+- **Când nu știi** — și acesta este răspunsul cel mai frecvent. Suni și întrebi. Un profesionist serios nu îți vinde o ședință de care nu ai nevoie: fie te primește, fie îți spune cine e potrivit pentru ce ai.
+
+Nu este o alegere făcută o singură dată. Mulți oameni încep cu un psiholog și continuă cu un psihoterapeut; alții au nevoie de ambele, în paralel, plus de un psihiatru când somnul sau corpul sunt implicate.
 
 ### Ce se potrivește cu ce cauți
 

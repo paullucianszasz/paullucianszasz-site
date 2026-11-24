@@ -1,7 +1,7 @@
 ---
-title: 'Psychologist or psychotherapist: what you are actually looking for'
+title: 'Psychologist or psychotherapist: what is the difference'
 date: 2026-11-12
-description: 'Psychologist, psychotherapist, counselor or psychiatrist: what each one does, which titles are protected in Romania and what to ask before the first session.'
+description: 'Psychologist or psychotherapist: what each one does, when each one fits, which titles are protected by law in Romania and what to ask at the first session.'
 excerpt: 'You search for a "psychologist in Cluj" and the results mix psychologists, psychotherapists, counselors and coaches. They are not the same thing.'
 mirror: 'psiholog-sau-psihoterapeut'
 ---
@@ -10,7 +10,7 @@ When you need help with anxiety, stress or a period that has knocked you off bal
 
 > "Psychologist or psychotherapist — is there really a difference?"
 
-Yes, and the difference is not just vocabulary. These words describe a person's training, the title they are allowed to use by law, and the kind of help you actually get in the room.
+Yes, and the difference is not just vocabulary. These words describe a person's training, the title they are allowed to use by law, and the kind of help you actually get in the room. And if your question is the concrete one — which of them do I go to? — the answer isn't decided by the title, but by what you need.
 
 ## What each one means in Romania
 
@@ -25,6 +25,14 @@ Yes, and the difference is not just vocabulary. These words describe a person's 
 The word you type usually describes what you feel, not the profession you need. When something is wrong you look for a "psychologist", because that is the word you know. The service you actually need may be psychotherapy.
 
 This is exactly why the searches "psychologist Cluj" and "psychotherapist Cluj" so often lead to the same person. I am a psychologist with the right to private practice in Cognitive and Behavioral Psychotherapies, accredited in the public CPR register — so both words apply to the same work.
+
+## Psychologist or psychotherapist: when each one fits
+
+- **When you need a psychologist** — you need assessment and testing: a clear psychological profile, a neuropsychological assessment, a report for school or for court. Or you need counselling for a difficult stretch: a loss, a decision, a period of stress that doesn't lift.
+- **When you need a psychotherapist** — something has been repeating for months and keeps you stuck: anxiety, panic, anger that explodes, relationships that unfold the same way, a pattern you can see but can't stop. Psychotherapy works with the mechanism that keeps the problem alive, not only with the event that started it.
+- **When you don't know** — and that is the most common answer. You call and ask. A serious professional doesn't sell you a session you don't need: either they take you on, or they tell you who fits what you have.
+
+It isn't a choice made once and for all. Many people start with a psychologist and continue with a psychotherapist; others need both, in parallel, plus a psychiatrist when sleep or the body is involved.
 
 ### What matches what you are looking for
 
